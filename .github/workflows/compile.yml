@@ -1,0 +1,40 @@
+name: Compile Arduino baselines
+on:
+  push:
+    paths:
+      - 'firmware/**'
+      - 'vendor/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'programs.json'
+      - 'toolchain.lock.json'
+      - '.gitattributes'
+      - '.github/workflows/compile.yml'
+  pull_request:
+    paths:
+      - 'firmware/**'
+      - 'vendor/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'programs.json'
+      - 'toolchain.lock.json'
+      - '.gitattributes'
+      - '.github/workflows/compile.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Check source snapshot and project structure
+        run: ./tests/Check-Repository.ps1
+      - name: Install pinned Arduino toolchain
+        run: ./scripts/Setup-Toolchain.ps1
+      - name: Compile every official sketch and USB check
+        run: ./scripts/Build.ps1 -All
