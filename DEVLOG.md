@@ -50,7 +50,10 @@
 - 原始编译日志只留本机，不上传其中的机器路径；[Windows 全量编译摘要](artifacts/2026-09-13-windows-compilation.json) 记录各程序 Flash、静态 RAM、使用库和警告数量。
 - 编译中保留了原厂/Arduino 核心的警告；没有把“零编译错误”写成“零警告”。
 - 全新本地 clone 再次通过所有仓库检查，确认 Windows 自动换行不再破坏 vendor 文件。
-- [首轮 GitHub Linux CI](https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34784599709) 对代码提交 `53de74ed9342c62ca3b06b8611413ce2fa74c69a` 完成所有检查和 30/30 编译，任务耗时 1 分 10 秒。运行时警告修正后的新一轮结果另行补记。
+- [首轮 GitHub Linux CI](https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34784599709) 对代码提交 `53de74ed9342c62ca3b06b8611413ce2fa74c69a` 完成所有检查和 30/30 编译，任务耗时 1 分 10 秒。
+- 运行时警告修正后的 [最终 GitHub Linux CI](https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34784847884) 对代码提交 `c7687048f769b008e924ad6b025eae786bf24ffd` 再次通过所有检查及 30/30 编译，任务耗时 1 分 9 秒，旧 Action 运行时警告已消除。
+- [环境证据](artifacts/2026-09-13-environment.json) 和 [CI 摘要](artifacts/2026-09-13-github-ci.json) 已归档。实际烧录次数 0，硬件测试次数 0；不能把自动编译结果当作课程演示通过。
+- 本次最终补记仅修改文档和验证 JSON，不改动已经验证的程序、依赖或构建流程。已完成本阶段非实物准备，不代表最终课程项目完成。
 
 ### 下一步
 

@@ -4,7 +4,7 @@
 
 GitHub 私有仓库：[Shengqinchu/SEP780-Robot-Car](https://github.com/Shengqinchu/SEP780-Robot-Car)。
 
-> 当前处于电脑端准备阶段。小车已到，电池未到；尚未烧录、完成舵机归中或实车测试。编译成功不代表小车已经能运行。
+> 电脑端准备已完成：Windows 本机和 GitHub Linux CI 均为 30/30 编译通过。小车已到，电池未到；尚未烧录、完成舵机归中或实车测试。编译成功不代表小车已经能运行。
 
 ## 从哪里开始
 
@@ -13,6 +13,7 @@ GitHub 私有仓库：[Shengqinchu/SEP780-Robot-Car](https://github.com/Shengqin
 - [测试清单](docs/test-plan.md)：逐项记录真实结果，不提前打勾。
 - [项目计划](docs/project-plan.md)：原厂基线与拟新增功能的边界。
 - [来源与许可](THIRD_PARTY.md)：原厂代码来源、固定版本及许可。
+- [GitHub 编译验证](https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34784847884)：固定版本工具链的远端复现结果。
 
 ## 电脑端命令
 

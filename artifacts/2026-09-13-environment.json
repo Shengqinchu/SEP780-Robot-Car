@@ -1,0 +1,23 @@
+{
+  "recorded_at_utc": "2026-09-13T21:49:52.5730160Z",
+  "powershell_version": "7.5.4",
+  "operating_system": "Microsoft Windows 10.0.26100",
+  "arduino_cli_version": "1.5.1",
+  "arduino_cli_commit": "01f3d4f2b",
+  "arduino_ide": {
+    "version": "2.3.10",
+    "archive_sha256": "5dd9d6b2e2c9ef8dd9d98da7808f712daff97911a91d3ccfaf946355c6b6abb3",
+    "signature_status": "Valid",
+    "signer": "CN=Arduino SA, O=Arduino SA, S=Ticino, C=CH",
+    "gui_interaction_tested": false
+  },
+  "source_snapshot_files": 70,
+  "source_snapshot_verified_against_upstream_git_blobs": true,
+  "fresh_clone_repository_checks_passed": true,
+  "battery_received": false,
+  "battery_status_source": "User confirmed battery not yet delivered on 2026-09-13",
+  "arduino_serial_port_confirmed": false,
+  "existing_port_classification": "Six Bluetooth serial ports; not selected for upload",
+  "boards_flashed": 0,
+  "physical_tests_performed": []
+}
