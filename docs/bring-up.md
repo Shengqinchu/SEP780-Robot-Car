@@ -2,9 +2,21 @@
 
 ## 当前边界
 
-截至 2026-09-13 晚，用户提供的照片显示车轮、两层底板、板卡和超声波支架已装到车体上。照片不足以逐针核对接线，也未清楚展示底部循迹板。电池最新已知状态仍为未到；实际烧录、舵机归中和电机测试均未完成。
+截至 2026-09-13 晚，用户提供的照片显示车轮、两层底板、板卡和超声波支架已装到车体上。后续近照已看清车头下方的循迹板、扩展板上的红外接收器、上层电池电源插口和下层 USB-C 接口，但仍未逐针核对全部接线/板间接触。电池最新已知状态仍为未到；实际烧录、舵机归中和电机测试没有新增通过记录。
 
 官方装配顺序以 [Chapter 0](https://docs.freenove.com/projects/fnk0041/en/latest/fnk0041/codes/tutorial/0_Software,_Assembly_and_Play.html) 为准。本文件是操作检查清单，不代替逐张接线图。
+
+## 平台与电脑连接
+
+这套 FNK0041 按官方 Arduino Uno 兼容平台开发，不是 Raspberry Pi。下层带 USB-C 的板是主控板，上层接电机和传感器的板是扩展板；手持的小蓝牙串口模块用于通信，不是负责运行小车主程序的 Arduino 板。
+
+- 电脑用 Arduino IDE 或本项目 CLI 编译/上传 C/C++ `.ino` 程序，并通过串口查看调试数据。
+- USB 数据线连接下层主控板的 USB-C 口；同一侧的圆形 DC 插口不是电脑数据接口。
+- 程序上传后保存在主控板上，装好电池可脱离电脑运行；手机蓝牙或红外遥控是否可用取决于所接模块和所选固件。
+- 电池未到时先准备 USB 主控板识别/检查，不用 USB 去验证整车驱动或舵机归中。仍按下面的裸板检查条件执行，不因看到接口就自动烧录。
+- 蓝牙模块暂不插入；USB 上传与蓝牙共用串口，上传完成并断电后再按实际针脚接回。
+
+来源：[Control Board and Software](https://docs.freenove.com/projects/fnk0041/en/latest/fnk0041/codes/tutorial/Control_Board_and_Software.html)、[Chapter 6](https://docs.freenove.com/projects/fnk0041/en/latest/fnk0041/codes/tutorial/6_Bluetooth_control.html)。
 
 ## 装配后剩下的附件
 
