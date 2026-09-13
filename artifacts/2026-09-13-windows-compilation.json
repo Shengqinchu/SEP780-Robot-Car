@@ -1,0 +1,835 @@
+{
+  "recorded_at_utc": "2026-09-13T21:42:55.9689223Z",
+  "scope": "Compilation only; not flashed or hardware-tested",
+  "cli_version": "1.5.1",
+  "core": "arduino:avr@1.8.6",
+  "fqbn": "arduino:avr:uno",
+  "upstream_commit": "a035ca380a9218d0a88aab635a58b9a3c738940f",
+  "passed": 30,
+  "total": 30,
+  "programs": [
+    {
+      "program": "usb_check",
+      "source": "firmware/usb_check",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 2318,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 193,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [],
+      "warning_count": 4
+    },
+    {
+      "program": "00.0_Servo_90",
+      "source": "vendor/freenove/Sketches/00.0_Servo_90",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 1740,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 50,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "Servo",
+          "version": "1.2.2"
+        }
+      ],
+      "warning_count": 4
+    },
+    {
+      "program": "01.1.1_RunMotor_Left_Wheel",
+      "source": "vendor/freenove/Sketches/01.1.1_RunMotor_Left_Wheel",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 1184,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 9,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [],
+      "warning_count": 4
+    },
+    {
+      "program": "01.1.2_RunMotor_Right_Wheel",
+      "source": "vendor/freenove/Sketches/01.1.2_RunMotor_Right_Wheel",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 1184,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 9,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [],
+      "warning_count": 4
+    },
+    {
+      "program": "01.1.3_Car_Move_and_Turn",
+      "source": "vendor/freenove/Sketches/01.1.3_Car_Move_and_Turn",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 1328,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 9,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [],
+      "warning_count": 4
+    },
+    {
+      "program": "01.2.1_Buzzer",
+      "source": "vendor/freenove/Sketches/01.2.1_Buzzer",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 978,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 9,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [],
+      "warning_count": 4
+    },
+    {
+      "program": "01.2.2_Battery_level",
+      "source": "vendor/freenove/Sketches/01.2.2_Battery_level",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 3968,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 292,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [],
+      "warning_count": 4
+    },
+    {
+      "program": "01.3_Led_Strip",
+      "source": "vendor/freenove/Sketches/01.3_Led_Strip",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 4964,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 291,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "Freenove WS2812B RGBLED Controller",
+          "version": "1.0.3"
+        },
+        {
+          "name": "Wire",
+          "version": "1.0"
+        }
+      ],
+      "warning_count": 13
+    },
+    {
+      "program": "01.4.1_Integrate_Functions",
+      "source": "vendor/freenove/Sketches/01.4.1_Integrate_Functions",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 7510,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 501,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "Freenove WS2812B RGBLED Controller",
+          "version": "1.0.3"
+        },
+        {
+          "name": "Wire",
+          "version": "1.0"
+        }
+      ],
+      "warning_count": 14
+    },
+    {
+      "program": "01.4.2_Library_Integrate_Functions",
+      "source": "vendor/freenove/Sketches/01.4.2_Library_Integrate_Functions",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 7550,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 501,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "Freenove WS2812B RGBLED Controller",
+          "version": "1.0.3"
+        },
+        {
+          "name": "Wire",
+          "version": "1.0"
+        }
+      ],
+      "warning_count": 20
+    },
+    {
+      "program": "02.1_Servo",
+      "source": "vendor/freenove/Sketches/02.1_Servo",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 2054,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 50,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "Servo",
+          "version": "1.2.2"
+        }
+      ],
+      "warning_count": 4
+    },
+    {
+      "program": "02.2_Ultrasonic_Ranging",
+      "source": "vendor/freenove/Sketches/02.2_Ultrasonic_Ranging",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 4486,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 259,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "Servo",
+          "version": "1.2.2"
+        }
+      ],
+      "warning_count": 5
+    },
+    {
+      "program": "02.3.1_Automatic_Obstacle_Avoidance",
+      "source": "vendor/freenove/Sketches/02.3.1_Automatic_Obstacle_Avoidance",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 4350,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 61,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "Servo",
+          "version": "1.2.2"
+        }
+      ],
+      "warning_count": 6
+    },
+    {
+      "program": "02.3.2_Library_Automatic_Obstacle_Avoidance",
+      "source": "vendor/freenove/Sketches/02.3.2_Library_Automatic_Obstacle_Avoidance",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 4710,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 61,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "EEPROM",
+          "version": "2.0"
+        },
+        {
+          "name": "Servo",
+          "version": "1.2.2"
+        }
+      ],
+      "warning_count": 19
+    },
+    {
+      "program": "03.1_Tracking_Sensor",
+      "source": "vendor/freenove/Sketches/03.1_Tracking_Sensor",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 2242,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 222,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [],
+      "warning_count": 4
+    },
+    {
+      "program": "03.2_Automatic_Tracking_Line",
+      "source": "vendor/freenove/Sketches/03.2_Automatic_Tracking_Line",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 1444,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 9,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [],
+      "warning_count": 11
+    },
+    {
+      "program": "03.3_One_Code_Automatic_Tracking_Line",
+      "source": "vendor/freenove/Sketches/03.3_One_Code_Automatic_Tracking_Line",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 1444,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 9,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [],
+      "warning_count": 8
+    },
+    {
+      "program": "04.1_IR_Receiver",
+      "source": "vendor/freenove/Sketches/04.1_IR_Receiver",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 7560,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 414,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "IRremote",
+          "version": "2.2.3"
+        }
+      ],
+      "warning_count": 10
+    },
+    {
+      "program": "04.2_IR_Remote_Car",
+      "source": "vendor/freenove/Sketches/04.2_IR_Remote_Car",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 6996,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 244,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "IRremote",
+          "version": "2.2.3"
+        }
+      ],
+      "warning_count": 17
+    },
+    {
+      "program": "04.3_Multifunctional_IR_Remote_Car",
+      "source": "vendor/freenove/Sketches/04.3_Multifunctional_IR_Remote_Car",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 10746,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 536,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "IRremote",
+          "version": "2.2.3"
+        },
+        {
+          "name": "Freenove WS2812B RGBLED Controller",
+          "version": "1.0.3"
+        },
+        {
+          "name": "Wire",
+          "version": "1.0"
+        }
+      ],
+      "warning_count": 26
+    },
+    {
+      "program": "04.4_One_Code_Multifunctional_IR_Remote_Car",
+      "source": "vendor/freenove/Sketches/04.4_One_Code_Multifunctional_IR_Remote_Car",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 10746,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 536,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "Freenove WS2812B RGBLED Controller",
+          "version": "1.0.3"
+        },
+        {
+          "name": "Wire",
+          "version": "1.0"
+        },
+        {
+          "name": "IRremote",
+          "version": "2.2.3"
+        }
+      ],
+      "warning_count": 23
+    },
+    {
+      "program": "05.1_RF24_Remote_Controller",
+      "source": "vendor/freenove/Sketches/05.1_RF24_Remote_Controller",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 2962,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 56,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "SPI",
+          "version": "1.0"
+        },
+        {
+          "name": "RF24",
+          "version": "1.3.2"
+        }
+      ],
+      "warning_count": 4
+    },
+    {
+      "program": "05.2_Receive_Data",
+      "source": "vendor/freenove/Sketches/05.2_Receive_Data",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 3524,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 315,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "SPI",
+          "version": "1.0"
+        },
+        {
+          "name": "RF24",
+          "version": "1.3.2"
+        }
+      ],
+      "warning_count": 5
+    },
+    {
+      "program": "05.3_RF24_Remote_Car",
+      "source": "vendor/freenove/Sketches/05.3_RF24_Remote_Car",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 3442,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 74,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "RF24",
+          "version": "1.3.2"
+        },
+        {
+          "name": "SPI",
+          "version": "1.0"
+        },
+        {
+          "name": "FlexiTimer2",
+          "version": ""
+        }
+      ],
+      "warning_count": 14
+    },
+    {
+      "program": "05.4_Multifunctional_RF24_Remote_Car",
+      "source": "vendor/freenove/Sketches/05.4_Multifunctional_RF24_Remote_Car",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 11402,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 433,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "EEPROM",
+          "version": "2.0"
+        },
+        {
+          "name": "Servo",
+          "version": "1.2.2"
+        },
+        {
+          "name": "Freenove WS2812B RGBLED Controller",
+          "version": "1.0.3"
+        },
+        {
+          "name": "Wire",
+          "version": "1.0"
+        },
+        {
+          "name": "RF24",
+          "version": "1.3.2"
+        },
+        {
+          "name": "SPI",
+          "version": "1.0"
+        },
+        {
+          "name": "FlexiTimer2",
+          "version": ""
+        }
+      ],
+      "warning_count": 34
+    },
+    {
+      "program": "05.5_One_Code_Multifunctional_RF24_Remote_Car",
+      "source": "vendor/freenove/Sketches/05.5_One_Code_Multifunctional_RF24_Remote_Car",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 11402,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 433,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "Freenove WS2812B RGBLED Controller",
+          "version": "1.0.3"
+        },
+        {
+          "name": "Wire",
+          "version": "1.0"
+        },
+        {
+          "name": "EEPROM",
+          "version": "2.0"
+        },
+        {
+          "name": "Servo",
+          "version": "1.2.2"
+        },
+        {
+          "name": "RF24",
+          "version": "1.3.2"
+        },
+        {
+          "name": "SPI",
+          "version": "1.0"
+        },
+        {
+          "name": "FlexiTimer2",
+          "version": ""
+        }
+      ],
+      "warning_count": 21
+    },
+    {
+      "program": "06.1_Receive_Bluetooth_Data",
+      "source": "vendor/freenove/Sketches/06.1_Receive_Bluetooth_Data",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 3656,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 253,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [],
+      "warning_count": 4
+    },
+    {
+      "program": "06.2_Bluetooth_Remote_Car",
+      "source": "vendor/freenove/Sketches/06.2_Bluetooth_Remote_Car",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 6246,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 214,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [],
+      "warning_count": 11
+    },
+    {
+      "program": "06.3_Multifunctional_Bluetooth_Remote_Car",
+      "source": "vendor/freenove/Sketches/06.3_Multifunctional_Bluetooth_Remote_Car",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 13060,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 584,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "EEPROM",
+          "version": "2.0"
+        },
+        {
+          "name": "Servo",
+          "version": "1.2.2"
+        },
+        {
+          "name": "Freenove WS2812B RGBLED Controller",
+          "version": "1.0.3"
+        },
+        {
+          "name": "Wire",
+          "version": "1.0"
+        }
+      ],
+      "warning_count": 31
+    },
+    {
+      "program": "06.4_One_Code_Multifunctional_Bluetooth_Remote_Car",
+      "source": "vendor/freenove/Sketches/06.4_One_Code_Multifunctional_Bluetooth_Remote_Car",
+      "success": true,
+      "exit_code": 0,
+      "sizes": [
+        {
+          "name": "text",
+          "size": 13062,
+          "max_size": 32256
+        },
+        {
+          "name": "data",
+          "size": 584,
+          "max_size": 2048
+        }
+      ],
+      "used_libraries": [
+        {
+          "name": "Freenove WS2812B RGBLED Controller",
+          "version": "1.0.3"
+        },
+        {
+          "name": "Wire",
+          "version": "1.0"
+        },
+        {
+          "name": "EEPROM",
+          "version": "2.0"
+        },
+        {
+          "name": "Servo",
+          "version": "1.2.2"
+        },
+        {
+          "name": "RF24",
+          "version": "1.3.2"
+        },
+        {
+          "name": "SPI",
+          "version": "1.0"
+        }
+      ],
+      "warning_count": 21
+    }
+  ]
+}
