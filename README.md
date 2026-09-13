@@ -4,7 +4,7 @@
 
 GitHub 私有仓库：[Shengqinchu/SEP780-Robot-Car](https://github.com/Shengqinchu/SEP780-Robot-Car)。
 
-> 电脑端准备已完成：Windows 本机和 GitHub Linux CI 均为 30/30 编译通过。小车已到，电池未到；尚未烧录、完成舵机归中或实车测试。编译成功不代表小车已经能运行。
+> 电脑端准备已完成：Windows 本机和 GitHub Linux CI 均为 30/30 编译通过。2026-09-13 晚的照片显示机械主体已装成，但接线未完成逐项验收；电池最新已知状态仍为未到。尚未烧录、完成舵机归中或实车测试。编译成功不代表小车已经能运行。
 
 ## 从哪里开始
 
