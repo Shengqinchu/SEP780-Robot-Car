@@ -285,3 +285,10 @@
 - [软件验证摘要](artifacts/2026-09-13-control-software.json)、[全量编译摘要](artifacts/2026-09-13-control-compilation.json)、[场景回放输出](artifacts/2026-09-13-line-course-replay.csv)。后者是合成场景结果，不是实车行驶记录。
 - 电池到货后：先原厂基线，再校准电压/方向/黑白读数/车速/距离，最后重复路线对比。首次正式运行自定义固件仍需要现场确认与显式上传。
 - 代码、文档和本机证据先提交，GitHub CI 的实际结果另行补记。
+
+### GitHub 验证与落档完成
+
+- 实现提交：`e7ed7dfb56d86f3e74acdb5b679eed53d8d986ed`，已推送到原有私有仓库 main。
+- [GitHub Linux CI](https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34801602253) 成功，耗时 1 分 39 秒。原始日志再次核对到 76 项 Unity 测试、78 项 Python 测试、31 个回放检查点、文档检查、内存回环及 31/31 编译通过。
+- GitHub 中文/英文 README 的实际 HTML 渲染已检查：标题、语言切换、快速开始代码和校准链接均存在；本地相对链接与两版命令也通过自动检查。
+- 更新软件摘要的 CI 字段并落档。本次收尾只追加日志与证据，不改动已经验证的代码，不增加任何物理串口或烧录操作。

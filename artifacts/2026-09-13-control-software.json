@@ -30,7 +30,11 @@
       "zh",
       "en"
     ],
-    "bilingual_commands_match": true
+    "bilingual_commands_match": true,
+    "github_html_checked": [
+      "README.md",
+      "README.en.md"
+    ]
   },
   "compilation": {
     "passed": 31,
@@ -85,7 +89,16 @@
   "physical_serial_sessions_this_turn": 0,
   "actuator_tests_this_turn": 0,
   "ci": {
-    "status": "pending",
-    "workflow": "compile.yml"
+    "status": "success",
+    "workflow": "compile.yml",
+    "run_id": 34801602253,
+    "url": "https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34801602253",
+    "head_sha": "e7ed7dfb56d86f3e74acdb5b679eed53d8d986ed",
+    "completed_at_utc": "2026-09-14T03:11:06Z",
+    "duration_seconds": 99,
+    "native_tests_passed": 76,
+    "host_tests_passed": 78,
+    "replay_checks_passed": 31,
+    "sketches_compiled": 31
   }
 }
