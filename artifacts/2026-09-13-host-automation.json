@@ -1,0 +1,50 @@
+{
+  "local_date": "2026-09-13",
+  "timezone": "America/Toronto",
+  "tested_code_commit": "852beb0608df1a6e9ed7e6771302200cce25d8d8",
+  "scope": "Host serial API implementation and offline validation only; physical USB check is awaiting isolation confirmation",
+  "host_dependency": {
+    "name": "pyserial",
+    "version": "3.5",
+    "wheel_sha256": "c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0",
+    "environment": "project-local isolated venv, ignored by Git",
+    "windows_python": "3.12.14"
+  },
+  "windows": {
+    "unit_tests_passed": 42,
+    "unit_tests_total": 42,
+    "pyserial_memory_loopback": "passed",
+    "powershell_python_lock_names": "matched",
+    "port_lock_exclusion": "passed",
+    "invalid_port_rejection": "passed",
+    "compile_recorded_at_utc": "2026-09-14T01:24:02.6037879Z",
+    "sketches_compiled": 30,
+    "sketches_total": 30,
+    "vendor_hashes_unchanged": 70,
+    "usb_enumeration": {"port": "COM5", "description": "USB-SERIAL CH340", "vid": "1A86", "pid": "7523"}
+  },
+  "github_ci": {
+    "run_id": 34796061715,
+    "url": "https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34796061715",
+    "conclusion": "success",
+    "platform": "ubuntu-latest",
+    "unit_tests_passed": 42,
+    "unit_tests_total": 42,
+    "pyserial_memory_loopback": "passed",
+    "sketches_compiled": 30,
+    "sketches_total": 30,
+    "job_started_at_utc": "2026-09-14T01:29:11Z",
+    "job_completed_at_utc": "2026-09-14T01:30:34Z"
+  },
+  "physical_serial_sessions_opened": 0,
+  "firmware_uploads": 0,
+  "actuator_tests": 0,
+  "hardware_isolation_confirmed": false,
+  "mcp_servers_installed": 0,
+  "global_python_packages_modified": false,
+  "notes": [
+    "Initial AppData venv install failed with WinError 17 due to Windows path redirection; the project-local venv succeeded.",
+    "Inactive DTR/RTS requests are not a guarantee against an OS/driver-triggered reset.",
+    "The current host tool is limited to the 115200-baud USB_CHECK protocol, not motor or sensor testing."
+  ]
+}

@@ -8,7 +8,7 @@ GitHub 私有仓库：[Shengqinchu/SEP780-Robot-Car](https://github.com/Shengqin
 
 2026-09-13 USB 已连接，电脑枚举到 COM5（CLI 板型仍为 Unknown）。按“先调研、后调试”的要求，本轮只做工具研究与无上传编译，未打开串口或让小车动作。
 
-后续电脑端已落地：pySerial API、限时采集/查询、端口互斥锁及 42 项离线测试；真实串口会话/烧录仍等待现场隔离条件确认。
+后续电脑端已落地：pySerial API、限时采集/查询、端口互斥锁及 42 项离线测试；Windows 与 [新 GitHub CI](https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34796061715) 均通过主机测试及 30/30 编译。真实串口会话/烧录仍等待现场隔离条件确认。
 
 ## 从哪里开始
 

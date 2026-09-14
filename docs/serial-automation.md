@@ -61,4 +61,4 @@ Python 串口会话和现有 PowerShell Upload 共用 `.local/port-locks` 的独
 
 42 个 Python 测试覆盖参数门槛、URL/非法端口拒绝、分包/超长行、精确应答、旧应答排除、时间回绕/复位、未知固件不写入、超时/字节预算、断线/中断清理、锁冲突、结果落档和软件回环。PowerShell 另验证锁命名与 Python 一致、锁互斥以及非法端口拒绝。
 
-Windows 本机测试和 30/30 无上传编译均已通过。GitHub CI 增加同一套主机测试与回环，实际远端结果单独记录在 DEVLOG。当前未开真实串口、未烧录、未测试执行器；下一步等待现场隔离状态确认。
+Windows 本机和 [GitHub Linux CI](https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34796061715) 均通过 42 项测试、软件回环及 30/30 无上传编译；测试代码提交为 `852beb0`。当前未开真实串口、未烧录、未测试执行器；下一步等待现场隔离状态确认。
