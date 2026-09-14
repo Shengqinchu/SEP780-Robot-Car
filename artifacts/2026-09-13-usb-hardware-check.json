@@ -66,5 +66,14 @@
   "led_blink_visually_verified": false,
   "remaining_project_port_locks": 0,
   "local_host_tests_passed": 43,
-  "hardware_scope": "USB programming and serial communication only; no motor, servo, sensor, battery or navigation acceptance"
+  "hardware_scope": "USB programming and serial communication only; no motor, servo, sensor, battery or navigation acceptance",
+  "github_ci": {
+    "run_id": 34797661833,
+    "url": "https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34797661833",
+    "head_sha": "0309b5e0146733edd65d97cfe798bf1dc788ca20",
+    "conclusion": "success",
+    "host_tests_passed": 43,
+    "sketches_compiled": 30,
+    "job_duration_seconds": 82
+  }
 }

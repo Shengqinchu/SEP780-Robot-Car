@@ -4,7 +4,7 @@
 
 GitHub 私有仓库：[Shengqinchu/SEP780-Robot-Car](https://github.com/Shengqinchu/SEP780-Robot-Car)。
 
-> 2026-09-13 晚：usb_check 已成功上传到 COM5，实际收到两条推进心跳及问号查询应答；另做 8 秒只读采集，收到 8 条连续心跳，无检测到复位。[实测摘要](artifacts/2026-09-13-usb-hardware-check.json)。
+> 2026-09-13 晚：usb_check 已成功上传到 COM5，实际收到两条推进心跳及问号查询应答；另做 8 秒只读采集，收到 8 条连续心跳，未检测到复位。[实测摘要](artifacts/2026-09-13-usb-hardware-check.json)。
 
 主控 USB 下载/通信已通过，不代表整车功能通过。电池尚未到，实际舵机归中、电机/传感器、循迹与避障测试仍未执行；LED 物理闪烁也未由现场观察确认。电脑端已有 CLI、pySerial API、日志、端口锁及离线/CI 验证，具体记录见开发日志。
 
@@ -17,7 +17,7 @@ GitHub 私有仓库：[Shengqinchu/SEP780-Robot-Car](https://github.com/Shengqin
 - [项目计划](docs/project-plan.md)：原厂基线与拟新增功能的边界。
 - [自动化工具与开源选型](docs/tooling-research.md)：45 项 CLI/API/MCP/Skill/机器人项目比较，含源码检查和采用建议。
 - [来源与许可](THIRD_PARTY.md)：原厂代码来源、固定版本及许可。
-- [GitHub 编译验证](https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34784847884)：固定版本工具链的远端复现结果。
+- [GitHub 验证](https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34797661833)：43 项主机测试、软件回环及 30/30 固件编译的远端复现结果。
 
 ## 电脑端命令
 
