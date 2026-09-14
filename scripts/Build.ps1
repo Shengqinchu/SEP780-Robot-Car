@@ -10,7 +10,7 @@ if ($Program -and $All) { throw 'Choose -Program or -All, not both.' }
 if ($Program) {
     $selected = @(Get-Program -Name $Program)
 } elseif ($All) {
-    $selected = @([pscustomobject]@{ name = 'usb_check'; path = 'firmware/usb_check' })
+    $selected = @(Get-Content -LiteralPath (Join-Path $ProjectRoot 'programs.json') -Raw | ConvertFrom-Json | Where-Object { $_.path.StartsWith('firmware/') })
     $vendorRoot = Join-Path $ProjectRoot 'vendor/freenove/Sketches'
     $selected += @(Get-ChildItem -LiteralPath $vendorRoot -Directory | Sort-Object Name | ForEach-Object {
         $ino = Join-Path $_.FullName ($_.Name + '.ino')

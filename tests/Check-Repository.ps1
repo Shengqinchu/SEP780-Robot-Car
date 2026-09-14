@@ -21,6 +21,15 @@ foreach ($file in $manifest.files) {
 }
 Write-Host "PASS: $($manifest.files.Count) original vendor files match SHA-256."
 
+$native = Get-Content -LiteralPath (Join-Path $ProjectRoot 'native.lock.json') -Raw | ConvertFrom-Json
+$unityRoot = Join-Path $ProjectRoot 'vendor/unity'
+Assert-Condition (@(Get-ChildItem -LiteralPath $unityRoot -File -Recurse).Count -eq $native.unity.files.Count) 'Unexpected Unity file count.'
+foreach ($file in $native.unity.files) {
+    $path = Join-Path $unityRoot $file.path
+    Assert-Condition ((Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant() -eq $file.sha256) "Modified Unity source: $($file.path)"
+}
+Write-Host 'PASS: Pinned Unity source hashes.'
+
 $programs = @(Get-Content -LiteralPath (Join-Path $ProjectRoot 'programs.json') -Raw | ConvertFrom-Json)
 Assert-Condition (@($programs.name | Select-Object -Unique).Count -eq $programs.Count) 'Duplicate program name.'
 foreach ($program in $programs) {
@@ -34,6 +43,7 @@ foreach ($program in $programs) {
 Assert-Condition ((Get-Program 'servo_center').actuators -eq $true) 'Servo program must be marked as actuating.'
 Assert-Condition ((Get-Program 'ultrasonic_test').actuators -eq $true) 'Ultrasonic example sweeps the servo.'
 Assert-Condition ((Get-Program 'motor_test').actuators -eq $true) 'Motor program must be marked as actuating.'
+Assert-Condition ((Get-Program 'robot_car').actuators -eq $true) 'Robot controller centers the head and can drive.'
 Write-Host "PASS: $($programs.Count) named programs and actuator warnings."
 
 foreach ($script in Get-ChildItem -LiteralPath (Join-Path $ProjectRoot 'scripts'), $PSScriptRoot -Filter '*.ps1' -File) {
@@ -57,4 +67,11 @@ try {
 }
 Assert-Condition $rejected 'Upload must reject missing physical confirmation before accessing hardware.'
 Write-Host 'PASS: Upload refused without hardware confirmation; no port accessed.'
+foreach ($case in @(@{Action='observe';Port='COM9999'}, @{Action='line';Port='COM9999';ConfirmHardwareReady=$true})) {
+    $rejected = $false
+    try { & (Join-Path $ProjectRoot 'scripts/Robot.ps1') @case }
+    catch { $rejected = $_.Exception.Message -match 'requires -ConfirmHardwareReady|requires -ConfirmMotionClear' }
+    Assert-Condition $rejected 'Robot operation did not enforce setup/motion confirmation.'
+}
+Write-Host 'PASS: Robot sessions refuse missing setup/motion confirmation; no port accessed.'
 Write-Host 'All repository checks passed. No hardware was tested.'

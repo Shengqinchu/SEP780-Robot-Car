@@ -1,0 +1,91 @@
+{
+  "recorded_at_utc": "2026-09-14T03:08:11.2275904Z",
+  "local_date": "2026-09-13",
+  "timezone": "America/Toronto",
+  "scope": "Battery-independent software implementation and offline verification only",
+  "native_tests": {
+    "passed": 76,
+    "framework": "Unity 2.6.1",
+    "seeded_input_steps": 10000,
+    "compiler": "Zig 0.13.0",
+    "total": 76
+  },
+  "host_tests": {
+    "passed": 78,
+    "total": 78,
+    "physical_ports_opened": 0,
+    "pyserial": "3.5"
+  },
+  "scenario": {
+    "passed": 31,
+    "physical_simulation": false,
+    "samples": 31,
+    "source": "scenarios/line_course.csv",
+    "result": "artifacts/2026-09-13-line-course-replay.csv"
+  },
+  "documentation": {
+    "guides_checked": 8,
+    "local_links_checked": 46,
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "bilingual_commands_match": true
+  },
+  "compilation": {
+    "passed": 31,
+    "total": 31,
+    "robot_flash_bytes": 14616,
+    "summary": "artifacts/2026-09-13-control-compilation.json",
+    "robot_static_ram_bytes": 662
+  },
+  "source_hashes": [
+    {
+      "path": "firmware/robot_car/config.h",
+      "sha256": "8a1b62dc6ef4f187d2b22af5c4212e2422fa7e5aa2ab5eb9b88f0627b83cb644"
+    },
+    {
+      "path": "firmware/robot_car/controller.cpp",
+      "sha256": "250d8338cd5377bf63628e48aab966abd3959e4c25ad25d638e6ba771a1771fa"
+    },
+    {
+      "path": "firmware/robot_car/controller.h",
+      "sha256": "e8f5ffb49ed9668c662d034747fbd3f16ff1b6ca4d4b0ebef3bdb65ab0790703"
+    },
+    {
+      "path": "firmware/robot_car/fnk0041_io.cpp",
+      "sha256": "89a8243c9da75b39fbe4c9fe8f6daa30ee53387d5c985227bfdf3976c12f533a"
+    },
+    {
+      "path": "firmware/robot_car/fnk0041_io.h",
+      "sha256": "733d72fc91d67e7326d5e2f5cb8d2e3c24cfd21e02b5f479d6b613593104268f"
+    },
+    {
+      "path": "firmware/robot_car/ir_input.cpp",
+      "sha256": "4ed9b58e048013ede0c01c827a474c713ca52f1caa8380213db8959dfdc0066a"
+    },
+    {
+      "path": "firmware/robot_car/ir_input.h",
+      "sha256": "b3185016f2748384ddc43f476a326c581c865ffda06584156eb2ca88d01374b2"
+    },
+    {
+      "path": "firmware/robot_car/protocol.cpp",
+      "sha256": "0934797ea047f3e0f4e356ba44e8fd356c6548f0d222bebbdbe4266c6911431f"
+    },
+    {
+      "path": "firmware/robot_car/protocol.h",
+      "sha256": "a6ddab7456d71ae2bf17f8cb734aa5f488e669f5aada549f88d6e9d11b8e11d5"
+    },
+    {
+      "path": "firmware/robot_car/robot_car.ino",
+      "sha256": "5f9196dcfb243d038f308379031548bfa0ee009a725599ea2e3d7125b1b7172e"
+    }
+  ],
+  "uploads_this_turn": 0,
+  "physical_serial_sessions_this_turn": 0,
+  "actuator_tests_this_turn": 0,
+  "ci": {
+    "status": "pending",
+    "workflow": "compile.yml"
+  }
+}

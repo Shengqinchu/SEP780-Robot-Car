@@ -1,0 +1,18 @@
+{
+  "zig": {
+    "version": "0.13.0",
+    "windows_x64": {"url":"https://ziglang.org/download/0.13.0/zig-windows-x86_64-0.13.0.zip","sha256":"d859994725ef9402381e557c60bb57497215682e355204d754ee3df75ee3c158","folder":"zig-windows-x86_64-0.13.0"},
+    "linux_x64": {"url":"https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz","sha256":"d45312e61ebcc48032b77bc4cf7fd6915c11fa16e4aad116b66c9468211230ea","folder":"zig-linux-x86_64-0.13.0"}
+  },
+  "unity": {
+    "version": "2.6.1",
+    "repository": "https://github.com/ThrowTheSwitch/Unity",
+    "commit": "cbcd08fa7de711053a3deec6339ee89cad5d2697",
+    "files": [
+      {"path":"src/unity.c","sha256":"b90e735a54cf3b3765ab6caa955d11a1488ee73d9c6152cdc98576c2d17cb871"},
+      {"path":"src/unity.h","sha256":"9db174d3c2c6424fd35c0980c5941d124c5ebb0f48e8172f997a2aa9554b64ea"},
+      {"path":"src/unity_internals.h","sha256":"fcd8b3f6b412ac0ab599547eb8a30b6d7f3f0af77aab31f7a1822a2a8fc9a2b2"},
+      {"path":"LICENSE.txt","sha256":"907d9e859c6433703c0c183de3ddeaaf4baf3d517382f8f368b2c190fd2581d1"}
+    ]
+  }
+}

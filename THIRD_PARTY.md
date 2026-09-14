@@ -30,6 +30,14 @@ RF24 使用厂商提供的 1.3.2。IRremote 使用同一快照附带版本，不
 - 安装文件 `pyserial-3.5-py2.py3-none-any.whl`，SHA-256 `c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0`，锁在 `host/requirements.lock`；本机和 CI 均使用 require-hashes 安装。
 - `host/serial_tool.py` 及测试、PowerShell 接入由本项目新增并经 AI 辅助编写；未复制第三方 MCP 实现、未修改 pySerial 源码。依赖/环境在 `.local`，不上传二进制或 site-packages。
 
+## 自定义控制器与测试工具
+
+- `firmware/robot_car/controller.*`、`protocol.*`、主机 API、回放及测试由本项目新增，采用 AI 辅助实现和核验。软件结果和现场实测分开记录在开发日志中。
+- `fnk0041_io.cpp` 的引脚/左右电机极性依据固定原厂 `Sketches/03.2_Automatic_Tracking_Line/Freenove_4WD_Car_for_Arduino.*`；`ir_input.cpp` 的遥控键码依据 `Sketches/04.3_Multifunctional_IR_Remote_Car/Freenove_IR_Remote_Keycode.h`。硬件适配与键码部分按原厂 CC BY-NC-SA 3.0 保留来源；没有复制原厂完整循迹/避障控制循环。
+- 项目固件沿用已固定的 Servo 1.2.2 和 IRremote 2.2.3。没有更新原厂依赖，没有移植 AutoRC 代码。
+- [ThrowTheSwitch/Unity 2.6.1](https://github.com/ThrowTheSwitch/Unity/tree/cbcd08fa7de711053a3deec6339ee89cad5d2697)，MIT。四个源码/许可文件逐字节保存在 `vendor/unity`，许可证见 [LICENSE.txt](vendor/unity/LICENSE.txt)，SHA-256 锁在 [native.lock.json](native.lock.json)。这是 C/C++ 单元测试框架，不是 Unity 游戏引擎。
+- [Zig 0.13.0](https://ziglang.org/download/0.13.0/release-notes.html) 作为本机/CI 的 C/C++ 编译器，Windows/Linux 官方下载 SHA-256 固定在 `native.lock.json`。工具及其上游许可证随原包保留在本机缓存，不作为机器人运行依赖上传。
+
 ## 官方资料
 
 - [装配与烧录顺序](https://docs.freenove.com/projects/fnk0041/en/latest/fnk0041/codes/tutorial/0_Software,_Assembly_and_Play.html)

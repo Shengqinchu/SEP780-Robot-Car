@@ -1,4 +1,4 @@
-name: Compile Arduino baselines
+name: Robot software checks
 on:
   push:
     paths:
@@ -9,6 +9,10 @@ on:
       - 'tests/**'
       - 'programs.json'
       - 'toolchain.lock.json'
+      - 'native.lock.json'
+      - 'scenarios/**'
+      - 'README*.md'
+      - 'docs/**'
       - '.gitattributes'
       - '.github/workflows/compile.yml'
   pull_request:
@@ -20,6 +24,10 @@ on:
       - 'tests/**'
       - 'programs.json'
       - 'toolchain.lock.json'
+      - 'native.lock.json'
+      - 'scenarios/**'
+      - 'README*.md'
+      - 'docs/**'
       - '.gitattributes'
       - '.github/workflows/compile.yml'
   workflow_dispatch:
@@ -36,13 +44,21 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1, Node.js 24
       - name: Check source snapshot and project structure
         run: ./tests/Check-Repository.ps1
+      - name: Check bilingual documentation
+        run: ./tests/Test-Docs.ps1
       - name: Install pinned Arduino toolchain
         run: ./scripts/Setup-Toolchain.ps1
       - name: Install isolated host tools
         run: ./scripts/Setup-Host.ps1
+      - name: Install pinned native test compiler
+        run: ./scripts/Setup-Native.ps1
+      - name: Test controller and hardware adapter offline
+        run: ./tests/Test-Control.ps1
       - name: Test host API without hardware
         run: ./tests/Test-Host.ps1
+      - name: Replay sensor scenarios through production controller
+        run: ./scripts/Simulate.ps1
       - name: Host-only pySerial loopback
         run: ./scripts/Serial.ps1 -Action self-test
-      - name: Compile every official sketch and USB check
+      - name: Compile every official and project sketch
         run: ./scripts/Build.ps1 -All

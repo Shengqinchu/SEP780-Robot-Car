@@ -1,3 +1,4 @@
 * text=auto eol=lf
 vendor/freenove/** -text
+vendor/unity/** -text -whitespace
 *.zip binary
