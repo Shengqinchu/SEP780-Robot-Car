@@ -1,0 +1,5211 @@
+{
+  "retrieved_at_utc": "2026-09-14T00:41:25.3962645Z",
+  "scope": "Bounded multilingual repository search plus primary-project seeds; not exhaustive GitHub coverage",
+  "query_count": 6,
+  "unique_repositories": 302,
+  "queries": [
+    {
+      "id": "mcp_exact",
+      "query": "arduino \"model context protocol\" in:name,description,readme stars:>1",
+      "total_matches": 209,
+      "retrieved": 100,
+      "pages": 2,
+      "truncated": true,
+      "incomplete_results": false
+    },
+    {
+      "id": "mcp_server_exact",
+      "query": "arduino mcp-server in:name,description",
+      "total_matches": 25,
+      "retrieved": 25,
+      "pages": 1,
+      "truncated": false,
+      "incomplete_results": false
+    },
+    {
+      "id": "car_broad",
+      "query": "arduino car in:name,description stars:>20",
+      "total_matches": 62,
+      "retrieved": 62,
+      "pages": 2,
+      "truncated": false,
+      "incomplete_results": false
+    },
+    {
+      "id": "line_topic",
+      "query": "topic:line-follower stars:>20",
+      "total_matches": 5,
+      "retrieved": 5,
+      "pages": 1,
+      "truncated": false,
+      "incomplete_results": false
+    },
+    {
+      "id": "cli_skill_exact",
+      "query": "arduino-cli skill in:name,description",
+      "total_matches": 7,
+      "retrieved": 7,
+      "pages": 1,
+      "truncated": false,
+      "incomplete_results": false
+    },
+    {
+      "id": "mcp_awesome",
+      "query": "awesome embedded mcp in:name,description,readme stars:>50",
+      "total_matches": 742,
+      "retrieved": 100,
+      "pages": 2,
+      "truncated": true,
+      "incomplete_results": false
+    }
+  ],
+  "repositories": [
+    {
+      "name": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "stars": 479771,
+      "forks": 52923,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2016-03-20T23:49:42Z",
+      "pushed_at": "2026-09-13T15:50:23Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "vinta/awesome-python",
+      "url": "https://github.com/vinta/awesome-python",
+      "description": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
+      "stars": 320450,
+      "forks": 28725,
+      "language": "Python",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2014-06-27T21:00:06Z",
+      "pushed_at": "2026-09-13T15:54:38Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "awesome-selfhosted/awesome-selfhosted",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
+      "stars": 319043,
+      "forks": 14993,
+      "language": null,
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2015-06-01T02:33:17Z",
+      "pushed_at": "2026-09-12T08:33:35Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "avelino/awesome-go",
+      "url": "https://github.com/avelino/awesome-go",
+      "description": "A curated list of awesome Go frameworks, libraries and software",
+      "stars": 184045,
+      "forks": 13556,
+      "language": "Go",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2014-07-06T13:42:15Z",
+      "pushed_at": "2026-09-14T00:40:35Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact",
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "stars": 152141,
+      "forks": 24512,
+      "language": "Shell",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-10-13T12:12:29Z",
+      "pushed_at": "2026-09-12T16:57:21Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
+      "stars": 137951,
+      "forks": 20272,
+      "language": "Python",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2024-04-29T05:30:25Z",
+      "pushed_at": "2026-09-13T03:46:11Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "punkpeye/awesome-mcp-servers",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "description": "A collection of MCP servers.",
+      "stars": 94915,
+      "forks": 16096,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2024-11-30T04:49:10Z",
+      "pushed_at": "2026-09-13T07:49:46Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "stars": 80603,
+      "forks": 14803,
+      "language": "TypeScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-03-02T15:01:51Z",
+      "pushed_at": "2026-09-14T00:02:35Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "josephmisiti/awesome-machine-learning",
+      "url": "https://github.com/josephmisiti/awesome-machine-learning",
+      "description": "A curated list of awesome Machine Learning frameworks, libraries and software.",
+      "stars": 74324,
+      "forks": 15644,
+      "language": "Python",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2014-07-15T19:11:19Z",
+      "pushed_at": "2026-09-12T14:34:25Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "vuejs/awesome-vue",
+      "url": "https://github.com/vuejs/awesome-vue",
+      "description": "🎉 A curated list of awesome things related to Vue.js",
+      "stars": 73548,
+      "forks": 9453,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2015-10-20T00:16:14Z",
+      "pushed_at": "2026-07-24T10:16:04Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "fffaraz/awesome-cpp",
+      "url": "https://github.com/fffaraz/awesome-cpp",
+      "description": "A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff.",
+      "stars": 73269,
+      "forks": 8341,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2014-07-17T08:51:11Z",
+      "pushed_at": "2026-09-05T20:26:41Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "shanraisshan/claude-code-best-practice",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "description": "from vibe coding to agentic engineering - practice makes claude perfect",
+      "stars": 65901,
+      "forks": 6544,
+      "language": "HTML",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-10-31T14:15:28Z",
+      "pushed_at": "2026-09-13T06:38:03Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "diegosouzapw/OmniRoute",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "description": "Never stop coding. Free MIT AI gateway: one endpoint, 352 providers (150+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RT",
+      "stars": 65744,
+      "forks": 9196,
+      "language": "TypeScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-02-13T12:38:31Z",
+      "pushed_at": "2026-09-12T01:29:30Z",
+      "default_branch": "release/v3.8.51",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "1c7/chinese-independent-developer",
+      "url": "https://github.com/1c7/chinese-independent-developer",
+      "description": "👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么",
+      "stars": 61417,
+      "forks": 5383,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2017-09-21T11:08:23Z",
+      "pushed_at": "2026-09-13T13:04:40Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "rust-unofficial/awesome-rust",
+      "url": "https://github.com/rust-unofficial/awesome-rust",
+      "description": "A curated list of Rust code and resources.",
+      "stars": 59333,
+      "forks": 3612,
+      "language": "Rust",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2014-07-17T10:45:10Z",
+      "pushed_at": "2026-09-13T18:38:12Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact",
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "hesreallyhim/awesome-claude-code",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrou",
+      "stars": 53984,
+      "forks": 4705,
+      "language": "Python",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2025-04-19T20:55:59Z",
+      "pushed_at": "2026-09-14T00:29:27Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "moeru-ai/airi",
+      "url": "https://github.com/moeru-ai/airi",
+      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Win",
+      "stars": 49111,
+      "forks": 4866,
+      "language": "TypeScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2024-12-01T16:33:36Z",
+      "pushed_at": "2026-09-13T18:19:05Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "akullpp/awesome-java",
+      "url": "https://github.com/akullpp/awesome-java",
+      "description": "A curated list of awesome frameworks, libraries and software for the Java programming language.",
+      "stars": 49008,
+      "forks": 7715,
+      "language": null,
+      "license_spdx": "CC-BY-SA-4.0",
+      "archived": false,
+      "created_at": "2014-07-09T10:12:43Z",
+      "pushed_at": "2026-08-24T00:59:50Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "lukasz-madon/awesome-remote-job",
+      "url": "https://github.com/lukasz-madon/awesome-remote-job",
+      "description": "A curated list of awesome remote jobs and resources. Inspired by https://github.com/vinta/awesome-python",
+      "stars": 48596,
+      "forks": 4802,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2015-01-02T00:31:34Z",
+      "pushed_at": "2026-08-16T19:35:44Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "GitHubDaily/GitHubDaily",
+      "url": "https://github.com/GitHubDaily/GitHubDaily",
+      "description": "坚持分享 GitHub 上高质量、有趣实用的开源技术教程、开发者工具、编程网站、技术资讯。A list cool, interesting projects of GitHub.",
+      "stars": 47886,
+      "forks": 4691,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2018-12-30T13:56:58Z",
+      "pushed_at": "2025-12-31T18:59:20Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "sickn33/agentic-awesome-skills",
+      "url": "https://github.com/sickn33/agentic-awesome-skills",
+      "description": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,115+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.",
+      "stars": 46371,
+      "forks": 6756,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-01-14T17:48:09Z",
+      "pushed_at": "2026-09-13T21:09:32Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "PatrickJS/awesome-cursorrules",
+      "url": "https://github.com/PatrickJS/awesome-cursorrules",
+      "description": "📄  Configuration files that enhance Cursor AI editor experience with custom rules and behaviors",
+      "stars": 40783,
+      "forks": 3481,
+      "language": "JavaScript",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2024-09-16T15:38:38Z",
+      "pushed_at": "2026-05-30T18:01:29Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "deepseek-ai/awesome-deepseek-integration",
+      "url": "https://github.com/deepseek-ai/awesome-deepseek-integration",
+      "description": "Integrate the DeepSeek API into popular software",
+      "stars": 39098,
+      "forks": 4252,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2024-01-11T02:43:17Z",
+      "pushed_at": "2026-02-23T16:27:47Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "veggiemonk/awesome-docker",
+      "url": "https://github.com/veggiemonk/awesome-docker",
+      "description": ":whale: A curated list of Docker resources and projects",
+      "stars": 36816,
+      "forks": 3363,
+      "language": null,
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2014-09-21T17:01:48Z",
+      "pushed_at": "2026-09-12T10:37:31Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "jondot/awesome-react-native",
+      "url": "https://github.com/jondot/awesome-react-native",
+      "description": "Awesome React Native components, news, tools, and learning material!",
+      "stars": 35699,
+      "forks": 4039,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2015-03-26T19:58:06Z",
+      "pushed_at": "2026-08-26T14:11:18Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "VoltAgent/awesome-agent-skills",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
+      "stars": 34260,
+      "forks": 3630,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-10-28T08:55:32Z",
+      "pushed_at": "2026-09-07T08:53:43Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "academic/awesome-datascience",
+      "url": "https://github.com/academic/awesome-datascience",
+      "description": ":memo: An awesome Data Science repository to learn and apply for real world problems.",
+      "stars": 29976,
+      "forks": 6629,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2014-07-05T07:07:43Z",
+      "pushed_at": "2026-09-09T16:27:56Z",
+      "default_branch": "live",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "wilsonfreitas/awesome-quant",
+      "url": "https://github.com/wilsonfreitas/awesome-quant",
+      "description": "A curated list of insanely awesome libraries, packages and resources for Quants (Quantitative Finance)",
+      "stars": 29572,
+      "forks": 3992,
+      "language": "HTML",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2015-09-30T09:53:49Z",
+      "pushed_at": "2026-09-13T21:50:34Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "matteocrippa/awesome-swift",
+      "url": "https://github.com/matteocrippa/awesome-swift",
+      "description": "A collaborative list of awesome Swift libraries and resources. Feel free to contribute!",
+      "stars": 26252,
+      "forks": 3144,
+      "language": "Ruby",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2014-07-10T14:04:09Z",
+      "pushed_at": "2026-09-01T05:37:47Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "enescingoz/awesome-n8n-templates",
+      "url": "https://github.com/enescingoz/awesome-n8n-templates",
+      "description": "280+ free n8n automation templates — ready-to-use workflows for Gmail, Telegram, Slack, Discord, WhatsApp, Google Drive, Notion, OpenAI, and more. AI agents, RAG   chatbots, email automation, social media, DevOps, and document processing. T",
+      "stars": 25340,
+      "forks": 6457,
+      "language": null,
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2025-05-08T18:34:01Z",
+      "pushed_at": "2026-09-12T13:00:32Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "VoltAgent/awesome-claude-code-subagents",
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "description": "A collection of 100+ specialized Claude Code subagents covering a wide range of development use cases",
+      "stars": 25045,
+      "forks": 2901,
+      "language": "Shell",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-07-30T12:31:51Z",
+      "pushed_at": "2026-09-07T08:53:31Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "lukasmasuch/best-of-ml-python",
+      "url": "https://github.com/lukasmasuch/best-of-ml-python",
+      "description": "🏆 A ranked list of awesome machine learning Python libraries. Updated weekly.",
+      "stars": 23804,
+      "forks": 3153,
+      "language": null,
+      "license_spdx": "CC-BY-SA-4.0",
+      "archived": false,
+      "created_at": "2020-11-29T19:41:36Z",
+      "pushed_at": "2026-09-10T14:13:24Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "spmallick/learnopencv",
+      "url": "https://github.com/spmallick/learnopencv",
+      "description": "Learn OpenCV  : C++ and Python Examples",
+      "stars": 23146,
+      "forks": 11663,
+      "language": "Jupyter Notebook",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2015-02-17T08:00:51Z",
+      "pushed_at": "2026-09-13T16:20:04Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "AiHubCN/Awesome-Chinese-LLM",
+      "url": "https://github.com/AiHubCN/Awesome-Chinese-LLM",
+      "description": "整理开源的中文大语言模型，以规模较小、可私有化部署、训练成本较低的模型为主，包括底座模型，垂直领域微调及应用，数据集与教程等。",
+      "stars": 22761,
+      "forks": 2139,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2023-05-22T12:27:03Z",
+      "pushed_at": "2026-05-10T05:03:06Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "rockerBOO/awesome-neovim",
+      "url": "https://github.com/rockerBOO/awesome-neovim",
+      "description": "Collections of awesome neovim plugins.",
+      "stars": 21374,
+      "forks": 1052,
+      "language": "Shell",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2020-09-18T18:40:59Z",
+      "pushed_at": "2026-09-13T01:24:57Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "EthicalML/awesome-production-machine-learning",
+      "url": "https://github.com/EthicalML/awesome-production-machine-learning",
+      "description": "A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning",
+      "stars": 20907,
+      "forks": 2599,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2018-08-15T14:28:41Z",
+      "pushed_at": "2026-09-06T16:54:10Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "livekit/livekit",
+      "url": "https://github.com/livekit/livekit",
+      "description": "End-to-end realtime stack for connecting humans and AI",
+      "stars": 20889,
+      "forks": 2333,
+      "language": "Go",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2020-09-30T06:49:46Z",
+      "pushed_at": "2026-09-12T21:24:35Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "unixorn/awesome-zsh-plugins",
+      "url": "https://github.com/unixorn/awesome-zsh-plugins",
+      "description": "A collection of ZSH frameworks, plugins, themes and tutorials.",
+      "stars": 18000,
+      "forks": 608,
+      "language": "Shell",
+      "license_spdx": "BSD-3-Clause",
+      "archived": false,
+      "created_at": "2014-10-07T06:11:17Z",
+      "pushed_at": "2026-09-06T12:37:13Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "ellisonleao/magictools",
+      "url": "https://github.com/ellisonleao/magictools",
+      "description": ":video_game: :pencil: A list of Game Development resources to make magic happen.",
+      "stars": 17298,
+      "forks": 1234,
+      "language": "Markdown",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2014-07-17T21:27:07Z",
+      "pushed_at": "2026-09-01T19:44:33Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "wanshuiyin/Auto-claude-code-research-in-sleep",
+      "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+      "description": "ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any ",
+      "stars": 16084,
+      "forks": 1376,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-03-10T07:31:45Z",
+      "pushed_at": "2026-09-11T04:02:49Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "awesome-dsh-plugin/awesome-dsh-plugin",
+      "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+      "description": "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表",
+      "stars": 15558,
+      "forks": 2878,
+      "language": "Python",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2026-08-13T13:55:31Z",
+      "pushed_at": "2026-09-13T09:40:33Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "analysis-tools-dev/static-analysis",
+      "url": "https://github.com/analysis-tools-dev/static-analysis",
+      "description": "⚙️ A curated list of static analysis (SAST) tools and linters for all programming languages, config files, build tools, and more. The focus is on tools which improve code quality.",
+      "stars": 14781,
+      "forks": 1507,
+      "language": "Rust",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2015-12-18T16:58:30Z",
+      "pushed_at": "2026-09-13T13:02:18Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Arindam200/awesome-ai-apps",
+      "url": "https://github.com/Arindam200/awesome-ai-apps",
+      "description": "A collection of projects showcasing RAG, agents, workflows, and other AI use cases",
+      "stars": 14665,
+      "forks": 1777,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-02-16T13:57:00Z",
+      "pushed_at": "2026-09-08T08:02:36Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "markets/awesome-ruby",
+      "url": "https://github.com/markets/awesome-ruby",
+      "description": "💎 A collection of awesome Ruby libraries, tools, frameworks and software",
+      "stars": 14154,
+      "forks": 1766,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2014-07-03T12:31:18Z",
+      "pushed_at": "2026-09-08T08:34:40Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact",
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "qazbnm456/awesome-web-security",
+      "url": "https://github.com/qazbnm456/awesome-web-security",
+      "description": "🐶 A curated list of Web Security materials and resources.",
+      "stars": 13790,
+      "forks": 1818,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2017-01-29T16:50:21Z",
+      "pushed_at": "2026-09-05T17:52:29Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "rwaldron/johnny-five",
+      "url": "https://github.com/rwaldron/johnny-five",
+      "description": "JavaScript Robotics and IoT programming framework, developed at Bocoup.",
+      "stars": 13410,
+      "forks": 1728,
+      "language": "JavaScript",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2012-03-30T20:09:52Z",
+      "pushed_at": "2023-10-24T22:18:06Z",
+      "default_branch": "main",
+      "origins": [
+        "curated_primary_seed"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "h4cc/awesome-elixir",
+      "url": "https://github.com/h4cc/awesome-elixir",
+      "description": "A curated list of amazingly awesome Elixir and Erlang libraries, resources and shiny things. Updates:",
+      "stars": 13169,
+      "forks": 1190,
+      "language": "Elixir",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2014-07-01T21:12:03Z",
+      "pushed_at": "2025-10-12T18:06:13Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "nestjs/awesome-nestjs",
+      "url": "https://github.com/nestjs/awesome-nestjs",
+      "description": "A curated list of awesome things related to NestJS 😎",
+      "stars": 13135,
+      "forks": 1145,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2017-09-27T01:35:45Z",
+      "pushed_at": "2026-08-31T17:50:11Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "steven2358/awesome-generative-ai",
+      "url": "https://github.com/steven2358/awesome-generative-ai",
+      "description": "A curated list of modern Generative Artificial Intelligence projects and services",
+      "stars": 12633,
+      "forks": 2109,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2022-10-20T11:18:17Z",
+      "pushed_at": "2026-09-09T00:01:42Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "mehdihadeli/awesome-software-architecture",
+      "url": "https://github.com/mehdihadeli/awesome-software-architecture",
+      "description": "📚 A curated list of awesome articles, videos, and other resources to learn and practice software architecture, patterns, and principles.",
+      "stars": 11640,
+      "forks": 1014,
+      "language": "TypeScript",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2021-02-06T22:17:38Z",
+      "pushed_at": "2026-09-08T20:13:05Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "OffcierCia/DeFi-Developer-Road-Map",
+      "url": "https://github.com/OffcierCia/DeFi-Developer-Road-Map",
+      "description": "DeFi Developer roadmap is a curated Developer handbook which includes a list of the best tools for DApps development, resources and references! ",
+      "stars": 10828,
+      "forks": 1320,
+      "language": "JavaScript",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2021-06-20T01:34:08Z",
+      "pushed_at": "2026-08-16T23:17:39Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "infosecn1nja/Red-Teaming-Toolkit",
+      "url": "https://github.com/infosecn1nja/Red-Teaming-Toolkit",
+      "description": "This repository contains cutting-edge open-source security tools (OST) for a red teamer and threat hunter.",
+      "stars": 10705,
+      "forks": 2372,
+      "language": null,
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2018-04-26T13:35:09Z",
+      "pushed_at": "2026-05-07T23:44:01Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "awesome-opencode/awesome-opencode",
+      "url": "https://github.com/awesome-opencode/awesome-opencode",
+      "description": "A curated list of awesome plugins, themes, agents, projects, and resources for https://opencode.ai",
+      "stars": 10223,
+      "forks": 848,
+      "language": "JavaScript",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2025-09-22T00:01:14Z",
+      "pushed_at": "2026-07-03T14:10:38Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "timschneeb/awesome-shizuku",
+      "url": "https://github.com/timschneeb/awesome-shizuku",
+      "description": "Curated list of awesome Android apps making use of Shizuku",
+      "stars": 10143,
+      "forks": 272,
+      "language": "Python",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2022-10-09T03:24:23Z",
+      "pushed_at": "2026-09-13T23:26:22Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "PatrickJS/awesome-angular",
+      "url": "https://github.com/PatrickJS/awesome-angular",
+      "description": ":page_facing_up: A curated list of awesome Angular resources",
+      "stars": 10075,
+      "forks": 1422,
+      "language": "HTML",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2015-09-01T05:12:10Z",
+      "pushed_at": "2026-09-13T17:14:28Z",
+      "default_branch": "gh-pages",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "yzhao062/pyod",
+      "url": "https://github.com/yzhao062/pyod",
+      "description": "A Python library for anomaly detection across tabular, time series, graph, text, image, and audio data. 60+ detectors, benchmark-backed ADEngine orchestration, and an agentic workflow for AI agents.",
+      "stars": 10001,
+      "forks": 1502,
+      "language": "Python",
+      "license_spdx": "BSD-2-Clause",
+      "archived": false,
+      "created_at": "2017-10-03T20:29:04Z",
+      "pushed_at": "2026-09-08T05:16:56Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "ashishb/android-security-awesome",
+      "url": "https://github.com/ashishb/android-security-awesome",
+      "description": "A collection of android security related resources",
+      "stars": 9688,
+      "forks": 1574,
+      "language": "Makefile",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2014-07-22T19:30:51Z",
+      "pushed_at": "2026-09-07T21:20:40Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "kyrolabs/awesome-langchain",
+      "url": "https://github.com/kyrolabs/awesome-langchain",
+      "description": "😎 Awesome list of tools and projects with the awesome LangChain framework",
+      "stars": 9524,
+      "forks": 946,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2023-02-28T20:25:33Z",
+      "pushed_at": "2026-08-11T04:36:24Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "adongwanai/AgentGuide",
+      "url": "https://github.com/adongwanai/AgentGuide",
+      "description": "https://adongwanai.github.io/AgentGuide | AI Agent开发指南 | LangGraph实战 | 高级RAG | 转行大模型 | 大模型面试 | 算法工程师 | 面试题库 | 强化学习｜数据合成",
+      "stars": 9523,
+      "forks": 926,
+      "language": "MDX",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2025-11-03T10:46:38Z",
+      "pushed_at": "2026-09-08T11:05:28Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "zardus/ctf-tools",
+      "url": "https://github.com/zardus/ctf-tools",
+      "description": "Some setup scripts for security research tools.",
+      "stars": 9513,
+      "forks": 1910,
+      "language": "Nix",
+      "license_spdx": "BSD-3-Clause",
+      "archived": false,
+      "created_at": "2015-05-07T11:02:26Z",
+      "pushed_at": "2026-09-09T19:02:57Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "marcelscruz/public-apis",
+      "url": "https://github.com/marcelscruz/public-apis",
+      "description": "A collaborative list of public APIs for developers",
+      "stars": 9451,
+      "forks": 1109,
+      "language": "JavaScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2022-05-11T06:31:22Z",
+      "pushed_at": "2026-09-12T18:07:58Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "spring-projects/spring-ai",
+      "url": "https://github.com/spring-projects/spring-ai",
+      "description": "An Application Framework for AI Engineering",
+      "stars": 9439,
+      "forks": 2906,
+      "language": "Java",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2023-06-27T18:57:29Z",
+      "pushed_at": "2026-09-11T15:28:45Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "nhivp/Awesome-Embedded",
+      "url": "https://github.com/nhivp/Awesome-Embedded",
+      "description": "A curated list of awesome embedded programming.",
+      "stars": 9110,
+      "forks": 1210,
+      "language": null,
+      "license_spdx": "Unlicense",
+      "archived": false,
+      "created_at": "2017-09-24T02:23:36Z",
+      "pushed_at": "2026-09-06T05:27:33Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "igorbarinov/awesome-data-engineering",
+      "url": "https://github.com/igorbarinov/awesome-data-engineering",
+      "description": "A curated list of data engineering tools for software developers",
+      "stars": 9051,
+      "forks": 1613,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2015-06-18T19:39:42Z",
+      "pushed_at": "2026-09-07T13:29:54Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "We5ter/Scanners-Box",
+      "url": "https://github.com/We5ter/Scanners-Box",
+      "description": "A powerful and open-source toolkit for hackers and security automation - 安全行业从业者自研开源扫描器合辑",
+      "stars": 9045,
+      "forks": 2421,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2016-12-24T16:07:50Z",
+      "pushed_at": "2026-08-12T03:09:59Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "WangRongsheng/awesome-LLM-resources",
+      "url": "https://github.com/WangRongsheng/awesome-LLM-resources",
+      "description": "🧑‍🚀 全世界最好的LLM资料总结（多模态生成、Agent、辅助编程、AI审稿、数据处理、模型训练、模型推理、o1 模型、MCP、小语言模型、视觉语言模型） | Summary of the world's best LLM resources. ",
+      "stars": 8955,
+      "forks": 989,
+      "language": null,
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2024-04-19T03:31:13Z",
+      "pushed_at": "2026-09-08T10:28:57Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "ai-boost/awesome-prompts",
+      "url": "https://github.com/ai-boost/awesome-prompts",
+      "description": "Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store. Prompt Engineering, prompt attack & prompt protect. Advanced Prompt Engineering papers.",
+      "stars": 8874,
+      "forks": 862,
+      "language": null,
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2024-01-19T15:15:10Z",
+      "pushed_at": "2026-09-13T07:28:46Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "0xPlaygrounds/rig",
+      "url": "https://github.com/0xPlaygrounds/rig",
+      "description": "⚙️🦀 Build modular and scalable LLM Applications in Rust",
+      "stars": 8615,
+      "forks": 960,
+      "language": "Rust",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2024-06-05T13:42:28Z",
+      "pushed_at": "2026-09-13T23:48:31Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "superradcompany/microsandbox",
+      "url": "https://github.com/superradcompany/microsandbox",
+      "description": "🧱 Easy fast local-first microVM runtime and library",
+      "stars": 8246,
+      "forks": 434,
+      "language": "Rust",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2024-10-03T15:57:38Z",
+      "pushed_at": "2026-09-14T00:11:24Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "tauri-apps/awesome-tauri",
+      "url": "https://github.com/tauri-apps/awesome-tauri",
+      "description": "🚀 Awesome Tauri Apps, Plugins and Resources",
+      "stars": 8075,
+      "forks": 728,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2022-01-22T16:25:58Z",
+      "pushed_at": "2026-08-24T10:14:22Z",
+      "default_branch": "dev",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "meirwah/awesome-workflow-engines",
+      "url": "https://github.com/meirwah/awesome-workflow-engines",
+      "description": "A curated list of awesome open source workflow engines",
+      "stars": 7928,
+      "forks": 772,
+      "language": null,
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2015-05-20T15:54:43Z",
+      "pushed_at": "2026-04-06T08:20:52Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "yzfly/Awesome-MCP-ZH",
+      "url": "https://github.com/yzfly/Awesome-MCP-ZH",
+      "description": "MCP 资源精选， MCP指南，Claude MCP，MCP Servers, MCP Clients",
+      "stars": 7647,
+      "forks": 783,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-04-03T00:38:51Z",
+      "pushed_at": "2026-09-07T09:51:19Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "cporter202/API-mega-list",
+      "url": "https://github.com/cporter202/API-mega-list",
+      "description": "This GitHub repo is a powerhouse collection of APIs you can start using immediately to build everything from simple automations to full-scale applications. One of the most valuable API lists on GitHub—period. 💪",
+      "stars": 7621,
+      "forks": 1463,
+      "language": "JavaScript",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2025-12-09T15:36:20Z",
+      "pushed_at": "2026-07-23T19:20:07Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "trungdq88/Awesome-Black-Friday-Cyber-Monday",
+      "url": "https://github.com/trungdq88/Awesome-Black-Friday-Cyber-Monday",
+      "description": "Awesome apps, software, and SaaS deals on Black Friday.",
+      "stars": 7488,
+      "forks": 1565,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2022-11-22T06:16:23Z",
+      "pushed_at": "2025-11-30T01:11:39Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "liuchong/awesome-roadmaps",
+      "url": "https://github.com/liuchong/awesome-roadmaps",
+      "description": "A curated list of roadmaps.",
+      "stars": 7340,
+      "forks": 482,
+      "language": null,
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2019-01-12T14:43:04Z",
+      "pushed_at": "2026-08-03T13:48:51Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "infoslack/awesome-web-hacking",
+      "url": "https://github.com/infoslack/awesome-web-hacking",
+      "description": "A list of web application security",
+      "stars": 7267,
+      "forks": 1360,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2015-05-03T17:24:07Z",
+      "pushed_at": "2026-09-04T04:57:50Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Serial-Studio/Serial-Studio",
+      "url": "https://github.com/Serial-Studio/Serial-Studio",
+      "description": "Open-source telemetry dashboard. Supports UART, BLE, MQTT, Modbus, CAN Bus and more. ",
+      "stars": 7194,
+      "forks": 1081,
+      "language": "C",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2020-10-18T11:49:02Z",
+      "pushed_at": "2026-09-13T23:07:50Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "piotrkulpinski/open-source-alternatives",
+      "url": "https://github.com/piotrkulpinski/open-source-alternatives",
+      "description": "Curated list of open source alternatives to proprietary software.",
+      "stars": 6709,
+      "forks": 324,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2024-02-28T09:43:12Z",
+      "pushed_at": "2026-09-13T06:00:04Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "anbeime/skill",
+      "url": "https://github.com/anbeime/skill",
+      "description": "收录最全、更新最快的技能Skills商店：精选原创技能包（涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流），全部打包好可直接安装使用！同时自动抓取GitHub上万个Skills项目，按分类、更新时间、Star数量整理。The most comprehensive and frequently updated AI Agent skill library, featuring curated skill packs across document processing",
+      "stars": 6640,
+      "forks": 631,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2026-02-02T09:12:57Z",
+      "pushed_at": "2026-09-13T07:14:54Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "xairy/linux-kernel-exploitation",
+      "url": "https://github.com/xairy/linux-kernel-exploitation",
+      "description": "A collection of links related to Linux kernel security and exploitation",
+      "stars": 6636,
+      "forks": 1079,
+      "language": null,
+      "license_spdx": "CC-BY-4.0",
+      "archived": false,
+      "created_at": "2016-11-13T22:21:44Z",
+      "pushed_at": "2026-09-10T20:03:31Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "punkpeye/awesome-mcp-clients",
+      "url": "https://github.com/punkpeye/awesome-mcp-clients",
+      "description": "A collection of MCP clients.",
+      "stars": 6578,
+      "forks": 653,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-01-11T10:11:05Z",
+      "pushed_at": "2026-06-07T18:57:48Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "georgezouq/awesome-ai-in-finance",
+      "url": "https://github.com/georgezouq/awesome-ai-in-finance",
+      "description": "🔬 A curated list of awesome LLMs & deep learning strategies & tools in financial market.",
+      "stars": 6562,
+      "forks": 804,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2018-08-29T02:07:02Z",
+      "pushed_at": "2026-09-08T03:00:12Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "sirredbeard/awesome-wsl",
+      "url": "https://github.com/sirredbeard/awesome-wsl",
+      "description": "Awesome list dedicated to Windows Subsystem for Linux",
+      "stars": 6555,
+      "forks": 320,
+      "language": null,
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2018-05-19T22:21:02Z",
+      "pushed_at": "2026-09-08T17:09:05Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "qinwf/awesome-R",
+      "url": "https://github.com/qinwf/awesome-R",
+      "description": "A curated list of awesome R packages, frameworks and software.",
+      "stars": 6507,
+      "forks": 1515,
+      "language": "R",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2014-07-19T06:02:47Z",
+      "pushed_at": "2025-09-18T16:46:19Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "aymericdamien/TopDeepLearning",
+      "url": "https://github.com/aymericdamien/TopDeepLearning",
+      "description": "A list of popular github projects related to deep learning",
+      "stars": 6337,
+      "forks": 1250,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2016-04-27T04:13:03Z",
+      "pushed_at": "2026-07-15T02:19:53Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "promptslab/Awesome-Prompt-Engineering",
+      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
+      "description": "This repository contains a hand-curated resources for Prompt Engineering with a focus on Generative Pre-trained Transformer (GPT), ChatGPT, PaLM etc ",
+      "stars": 6329,
+      "forks": 763,
+      "language": "TypeScript",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2023-02-09T18:22:52Z",
+      "pushed_at": "2026-09-13T11:34:28Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "vavkamil/awesome-bugbounty-tools",
+      "url": "https://github.com/vavkamil/awesome-bugbounty-tools",
+      "description": "A curated list of various bug bounty tools",
+      "stars": 6258,
+      "forks": 999,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2021-01-11T19:31:28Z",
+      "pushed_at": "2026-09-02T10:48:51Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "heilcheng/awesome-agent-skills",
+      "url": "https://github.com/heilcheng/awesome-agent-skills",
+      "description": "Tutorials, Guides and Agent Skills Directories",
+      "stars": 6195,
+      "forks": 684,
+      "language": "TypeScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-12-29T21:13:40Z",
+      "pushed_at": "2026-04-05T20:39:24Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "mahseema/awesome-ai-tools",
+      "url": "https://github.com/mahseema/awesome-ai-tools",
+      "description": "A curated list of Artificial Intelligence Top Tools",
+      "stars": 6190,
+      "forks": 2165,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2023-08-25T21:51:55Z",
+      "pushed_at": "2025-12-31T14:46:19Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "ikaijua/Awesome-AITools",
+      "url": "https://github.com/ikaijua/Awesome-AITools",
+      "description": "Collection of AI-related utilities. Welcome to submit pull requests /收藏AI相关的实用工具，欢迎提交pull requests",
+      "stars": 6176,
+      "forks": 774,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2023-04-02T04:06:56Z",
+      "pushed_at": "2026-09-13T13:14:44Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "VoltAgent/awesome-codex-subagents",
+      "url": "https://github.com/VoltAgent/awesome-codex-subagents",
+      "description": "A collection of 130+ specialized Codex subagents covering a wide range of development use cases.",
+      "stars": 6169,
+      "forks": 682,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-03-17T12:26:20Z",
+      "pushed_at": "2026-09-07T08:53:34Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "tensorchord/Awesome-LLMOps",
+      "url": "https://github.com/tensorchord/Awesome-LLMOps",
+      "description": "An awesome & curated list of best LLMOps tools for developers",
+      "stars": 5930,
+      "forks": 1041,
+      "language": "Shell",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2022-04-15T01:56:44Z",
+      "pushed_at": "2026-05-21T09:12:50Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "0xNyk/awesome-hermes-agent",
+      "url": "https://github.com/0xNyk/awesome-hermes-agent",
+      "description": "Independent directory of useful skills, plugins, memory providers, tools, surfaces, and guides for Nous Research's open-source Hermes Agent.",
+      "stars": 5650,
+      "forks": 419,
+      "language": null,
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2026-03-23T05:34:37Z",
+      "pushed_at": "2026-09-12T10:40:36Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "xlite-dev/Awesome-LLM-Inference",
+      "url": "https://github.com/xlite-dev/Awesome-LLM-Inference",
+      "description": "📚A curated list of Awesome LLM/VLM Inference Papers with Codes: Flash-Attention, Paged-Attention, WINT8/4, Parallelism, etc.🎉",
+      "stars": 5500,
+      "forks": 435,
+      "language": "Python",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2023-08-27T02:32:15Z",
+      "pushed_at": "2026-08-14T12:23:49Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "wesbos/awesome-uses",
+      "url": "https://github.com/wesbos/awesome-uses",
+      "description": "A list of /uses pages detailing developer setups, gear, software and configs.",
+      "stars": 5299,
+      "forks": 1545,
+      "language": "JavaScript",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2017-06-12T21:41:13Z",
+      "pushed_at": "2026-09-12T17:14:35Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "sacridini/Awesome-Geospatial",
+      "url": "https://github.com/sacridini/Awesome-Geospatial",
+      "description": "Long list of geospatial tools and resources",
+      "stars": 5285,
+      "forks": 797,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2016-05-06T18:05:42Z",
+      "pushed_at": "2026-09-11T09:04:07Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "kelvins/awesome-mlops",
+      "url": "https://github.com/kelvins/awesome-mlops",
+      "description": ":sunglasses: A curated list of awesome MLOps tools",
+      "stars": 5268,
+      "forks": 780,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2020-05-25T22:53:26Z",
+      "pushed_at": "2026-08-17T00:21:28Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "wangzhe3224/awesome-systematic-trading",
+      "url": "https://github.com/wangzhe3224/awesome-systematic-trading",
+      "description": "A curated list of insanely awesome libraries, packages and resources for systematic trading. Crypto, Stock, Futures, Options, CFDs, FX, and more | 量化交易 | 量化投资",
+      "stars": 5129,
+      "forks": 677,
+      "language": "HTML",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2021-12-11T17:57:13Z",
+      "pushed_at": "2026-08-30T20:58:30Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "dzharii/awesome-typescript",
+      "url": "https://github.com/dzharii/awesome-typescript",
+      "description": "A collection of awesome TypeScript resources for client-side and server-side development. Write your awesome JavaScript in TypeScript",
+      "stars": 5116,
+      "forks": 496,
+      "language": null,
+      "license_spdx": "Unlicense",
+      "archived": true,
+      "created_at": "2015-06-06T22:00:48Z",
+      "pushed_at": "2026-02-11T04:21:43Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "nibzard/awesome-agentic-patterns",
+      "url": "https://github.com/nibzard/awesome-agentic-patterns",
+      "description": "A curated catalogue of awesome agentic AI patterns",
+      "stars": 4958,
+      "forks": 466,
+      "language": "HTML",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2025-05-31T11:20:41Z",
+      "pushed_at": "2026-08-25T21:28:11Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "alvinreal/awesome-opensource-ai",
+      "url": "https://github.com/alvinreal/awesome-opensource-ai",
+      "description": "Curated list of the best truly open-source AI projects, models, tools, and infrastructure. Daily updated.",
+      "stars": 4722,
+      "forks": 647,
+      "language": "Python",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2026-03-24T15:58:22Z",
+      "pushed_at": "2026-09-13T07:04:55Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "jaredthecoder/awesome-vehicle-security",
+      "url": "https://github.com/jaredthecoder/awesome-vehicle-security",
+      "description": "🚗  A curated list of resources for learning about vehicle security and car hacking.",
+      "stars": 4613,
+      "forks": 732,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2016-07-28T05:51:23Z",
+      "pushed_at": "2026-05-30T00:29:18Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "xianyu110/awesome-openclaw-tutorial",
+      "url": "https://github.com/xianyu110/awesome-openclaw-tutorial",
+      "description": "从零开始玩转OpenClaw：最全面的中文教程，涵盖安装、配置、实战案例和避坑指南（github版）",
+      "stars": 4566,
+      "forks": 685,
+      "language": "Shell",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2026-02-10T02:37:59Z",
+      "pushed_at": "2026-09-10T11:34:19Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_awesome"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "mustbeperfect/definitive-opensource",
+      "url": "https://github.com/mustbeperfect/definitive-opensource",
+      "description": "The definitive list of the best of (consumer facing) open source.",
+      "stars": 3408,
+      "forks": 133,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2024-10-15T20:03:38Z",
+      "pushed_at": "2026-09-13T21:18:17Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "taishi-i/awesome-ChatGPT-repositories",
+      "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
+      "description": "A curated list of open source GitHub repositories related to ChatGPT, the OpenAI API, and Codex. Searchable via Claude Code skills.",
+      "stars": 3244,
+      "forks": 461,
+      "language": "Python",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2023-04-02T14:00:07Z",
+      "pushed_at": "2026-09-13T16:34:38Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "aljazceru/awesome-nostr",
+      "url": "https://github.com/aljazceru/awesome-nostr",
+      "description": "nostr.net - awesome-nostr is a collection of projects and resources built on nostr to help developers and users find new things ",
+      "stars": 2962,
+      "forks": 408,
+      "language": "JavaScript",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2022-01-22T21:35:00Z",
+      "pushed_at": "2026-09-13T18:04:36Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "sanni/cartreader",
+      "url": "https://github.com/sanni/cartreader",
+      "description": "A shield for the Arduino Mega that can back up video game cartridges.",
+      "stars": 2644,
+      "forks": 272,
+      "language": "C++",
+      "license_spdx": "GPL-3.0",
+      "archived": true,
+      "created_at": "2016-05-03T13:40:09Z",
+      "pushed_at": "2026-03-16T09:36:13Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "rohitg00/awesome-claude-code-toolkit",
+      "url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+      "description": "The most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills, 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps, 52 ecosystem entries, and more.",
+      "stars": 2611,
+      "forks": 949,
+      "language": "JavaScript",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2026-02-04T21:09:33Z",
+      "pushed_at": "2026-05-12T07:18:34Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Jieyab89/OSINT-Cheat-sheet",
+      "url": "https://github.com/Jieyab89/OSINT-Cheat-sheet",
+      "description": "OSINT cheat sheet, list OSINT tools, wiki, dataset, article, book , red team OSINT for hackers and OSINT tips and OSINT branch. This repository will grow every time will research, there is a research, science and technology, tutorial. Pleas",
+      "stars": 2211,
+      "forks": 353,
+      "language": "HTML",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2021-11-22T14:06:58Z",
+      "pushed_at": "2026-09-12T09:27:57Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "szczyglis-dev/py-gpt",
+      "url": "https://github.com/szczyglis-dev/py-gpt",
+      "description": "Desktop AI Assistant powered by GPT-6, GPT-5, o1, o3, Gemini, Claude, Ollama, DeepSeek, Perplexity, Grok, Bielik, chat, vision, voice, RAG, image and video generation, agents, tools, MCP, plugins, speech synthesis and recognition, web searc",
+      "stars": 1914,
+      "forks": 345,
+      "language": "Python",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2023-04-09T23:48:06Z",
+      "pushed_at": "2026-09-13T20:29:40Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "uhub/awesome-go",
+      "url": "https://github.com/uhub/awesome-go",
+      "description": "A curated list of awesome Go frameworks, libraries and software.",
+      "stars": 1819,
+      "forks": 181,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2015-08-12T07:11:51Z",
+      "pushed_at": "2026-09-02T15:07:19Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "freeCodeCamp/awesome-quincy-larson-emails",
+      "url": "https://github.com/freeCodeCamp/awesome-quincy-larson-emails",
+      "description": "This repository is an archive of emails that are sent by the awesome Quincy Larson every week.",
+      "stars": 1183,
+      "forks": 158,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2021-02-16T09:56:30Z",
+      "pushed_at": "2026-08-17T01:29:19Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "njh/EtherCard",
+      "url": "https://github.com/njh/EtherCard",
+      "description": "EtherCard is an IPv4 driver for the ENC28J60 chip, compatible with Arduino IDE",
+      "stars": 1082,
+      "forks": 447,
+      "language": "C++",
+      "license_spdx": "GPL-2.0",
+      "archived": false,
+      "created_at": "2011-08-31T14:09:07Z",
+      "pushed_at": "2023-05-31T10:43:14Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "ravens/awesome-telco",
+      "url": "https://github.com/ravens/awesome-telco",
+      "description": "A curated list of telco resources and projects",
+      "stars": 1006,
+      "forks": 221,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2019-07-28T15:29:19Z",
+      "pushed_at": "2026-09-12T09:13:17Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "PowerBroker2/ELMduino",
+      "url": "https://github.com/PowerBroker2/ELMduino",
+      "description": "Arduino OBD-II Bluetooth Scanner Interface Library for Car Hacking Projects",
+      "stars": 934,
+      "forks": 144,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2019-05-07T03:15:41Z",
+      "pushed_at": "2025-05-20T20:28:15Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "amanbolat/awesome-go-with-stars",
+      "url": "https://github.com/amanbolat/awesome-go-with-stars",
+      "description": "Awesome-go list with stars. Automatically updated.",
+      "stars": 858,
+      "forks": 43,
+      "language": null,
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2020-12-31T08:37:54Z",
+      "pushed_at": "2026-09-13T22:08:14Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "viktorbezdek/awesome-github-projects",
+      "url": "https://github.com/viktorbezdek/awesome-github-projects",
+      "description": "Curated list of GitHub projects I starred over the years",
+      "stars": 831,
+      "forks": 94,
+      "language": "Python",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2024-03-19T08:16:34Z",
+      "pushed_at": "2026-09-13T05:12:19Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "mathworks/awesome-matlab-students",
+      "url": "https://github.com/mathworks/awesome-matlab-students",
+      "description": "An awesome list of helpful resources for students learning MATLAB & Simulink. List includes tips & tricks, tutorials, videos, cheat sheets, and opportunities to learn MATLAB & Simulink.",
+      "stars": 738,
+      "forks": 82,
+      "language": "MATLAB",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2023-08-28T20:25:19Z",
+      "pushed_at": "2026-09-09T13:23:29Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "uhub/awesome-shell",
+      "url": "https://github.com/uhub/awesome-shell",
+      "description": "A curated list of awesome Shell frameworks, libraries and software.",
+      "stars": 636,
+      "forks": 97,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2015-08-13T07:12:09Z",
+      "pushed_at": "2026-09-02T16:03:54Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "sandeepmistry/arduino-OBD2",
+      "url": "https://github.com/sandeepmistry/arduino-OBD2",
+      "description": "An Arduino library for reading OBD-II data from your car over CAN bus",
+      "stars": 572,
+      "forks": 121,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2018-08-11T19:51:22Z",
+      "pushed_at": "2022-12-29T22:47:13Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "uhub/awesome-java",
+      "url": "https://github.com/uhub/awesome-java",
+      "description": "A curated list of awesome Java frameworks, libraries and software.",
+      "stars": 531,
+      "forks": 123,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2015-08-12T17:56:04Z",
+      "pushed_at": "2026-09-02T15:13:56Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "lamaalrajih/kicad-mcp",
+      "url": "https://github.com/lamaalrajih/kicad-mcp",
+      "description": "Model Context Protocol server for KiCad on Mac, Windows, and Linux",
+      "stars": 518,
+      "forks": 83,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-03-20T04:47:00Z",
+      "pushed_at": "2025-10-17T16:30:09Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "ownpilot/OwnPilot",
+      "url": "https://github.com/ownpilot/OwnPilot",
+      "description": "Privacy-first personal AI assistant platform with autonomous agents, tool orchestration, and multi-provider support.",
+      "stars": 429,
+      "forks": 63,
+      "language": "TypeScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-01-28T11:04:14Z",
+      "pushed_at": "2026-09-08T18:33:01Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "latonita/arduino-canbus-monitor",
+      "url": "https://github.com/latonita/arduino-canbus-monitor",
+      "description": "Can bus monitoring tool based on arduino and can bus shield. Implements CAN ASCII/SLCAN protocol compatible with Lawicel CAN232/CANUSB. Can be used for monitoring low speed CAN (interior can bus of most cars, less than 500kbps). For higher ",
+      "stars": 336,
+      "forks": 96,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2015-04-15T22:11:29Z",
+      "pushed_at": "2025-10-22T10:47:42Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "adafruit/Reference-Cards",
+      "url": "https://github.com/adafruit/Reference-Cards",
+      "description": "Business card-sized references for Arduino and basic electronics",
+      "stars": 307,
+      "forks": 16,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2016-01-26T22:29:12Z",
+      "pushed_at": "2016-12-24T08:45:57Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "hongbo-miao/hongbomiao.com",
+      "url": "https://github.com/hongbo-miao/hongbomiao.com",
+      "description": "A personal research and development (R&D) lab that facilitates the sharing of knowledge.",
+      "stars": 299,
+      "forks": 51,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2019-02-27T01:47:30Z",
+      "pushed_at": "2026-09-07T16:38:47Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "hoilc/scoop-lemon",
+      "url": "https://github.com/hoilc/scoop-lemon",
+      "description": "🍋Yet Another Personal Bucket for Scoop",
+      "stars": 275,
+      "forks": 27,
+      "language": "PowerShell",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2020-07-18T17:35:58Z",
+      "pushed_at": "2026-09-14T00:14:00Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "PeterWaher/IoTGateway",
+      "url": "https://github.com/PeterWaher/IoTGateway",
+      "description": "New project",
+      "stars": 253,
+      "forks": 84,
+      "language": "C#",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2015-12-11T19:31:18Z",
+      "pushed_at": "2026-09-13T19:54:38Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "grisuno/LazyOwn",
+      "url": "https://github.com/grisuno/LazyOwn",
+      "description": "LazyOwn RedTeam/APT Framework is the first RedTeam Framework with an AI-powered C&C, featuring rootkits to conceal campaigns, undetectable malleable implants compatible with Windows/Linux/Mac OSX, and self-configuring backdoors. With its We",
+      "stars": 227,
+      "forks": 46,
+      "language": "Python",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2024-05-21T04:00:51Z",
+      "pushed_at": "2026-09-13T15:43:16Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "ludwig-v/arduino-psa-diag",
+      "url": "https://github.com/ludwig-v/arduino-psa-diag",
+      "description": "Arduino sketch to send UDS / KWP diagnostic frames over CAN-BUS to PSA/Stellantis cars  (Peugeot, Citroen, DS, Opel)",
+      "stars": 224,
+      "forks": 54,
+      "language": "C++",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2020-10-03T16:38:53Z",
+      "pushed_at": "2025-06-07T18:58:57Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "andrew/ultimate-awesome",
+      "url": "https://github.com/andrew/ultimate-awesome",
+      "description": "Every awesome list on every topic, including awesome lists of awesome lists, updated daily.",
+      "stars": 218,
+      "forks": 21,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2024-01-10T22:14:42Z",
+      "pushed_at": "2026-09-13T00:55:06Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "VelocityRa/awesome-game-file-format-reversing",
+      "url": "https://github.com/VelocityRa/awesome-game-file-format-reversing",
+      "description": "Collection of docs/tools/resources for reverse engineering and working with video game file formats.",
+      "stars": 214,
+      "forks": 13,
+      "language": "Python",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2025-12-26T13:17:44Z",
+      "pushed_at": "2026-09-12T10:54:10Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "engyasin/awesome-mechatronics",
+      "url": "https://github.com/engyasin/awesome-mechatronics",
+      "description": "A list of awesome mechatronics books, courses and software.",
+      "stars": 213,
+      "forks": 27,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2019-10-27T07:49:32Z",
+      "pushed_at": "2026-08-08T12:45:23Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "yigitkonur/awesome-herdr",
+      "url": "https://github.com/yigitkonur/awesome-herdr",
+      "description": "A curated guide to the Herdr ecosystem: tools, workflows, configs, clients, skills, and integrations.",
+      "stars": 211,
+      "forks": 21,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-05-17T20:47:22Z",
+      "pushed_at": "2026-09-09T02:55:51Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "pdavis68/RepoMapper",
+      "url": "https://github.com/pdavis68/RepoMapper",
+      "description": "A tool to produce a map of a codebase within a git repository. Based entirely on the \"Repo Map\" functionality in Aider.chat",
+      "stars": 206,
+      "forks": 42,
+      "language": "Tree-sitter Query",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-06-19T12:45:27Z",
+      "pushed_at": "2025-12-08T14:26:13Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "tekk/TTGO-T-Beam-Car-Tracker",
+      "url": "https://github.com/tekk/TTGO-T-Beam-Car-Tracker",
+      "description": "TTGO-T-Beam Arduino Car Tracker - ESP32 + LoRa + GPS + GSM (optional)",
+      "stars": 198,
+      "forks": 47,
+      "language": "C++",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2019-01-14T02:02:12Z",
+      "pushed_at": "2023-12-09T05:39:54Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "uru-card/uru-card",
+      "url": "https://github.com/uru-card/uru-card",
+      "description": "Arduino based firmware for FIDO2 Authenticator",
+      "stars": 189,
+      "forks": 11,
+      "language": "C++",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2020-04-12T18:13:52Z",
+      "pushed_at": "2023-01-05T17:02:20Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "ActivityWatch/awesome-activitywatch",
+      "url": "https://github.com/ActivityWatch/awesome-activitywatch",
+      "description": "A list of awesome ActivityWatch resources",
+      "stars": 178,
+      "forks": 13,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2023-04-30T12:28:26Z",
+      "pushed_at": "2026-03-11T15:31:52Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "RoboticsBrno/ServoESP32",
+      "url": "https://github.com/RoboticsBrno/ServoESP32",
+      "description": "⚙️ Generate RC servo signal on a selected pins with ESP32 device and Arduino framework.",
+      "stars": 177,
+      "forks": 34,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2017-07-06T15:49:59Z",
+      "pushed_at": "2023-10-20T23:44:56Z",
+      "default_branch": "master",
+      "origins": [
+        "curated_primary_seed"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "merliot/hub",
+      "url": "https://github.com/merliot/hub",
+      "description": "Merliot Device Hub",
+      "stars": 165,
+      "forks": 5,
+      "language": "Go",
+      "license_spdx": "BSD-3-Clause",
+      "archived": false,
+      "created_at": "2023-06-22T07:53:55Z",
+      "pushed_at": "2025-06-11T01:50:48Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "pololu/qtr-sensors-arduino",
+      "url": "https://github.com/pololu/qtr-sensors-arduino",
+      "description": "Arduino library for the Pololu QTR reflectance sensors",
+      "stars": 150,
+      "forks": 126,
+      "language": "C++",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2012-02-14T23:57:16Z",
+      "pushed_at": "2020-03-14T08:51:13Z",
+      "default_branch": "master",
+      "origins": [
+        "curated_primary_seed"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "asadravian/top-free-courses",
+      "url": "https://github.com/asadravian/top-free-courses",
+      "description": "Top best FREE courses directory with index, titles and working links.",
+      "stars": 146,
+      "forks": 48,
+      "language": null,
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2023-03-25T02:51:40Z",
+      "pushed_at": "2026-06-25T17:17:22Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Manavarya09/public-apis-live",
+      "url": "https://github.com/Manavarya09/public-apis-live",
+      "description": "Every public API in one place — aggregated, deduped, and auto-checked for reachability. Refreshed daily. npm + Claude plugin + live search.",
+      "stars": 144,
+      "forks": 10,
+      "language": "TypeScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-06-17T06:47:04Z",
+      "pushed_at": "2026-09-13T17:25:32Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "kisaragi-mochi/stackchan-mcp",
+      "url": "https://github.com/kisaragi-mochi/stackchan-mcp",
+      "description": "MCP gateway for StackChan (xiaozhi-esp32): bridge any MCP client to a CoreS3 + servo + camera robot",
+      "stars": 132,
+      "forks": 56,
+      "language": "C++",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2026-05-01T00:00:54Z",
+      "pushed_at": "2026-08-23T12:27:13Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "nplan/gym-line-follower",
+      "url": "https://github.com/nplan/gym-line-follower",
+      "description": "Line follower robot simulator environment for Open AI Gym.",
+      "stars": 124,
+      "forks": 19,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2018-11-25T20:24:15Z",
+      "pushed_at": "2021-05-20T06:58:38Z",
+      "default_branch": "master",
+      "origins": [
+        "line_topic"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "ever-works/awesome-mcp-servers",
+      "url": "https://github.com/ever-works/awesome-mcp-servers",
+      "description": "A curated list of the best MCP Servers, featuring top solutions, libraries, tools, and more. - https://mcpserver.ever.works",
+      "stars": 103,
+      "forks": 105,
+      "language": null,
+      "license_spdx": "CC-BY-SA-4.0",
+      "archived": false,
+      "created_at": "2025-05-14T01:00:14Z",
+      "pushed_at": "2026-08-04T21:54:25Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "uhub/awesome-perl",
+      "url": "https://github.com/uhub/awesome-perl",
+      "description": "A curated list of awesome Perl frameworks, libraries and software.",
+      "stars": 103,
+      "forks": 20,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2015-08-12T17:52:42Z",
+      "pushed_at": "2026-09-02T15:39:38Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "jabelone/car-controller",
+      "url": "https://github.com/jabelone/car-controller",
+      "description": "An arduino firmware that outputs a PWM signal for steering motor control via serial.",
+      "stars": 102,
+      "forks": 29,
+      "language": "Arduino",
+      "license_spdx": null,
+      "archived": true,
+      "created_at": "2016-06-23T19:12:43Z",
+      "pushed_at": "2016-10-08T04:11:53Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "rcy1314/some-stars",
+      "url": "https://github.com/rcy1314/some-stars",
+      "description": "我的star列表，每天自动更新",
+      "stars": 93,
+      "forks": 46,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2022-11-30T17:50:06Z",
+      "pushed_at": "2026-07-22T03:26:15Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Adancurusul/serial-mcp-server",
+      "url": "https://github.com/Adancurusul/serial-mcp-server",
+      "description": "Rust MCP server and CLI for serial/UART devices, with JSON macro automation and agent skills for repeatable timed workflows.",
+      "stars": 91,
+      "forks": 24,
+      "language": "Rust",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-08-06T03:05:03Z",
+      "pushed_at": "2026-07-07T08:10:23Z",
+      "default_branch": "main",
+      "origins": [
+        "curated_primary_seed"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "COONEO/Arduino_Raspberry_ROS_Car",
+      "url": "https://github.com/COONEO/Arduino_Raspberry_ROS_Car",
+      "description": "An open source Raspberry-Arduino ROS car",
+      "stars": 90,
+      "forks": 25,
+      "language": "ASP.NET",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2021-06-01T06:32:34Z",
+      "pushed_at": "2022-05-11T12:23:06Z",
+      "default_branch": "melodic",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "erbanku/awesome",
+      "url": "https://github.com/erbanku/awesome",
+      "description": "🌟 My Awesome Repositories List. Automatically updates by GitHub Actions on UTC 00:00 & 16:00",
+      "stars": 89,
+      "forks": 9,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2021-10-11T08:38:12Z",
+      "pushed_at": "2026-09-14T00:25:07Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "RiccardoGiubilato/ros_autonomous_car",
+      "url": "https://github.com/RiccardoGiubilato/ros_autonomous_car",
+      "description": "ROS package to control an autonomous RC vehicle based on Arduino and UDOO/Raspberry",
+      "stars": 88,
+      "forks": 29,
+      "language": "Arduino",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2017-10-21T14:36:52Z",
+      "pushed_at": "2017-10-21T15:14:37Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "tribixbite/awesome",
+      "url": "https://github.com/tribixbite/awesome",
+      "description": "awesome github repos",
+      "stars": 82,
+      "forks": 6,
+      "language": "JavaScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2022-03-20T19:34:45Z",
+      "pushed_at": "2026-06-25T12:57:08Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "martinhol221/SIM800L_DTMF_control",
+      "url": "https://github.com/martinhol221/SIM800L_DTMF_control",
+      "description": "Auto start of the car on SIM800L + Arduino with DTMF control and SMS messages, sending data to MQTT and narodmon.ru",
+      "stars": 81,
+      "forks": 31,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2017-04-26T18:46:59Z",
+      "pushed_at": "2021-02-10T13:37:36Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "vishalmysore/choturobo",
+      "url": "https://github.com/vishalmysore/choturobo",
+      "description": "Integrate Arduino-based robotics (using the NodeMCU ESP32 or Arduino Nano 368 board) with AI using the MCP (Model Context Protocol) framework from Claude Anthropic",
+      "stars": 78,
+      "forks": 13,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-03-12T22:32:52Z",
+      "pushed_at": "2025-04-20T12:14:52Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "uhub/awesome-ruby",
+      "url": "https://github.com/uhub/awesome-ruby",
+      "description": "A curated list of awesome Ruby frameworks, libraries and software.",
+      "stars": 77,
+      "forks": 16,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2015-08-12T07:53:31Z",
+      "pushed_at": "2026-09-02T15:53:18Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "shepmaster/rust-arduino-blink-led-no-core-with-cargo",
+      "url": "https://github.com/shepmaster/rust-arduino-blink-led-no-core-with-cargo",
+      "description": "Blink the LED on the Arduino Uno with Rust and Cargo",
+      "stars": 75,
+      "forks": 4,
+      "language": "Rust",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2016-05-19T19:34:15Z",
+      "pushed_at": "2020-07-25T20:09:11Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "arbal/awesome-stars",
+      "url": "https://github.com/arbal/awesome-stars",
+      "description": "Top 18K of GitHub's finest.",
+      "stars": 73,
+      "forks": 10,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2021-02-24T06:25:22Z",
+      "pushed_at": "2026-09-10T05:30:32Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "pavelmalik/BMWCanBridge",
+      "url": "https://github.com/pavelmalik/BMWCanBridge",
+      "description": "Arduino Due solution for adding vin-coded modules to BMW cars",
+      "stars": 71,
+      "forks": 15,
+      "language": "C++",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2018-03-19T00:18:45Z",
+      "pushed_at": "2018-12-30T14:01:28Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "cheesewhe/awesome-repositories-collection",
+      "url": "https://github.com/cheesewhe/awesome-repositories-collection",
+      "description": "A curated collection of awesome utilities and repositories organized by category",
+      "stars": 71,
+      "forks": 8,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-10-27T08:53:11Z",
+      "pushed_at": "2025-12-15T09:43:52Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "webpro255/awesome-ai-agent-attacks",
+      "url": "https://github.com/webpro255/awesome-ai-agent-attacks",
+      "description": "A curated timeline of real AI agent security incidents, breaches, and vulnerabilities (2024-2026). Every entry sourced and dated.",
+      "stars": 71,
+      "forks": 8,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-04-07T14:19:50Z",
+      "pushed_at": "2026-09-08T13:17:46Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "AndyXFuture/MCar-Arduino-ESP01S",
+      "url": "https://github.com/AndyXFuture/MCar-Arduino-ESP01S",
+      "description": "A Mecanum-wheel car based on ESP01S.",
+      "stars": 69,
+      "forks": 15,
+      "language": "HTML",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2021-11-02T04:47:03Z",
+      "pushed_at": "2022-04-16T04:26:52Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Sucareto/ESP32-CardReader",
+      "url": "https://github.com/Sucareto/ESP32-CardReader",
+      "description": "一个 Arduino 读卡器，OLED 显示，DIP 开关切换功能，OTA 更新。",
+      "stars": 66,
+      "forks": 6,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": true,
+      "created_at": "2022-05-30T10:38:41Z",
+      "pushed_at": "2024-11-05T16:03:05Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "xitanggg/-Pirates-of-the-Caribbean-Theme-Song",
+      "url": "https://github.com/xitanggg/-Pirates-of-the-Caribbean-Theme-Song",
+      "description": "Code to play \"Pirates of the Caribbean\" Theme Song on a Arduino via a Buzzer. Learn how this is built: https://www.tipstory.org/learning/h2lUMccm5MeuSds",
+      "stars": 65,
+      "forks": 42,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2016-06-28T02:52:25Z",
+      "pushed_at": "2021-03-25T21:49:42Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "deepsyx/arduino-tachometer",
+      "url": "https://github.com/deepsyx/arduino-tachometer",
+      "description": "Arduino car tachometer",
+      "stars": 63,
+      "forks": 22,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2016-10-12T20:10:51Z",
+      "pushed_at": "2019-02-13T10:32:30Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "krishnamk00/Top-10-OpenSource-News-Weekly",
+      "url": "https://github.com/krishnamk00/Top-10-OpenSource-News-Weekly",
+      "description": "One place for Open Source Weekly Updates All! ",
+      "stars": 58,
+      "forks": 7,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2018-08-17T08:16:22Z",
+      "pushed_at": "2024-12-23T17:25:31Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Petroula/Android-Car-duino",
+      "url": "https://github.com/Petroula/Android-Car-duino",
+      "description": "Android + Car + Arduino",
+      "stars": 57,
+      "forks": 28,
+      "language": "Java",
+      "license_spdx": "GPL-2.0",
+      "archived": false,
+      "created_at": "2015-03-23T12:59:43Z",
+      "pushed_at": "2017-07-24T19:38:28Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "GaloisInc/lean4-balance-car",
+      "url": "https://github.com/GaloisInc/lean4-balance-car",
+      "description": "Lean4 port of Arduino balance car controller",
+      "stars": 55,
+      "forks": 10,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2021-01-13T17:19:26Z",
+      "pushed_at": "2021-03-17T22:06:46Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "geeknik/my-awesome-stars",
+      "url": "https://github.com/geeknik/my-awesome-stars",
+      "description": "A curated list of my GitHub stars!",
+      "stars": 53,
+      "forks": 8,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2024-09-10T19:43:11Z",
+      "pushed_at": "2025-09-09T00:52:15Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "PowerBroker2/ArduHUD",
+      "url": "https://github.com/PowerBroker2/ArduHUD",
+      "description": "Arduino/ELM327-based project to create a car head's up display",
+      "stars": 52,
+      "forks": 8,
+      "language": "C",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2019-05-02T23:46:13Z",
+      "pushed_at": "2022-06-05T00:54:59Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "kkishore9891/Jetson-Nano-Self-Driving-Car",
+      "url": "https://github.com/kkishore9891/Jetson-Nano-Self-Driving-Car",
+      "description": "This is a project which uses deep Convolutional Neural Networks to steer a self driving car powered by Jetson Nano and Arduino UNO",
+      "stars": 50,
+      "forks": 11,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2020-03-19T13:03:16Z",
+      "pushed_at": "2020-05-27T06:40:55Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "platisd/AndroidCar",
+      "url": "https://github.com/platisd/AndroidCar",
+      "description": "Arduino library to control an Android Autonomous Vehicle by Team Pegasus",
+      "stars": 49,
+      "forks": 15,
+      "language": "C++",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2015-06-03T22:55:23Z",
+      "pushed_at": "2018-04-07T18:06:07Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "vgab7/VolvoDIM",
+      "url": "https://github.com/vgab7/VolvoDIM",
+      "description": "Arduino project to power a volvo DIM outside of the car",
+      "stars": 49,
+      "forks": 6,
+      "language": "C++",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2020-04-20T14:56:41Z",
+      "pushed_at": "2023-09-27T00:48:26Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "upiir/arduino_dashboard",
+      "url": "https://github.com/upiir/arduino_dashboard",
+      "description": "Car Dashboard using Arduino Leonardo, OBDII to UART adapter and Intelligent Nextion Display",
+      "stars": 48,
+      "forks": 6,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2024-10-16T13:23:05Z",
+      "pushed_at": "2024-10-16T15:21:53Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "smartmecard/arduino-smart-robot-car",
+      "url": "https://github.com/smartmecard/arduino-smart-robot-car",
+      "description": "Source code to make smart robot car with Arduino Uno and Arduino Mega (IR RC + Bluetooth RC + Obstacle Avoidance + Line Tracking)",
+      "stars": 48,
+      "forks": 20,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2017-03-11T03:37:16Z",
+      "pushed_at": "2017-06-24T15:52:33Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "mctrinh/awesome-mcp-servers",
+      "url": "https://github.com/mctrinh/awesome-mcp-servers",
+      "description": "A curated list of excellent Model Context Protocol (MCP) servers.",
+      "stars": 46,
+      "forks": 88,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2025-06-05T07:52:32Z",
+      "pushed_at": "2026-06-10T04:33:48Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "fire1/ArduinoMid",
+      "url": "https://github.com/fire1/ArduinoMid",
+      "description": "This is a reverse-engineered onboard car computer based on internal vehicle infrastructure.",
+      "stars": 46,
+      "forks": 14,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2016-05-31T13:24:48Z",
+      "pushed_at": "2020-10-09T18:38:10Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "LeeHounshell/BatBot",
+      "url": "https://github.com/LeeHounshell/BatBot",
+      "description": "AI vision robot car with 3 layers:  1) Android App, 2) Jetson Nano, 3) Arduino Robot Car.",
+      "stars": 45,
+      "forks": 15,
+      "language": "Kotlin",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2019-09-03T17:06:45Z",
+      "pushed_at": "2022-12-08T06:14:50Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "fraisasghar/Arduino-4WD-Bluetooth-Controlled-Robotic-Vehicle",
+      "url": "https://github.com/fraisasghar/Arduino-4WD-Bluetooth-Controlled-Robotic-Vehicle",
+      "description": "Developed an Arduino-based 4WD robotic car integrating motor control and wireless communication. The vehicle is remotely controlled via Bluetooth using a mobile device, demonstrating robotics, hardware integration, and Arduino programming.",
+      "stars": 44,
+      "forks": 0,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-01-27T03:50:53Z",
+      "pushed_at": "2026-02-03T16:51:03Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "gaahrdner/starred",
+      "url": "https://github.com/gaahrdner/starred",
+      "description": "A curated list of my GitHub stars!",
+      "stars": 43,
+      "forks": 6,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2017-09-07T17:27:11Z",
+      "pushed_at": "2026-09-13T05:17:22Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "rainmana/awesome-rainmana",
+      "url": "https://github.com/rainmana/awesome-rainmana",
+      "description": "This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D",
+      "stars": 43,
+      "forks": 4,
+      "language": "Python",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2024-02-03T05:47:42Z",
+      "pushed_at": "2026-09-14T00:37:24Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Subash-2503/BLUETOOTH_CAR_ARDUINO_L298N",
+      "url": "https://github.com/Subash-2503/BLUETOOTH_CAR_ARDUINO_L298N",
+      "description": " It appears that you're interested in a project involving Bluetooth, Arduino, and the L298N motor driver, possibly related to controlling a car. Let me provide you with a basic overview of how you might approach such a project.",
+      "stars": 41,
+      "forks": 0,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2023-12-19T15:59:46Z",
+      "pushed_at": "2023-12-19T16:02:07Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Rance-OwO/Serial-Agent",
+      "url": "https://github.com/Rance-OwO/Serial-Agent",
+      "description": "Serial Agent 是一个面向嵌入式开发的 AI 串口调试平台，由 VS Code 扩展与 MCP Server 组成：在编辑器内提供高性能串口监视（自动扫描连接、HEX 收发、时间戳、日志缓冲与自动重连），并通过本地 Bridge API 将串口能力暴露给 AI，实现“编译/烧录（Keil + JLink/DAP-Link/ST-Link等）→ 读取串口日志 → 自动分析问题 →   辅助修复”的闭环工作流。项目采用 TypeScript Monorepo 架构，聚焦",
+      "stars": 40,
+      "forks": 1,
+      "language": "TypeScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-03-11T14:38:04Z",
+      "pushed_at": "2026-08-22T11:50:49Z",
+      "default_branch": "main",
+      "origins": [
+        "curated_primary_seed"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "the911fund/skill-of-skills",
+      "url": "https://github.com/the911fund/skill-of-skills",
+      "description": "The autonomous discovery engine for AI coding tools. Indexes skills, plugins, MCP servers, agents, and integrations across Claude Code, Codex, Gemini CLI, and more.",
+      "stars": 38,
+      "forks": 11,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-01-23T02:43:56Z",
+      "pushed_at": "2026-09-14T00:25:03Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "ormsport/ToshibaCarrierHvac",
+      "url": "https://github.com/ormsport/ToshibaCarrierHvac",
+      "description": "This library can make Arduino/NodeMCU communicate with Toshiba/Carrier HVAC System via serial communication through wifi adapter port.",
+      "stars": 38,
+      "forks": 7,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2022-05-26T21:05:49Z",
+      "pushed_at": "2024-08-11T09:37:57Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "engrpanda/Arduino-Bluetooth-Controller",
+      "url": "https://github.com/engrpanda/Arduino-Bluetooth-Controller",
+      "description": "For HC05/06 & HM10. This android app makes you control your Arduino projects like RC car or any IOT applications using your mobile phone thru bluetooth. (click readme.md for more info)",
+      "stars": 37,
+      "forks": 12,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2019-08-11T11:11:57Z",
+      "pushed_at": "2026-05-13T08:58:00Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "schappim/emitt",
+      "url": "https://github.com/schappim/emitt",
+      "description": "Inbound email processing server with LLM-powered automation",
+      "stars": 37,
+      "forks": 0,
+      "language": "Go",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2026-01-13T09:46:47Z",
+      "pushed_at": "2026-08-05T09:31:25Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "decoded-cipher/nodrix",
+      "url": "https://github.com/decoded-cipher/nodrix",
+      "description": "The IoT platform Cloudflare didn't build. Telemetry, realtime dashboards, and automations on Workers + D1 + R2 + Durable Objects — in your own Cloudflare account.",
+      "stars": 37,
+      "forks": 2,
+      "language": "TypeScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-05-17T05:21:01Z",
+      "pushed_at": "2026-08-22T21:30:39Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "StrayDragon/awesome-stars",
+      "url": "https://github.com/StrayDragon/awesome-stars",
+      "description": "✨🌟✨  my stars list, thx for  https://github.com/maguowei/starred 😘",
+      "stars": 36,
+      "forks": 3,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2021-04-08T03:03:06Z",
+      "pushed_at": "2026-09-13T05:05:50Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "k4drw/hamclock-next",
+      "url": "https://github.com/k4drw/hamclock-next",
+      "description": "Full re-write of hamclock in SDL2",
+      "stars": 35,
+      "forks": 7,
+      "language": "C",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2026-02-10T00:16:45Z",
+      "pushed_at": "2026-06-23T23:55:27Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "slaytonrnd/CartridgeWriter",
+      "url": "https://github.com/slaytonrnd/CartridgeWriter",
+      "description": "Windows program that can use an Arduino to read / write a DS2433 chip from Stratasys printer cartridges.",
+      "stars": 34,
+      "forks": 27,
+      "language": "C#",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2014-12-11T02:09:43Z",
+      "pushed_at": "2022-02-03T22:41:50Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "tkem/CarreraDigitalControlUnit",
+      "url": "https://github.com/tkem/CarreraDigitalControlUnit",
+      "description": "Carrera(R) Digital 124/132 interface library for Arduino and mbed OS",
+      "stars": 34,
+      "forks": 8,
+      "language": "C++",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2017-07-14T15:28:06Z",
+      "pushed_at": "2024-12-09T16:32:37Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "utensil/awesome-stars",
+      "url": "https://github.com/utensil/awesome-stars",
+      "description": "A curated list of my GitHub stars!",
+      "stars": 34,
+      "forks": 9,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2019-02-21T12:56:56Z",
+      "pushed_at": "2026-09-13T01:27:22Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "seth-yang/remote-car",
+      "url": "https://github.com/seth-yang/remote-car",
+      "description": "树莓派和arduino控制的小车程序",
+      "stars": 34,
+      "forks": 22,
+      "language": "Java",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2015-06-22T17:57:02Z",
+      "pushed_at": "2025-05-15T10:55:00Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "hujiese/wifi-car",
+      "url": "https://github.com/hujiese/wifi-car",
+      "description": "使用树莓派和Arduino构建一个无线视频小车",
+      "stars": 34,
+      "forks": 16,
+      "language": "Java",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2018-08-25T02:22:50Z",
+      "pushed_at": "2018-09-01T03:48:36Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Rufus31415/arduino-pro-portenta-h7-carrier-board",
+      "url": "https://github.com/Rufus31415/arduino-pro-portenta-h7-carrier-board",
+      "description": "A simple carrier shield for Arduino Portenta H7",
+      "stars": 33,
+      "forks": 5,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2020-03-10T12:45:45Z",
+      "pushed_at": "2025-11-12T20:11:28Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "zbrogz/Curie-Car-Keyless-Entry",
+      "url": "https://github.com/zbrogz/Curie-Car-Keyless-Entry",
+      "description": "Automatically unlock your car using Arduino 101's BLE proximity and key fob iPhone app.",
+      "stars": 33,
+      "forks": 6,
+      "language": "Objective-C",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2017-07-28T13:18:04Z",
+      "pushed_at": "2017-07-28T17:49:22Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "themelisx/ESP32CarODB",
+      "url": "https://github.com/themelisx/ESP32CarODB",
+      "description": "Car OBD gauges Arduino TFT",
+      "stars": 33,
+      "forks": 4,
+      "language": "C",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2023-12-09T18:52:52Z",
+      "pushed_at": "2024-02-10T13:00:50Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "iakat/stars",
+      "url": "https://github.com/iakat/stars",
+      "description": "iakat/stars - An awesome list of my starred repositories",
+      "stars": 32,
+      "forks": 3,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2021-01-21T21:36:46Z",
+      "pushed_at": "2026-08-19T04:06:59Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Baekalfen/PyBoyCartridge",
+      "url": "https://github.com/Baekalfen/PyBoyCartridge",
+      "description": "GameBoy cartridge dumper and simulator written for Arduino and Python",
+      "stars": 32,
+      "forks": 3,
+      "language": "Arduino",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2016-07-14T20:30:28Z",
+      "pushed_at": "2016-12-13T13:01:21Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "un0038998/WiFiCar",
+      "url": "https://github.com/un0038998/WiFiCar",
+      "description": "This repository contains the code and diagram for WiFi car using esp32 and programmed using Arduino IDE",
+      "stars": 32,
+      "forks": 9,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2021-05-06T18:40:38Z",
+      "pushed_at": "2021-05-06T18:43:07Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "vinamrsachdeva/PID-Line-Follower",
+      "url": "https://github.com/vinamrsachdeva/PID-Line-Follower",
+      "description": "A robot which can follow a curvilinear path directed by a line on a surface, wherein both are of different colors. It uses a PID controller to do the same.",
+      "stars": 31,
+      "forks": 8,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2019-03-15T06:01:57Z",
+      "pushed_at": "2021-06-08T20:58:43Z",
+      "default_branch": "master",
+      "origins": [
+        "line_topic"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "mac999/LLM-RAG-Agent-Tutorial",
+      "url": "https://github.com/mac999/LLM-RAG-Agent-Tutorial",
+      "description": "LLM-RAG-Agent-Tutorial for AI application developers and researchers.",
+      "stars": 31,
+      "forks": 14,
+      "language": "Jupyter Notebook",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-04-18T08:45:03Z",
+      "pushed_at": "2026-07-05T01:38:31Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "anmspro/Smart-Car-Parking-System",
+      "url": "https://github.com/anmspro/Smart-Car-Parking-System",
+      "description": "Smart Car Parking System using Arduino Uno.",
+      "stars": 31,
+      "forks": 15,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2019-12-07T08:34:56Z",
+      "pushed_at": "2024-08-01T09:48:23Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "bigevtaylor/arduino-swc",
+      "url": "https://github.com/bigevtaylor/arduino-swc",
+      "description": "Car Audio Steering Wheel Control interface using Arduino",
+      "stars": 31,
+      "forks": 4,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2020-08-03T05:16:57Z",
+      "pushed_at": "2026-08-29T09:35:50Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "isekOS/awesome-a2a-agents",
+      "url": "https://github.com/isekOS/awesome-a2a-agents",
+      "description": "Awesome A2A Agents is a curated list of tools, frameworks, and projects built on the Agent-to-Agent (A2A) communication protocol. It aims to showcase interoperable agent systems, share best practices, and help developers explore the emergin",
+      "stars": 30,
+      "forks": 19,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-09-27T09:00:16Z",
+      "pushed_at": "2025-09-27T18:20:05Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "SagXD/awesome-stars",
+      "url": "https://github.com/SagXD/awesome-stars",
+      "description": "My Awesome List ",
+      "stars": 30,
+      "forks": 0,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2023-10-06T09:26:00Z",
+      "pushed_at": "2026-09-13T05:24:58Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Wnthr/arduino-alpine-remote",
+      "url": "https://github.com/Wnthr/arduino-alpine-remote",
+      "description": "An Arduino library to control an alpine car audio head unit via a 3.5mm phono plug.",
+      "stars": 29,
+      "forks": 8,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2016-07-31T20:46:14Z",
+      "pushed_at": "2016-08-24T12:58:18Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "robotmaker/Arduino_SBUS",
+      "url": "https://github.com/robotmaker/Arduino_SBUS",
+      "description": "This Arduino sketch expands the SBUS using an Arduino such as a small Ardiono Nano or ProMicro making the full 16 channels available on your FrSky compatile RC receiver  (such as the XR8 or  XR4) which would otherwise be limited to just a f",
+      "stars": 29,
+      "forks": 4,
+      "language": "Processing",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2016-03-23T00:07:20Z",
+      "pushed_at": "2021-06-02T21:04:49Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "nicrusso7/robot-gym",
+      "url": "https://github.com/nicrusso7/robot-gym",
+      "description": "RL applied to robotics.",
+      "stars": 29,
+      "forks": 2,
+      "language": "Python",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2021-03-13T15:02:21Z",
+      "pushed_at": "2022-01-21T13:15:40Z",
+      "default_branch": "main",
+      "origins": [
+        "line_topic"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "practicalarduino/CarEngineDatalogger",
+      "url": "https://github.com/practicalarduino/CarEngineDatalogger",
+      "description": "Read and store values from an engine management system and GPS using an Arduino to create your own \"black box\" flight recorder",
+      "stars": 29,
+      "forks": 4,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2009-06-18T12:58:26Z",
+      "pushed_at": "2009-09-09T13:09:50Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "rzeldent/esp32-cam-ai",
+      "url": "https://github.com/rzeldent/esp32-cam-ai",
+      "description": "A Model Context Protocol (MCP) server implementation for ESP32-CAM that enables integration with a Large Language Model (LLM). The LLM connects using this library to the ESP32-CAM offering remote camera control, LED management, and system m",
+      "stars": 28,
+      "forks": 3,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-06-28T18:47:02Z",
+      "pushed_at": "2026-08-31T22:03:31Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "ccamel/awesome-ccamel",
+      "url": "https://github.com/ccamel/awesome-ccamel",
+      "description": "🔖 A collection of awesome things for me, myself and I.",
+      "stars": 28,
+      "forks": 8,
+      "language": null,
+      "license_spdx": "BSD-3-Clause",
+      "archived": false,
+      "created_at": "2022-06-06T11:04:36Z",
+      "pushed_at": "2026-09-13T18:30:30Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "amjed-ali-k/ESP-32-Line-Follower",
+      "url": "https://github.com/amjed-ali-k/ESP-32-Line-Follower",
+      "description": "This is an Arduino-based project for a line follower robot with an 8-sensor array. The robot uses PID control to follow a line on the ground and can make sharp turns when necessary. The project includes the source code for the robot's firmw",
+      "stars": 28,
+      "forks": 1,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2023-10-20T06:21:43Z",
+      "pushed_at": "2023-10-20T06:21:46Z",
+      "default_branch": "main",
+      "origins": [
+        "line_topic"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "anxkhn/my-awesome-stars",
+      "url": "https://github.com/anxkhn/my-awesome-stars",
+      "description": "",
+      "stars": 27,
+      "forks": 0,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2025-01-13T20:21:08Z",
+      "pushed_at": "2026-09-13T05:08:03Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "AlexGyver/BluetoothCar",
+      "url": "https://github.com/AlexGyver/BluetoothCar",
+      "description": "Машинка на Arduino с управлением по Bluetooth и FPV",
+      "stars": 27,
+      "forks": 8,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2018-10-11T21:23:30Z",
+      "pushed_at": "2024-02-03T21:21:06Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "UCTRONICS/Smart-Robot-Car-Arduino",
+      "url": "https://github.com/UCTRONICS/Smart-Robot-Car-Arduino",
+      "description": "",
+      "stars": 26,
+      "forks": 52,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2017-05-11T07:20:00Z",
+      "pushed_at": "2019-11-06T00:51:09Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "ArnoldZhou/Arduino-LogisticsCar",
+      "url": "https://github.com/ArnoldZhou/Arduino-LogisticsCar",
+      "description": "基于Arduino MEGA2560的智能物流小车",
+      "stars": 26,
+      "forks": 5,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2019-08-20T08:27:15Z",
+      "pushed_at": "2019-07-26T15:04:05Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "s-marley/CarLights",
+      "url": "https://github.com/s-marley/CarLights",
+      "description": "Code and schematics for connecting a 5V Arduino to 12V vehicle signals",
+      "stars": 26,
+      "forks": 4,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2021-04-16T20:20:15Z",
+      "pushed_at": "2021-04-20T21:54:33Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "sidtalia/RC-CAR-DRIFT-ASSIST-SYSTEM",
+      "url": "https://github.com/sidtalia/RC-CAR-DRIFT-ASSIST-SYSTEM",
+      "description": "gyro based stability assist system. Uses an MPU6050(use my copied version of mpu6050 library) and an arduino mini pro and some jumper wires",
+      "stars": 26,
+      "forks": 10,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2018-05-14T06:40:34Z",
+      "pushed_at": "2019-03-14T13:37:08Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "moellere/WireStudio",
+      "url": "https://github.com/moellere/WireStudio",
+      "description": "Agent-driven design studio for ESPHome-compatible (e.g. ESP32/ESP8266, RP2040) + LoRaWAN devices: generates ESPHome YAML, KiCad schematic/PCB, 3D-printable enclosures, and builds/flashes/provisions LoRaWAN firmware (ChirpStack + Home Assist",
+      "stars": 26,
+      "forks": 2,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-05-03T19:48:49Z",
+      "pushed_at": "2026-08-31T18:28:49Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "zoroqi/my-awesome",
+      "url": "https://github.com/zoroqi/my-awesome",
+      "description": "My Awesome List",
+      "stars": 25,
+      "forks": 4,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2020-05-25T01:56:46Z",
+      "pushed_at": "2026-09-01T02:43:04Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "alanisme/awesome-zed-extensions",
+      "url": "https://github.com/alanisme/awesome-zed-extensions",
+      "description": "⭐ Discover the best Zed extensions, ranked by stars, loved by developers, updated daily. Find your next favorite tool! 🚀📊",
+      "stars": 25,
+      "forks": 1,
+      "language": "Go",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-03-09T04:35:59Z",
+      "pushed_at": "2026-09-13T11:32:46Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "liuzhenqi77/awesome-stars",
+      "url": "https://github.com/liuzhenqi77/awesome-stars",
+      "description": "A curated list of my GitHub stars by stargazed",
+      "stars": 25,
+      "forks": 2,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2019-09-26T15:03:52Z",
+      "pushed_at": "2026-09-13T05:14:53Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "parikshitpagare/3-mode-bluetooth-robot",
+      "url": "https://github.com/parikshitpagare/3-mode-bluetooth-robot",
+      "description": "A robot car developed using Arduino that can operate in 3 modes - Manual, Automatic and Voice. The car is controlled wirelessly via Bluetooth with an android app developed using MIT App Inventor.",
+      "stars": 25,
+      "forks": 2,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2023-04-24T17:51:17Z",
+      "pushed_at": "2024-01-07T03:42:44Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "serpvault/awesome-mcp-servers",
+      "url": "https://github.com/serpvault/awesome-mcp-servers",
+      "description": "Awesome MCP Servers for ... everything",
+      "stars": 25,
+      "forks": 12,
+      "language": null,
+      "license_spdx": null,
+      "archived": true,
+      "created_at": "2025-04-23T04:42:30Z",
+      "pushed_at": "2025-05-14T01:18:34Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "segrax/Arduino-C64-Cartridge-Dumper",
+      "url": "https://github.com/segrax/Arduino-C64-Cartridge-Dumper",
+      "description": "A Commodore 64 Cartridge Dumper",
+      "stars": 24,
+      "forks": 1,
+      "language": "C++",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2014-07-08T09:30:24Z",
+      "pushed_at": "2014-07-08T10:24:40Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "zengzzzzz/golang-trending-archive",
+      "url": "https://github.com/zengzzzzz/golang-trending-archive",
+      "description": "track golang trending in github",
+      "stars": 24,
+      "forks": 4,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2023-10-09T13:00:57Z",
+      "pushed_at": "2026-09-13T05:28:11Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "JBionics/Programmable-RC-Car",
+      "url": "https://github.com/JBionics/Programmable-RC-Car",
+      "description": "Arduino + $9 RC Car + $9 Parts = Programmable RC Car  Any RC car can be hacked and made programmable.  This project is great for electronics beginners and requires some soldering to build a simple Arduino shield used to control the car.  Pu",
+      "stars": 24,
+      "forks": 11,
+      "language": "Java",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2012-08-28T05:01:57Z",
+      "pushed_at": "2012-08-28T16:31:50Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "ArminJo/Arduino-RobotCar",
+      "url": "https://github.com/ArminJo/Arduino-RobotCar",
+      "description": "Enables autonomous driving of a 2 or 4 wheel car with an Arduino and a Adafruit Motor Shield V2.  To avoid obstacles a HC-SR04 Ultrasonic sensor mounted on a SG90 Servo continuously scans the area. Manual control is by a GUI implemented wit",
+      "stars": 24,
+      "forks": 7,
+      "language": "C++",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2016-12-15T22:08:30Z",
+      "pushed_at": "2026-07-14T23:56:38Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "jamesshao8/smart_car",
+      "url": "https://github.com/jamesshao8/smart_car",
+      "description": "an autonomous car following a person based on sound and video (realized by raspberry, arduino and respeaker)",
+      "stars": 24,
+      "forks": 7,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2018-02-20T01:30:47Z",
+      "pushed_at": "2018-09-23T11:36:00Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "hireblackout/awesome-mcp-servers",
+      "url": "https://github.com/hireblackout/awesome-mcp-servers",
+      "description": "Comprehensive curated list of top MCP (Model Context Protocol) servers for AI development. Includes rankings from GitHub downloads, Reddit consensus, and real developer usage patterns.",
+      "stars": 24,
+      "forks": 20,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2025-12-16T19:47:04Z",
+      "pushed_at": "2026-07-31T09:30:20Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "DrNebin/RC_Car",
+      "url": "https://github.com/DrNebin/RC_Car",
+      "description": "My ongoing design for a SMALL RC Car 3D printable on a small resin printer driven by Arduino.",
+      "stars": 23,
+      "forks": 3,
+      "language": "C++",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2020-10-28T20:02:11Z",
+      "pushed_at": "2023-11-16T12:39:47Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "zhangfeibao/ramgs",
+      "url": "https://github.com/zhangfeibao/ramgs",
+      "description": "让 AI 真正理解硬件 —— 打通 AIGC 与嵌入式系统的最后一公里。",
+      "stars": 23,
+      "forks": 4,
+      "language": "C",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-01-21T12:46:16Z",
+      "pushed_at": "2026-01-29T11:10:22Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "COONEO/Arduino_Jetson_nano_ROS_Car",
+      "url": "https://github.com/COONEO/Arduino_Jetson_nano_ROS_Car",
+      "description": "Making a Jetson_nano robot by yourself step by step.",
+      "stars": 22,
+      "forks": 4,
+      "language": "ASP.NET",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2022-01-27T09:12:03Z",
+      "pushed_at": "2022-05-11T12:18:02Z",
+      "default_branch": "melodic",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "question-and-answer/cave-mine-cardputer-alpha1",
+      "url": "https://github.com/question-and-answer/cave-mine-cardputer-alpha1",
+      "description": "A true 3D voxel sandbox (Minecraft-like) for the M5Stack Cardputer-Adv, built in Arduino IDE with real ray traversal, terrain generation, and block interaction.",
+      "stars": 22,
+      "forks": 2,
+      "language": "C++",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-03-18T15:02:16Z",
+      "pushed_at": "2026-03-18T15:47:35Z",
+      "default_branch": "main",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "connorwm/J1850VPW",
+      "url": "https://github.com/connorwm/J1850VPW",
+      "description": "Arduino Code (eventually library) for communicating with J1850 VPW OBD-II equipped cars.",
+      "stars": 22,
+      "forks": 10,
+      "language": "Arduino",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2014-12-29T07:38:58Z",
+      "pushed_at": "2015-09-02T06:44:20Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "maxgfr/awesome-stars",
+      "url": "https://github.com/maxgfr/awesome-stars",
+      "description": "List of repositories that I liked on Github",
+      "stars": 22,
+      "forks": 3,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2021-10-21T21:58:07Z",
+      "pushed_at": "2026-09-13T21:01:24Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "dnnsmnstrr/awesome-stars",
+      "url": "https://github.com/dnnsmnstrr/awesome-stars",
+      "description": "⭐️ My GitHub Stars in an Awesome List",
+      "stars": 22,
+      "forks": 1,
+      "language": "Shell",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2019-09-26T19:15:55Z",
+      "pushed_at": "2026-09-13T05:07:31Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Thomashighbaugh/stars",
+      "url": "https://github.com/Thomashighbaugh/stars",
+      "description": "A curated list of my GitHub stars!",
+      "stars": 22,
+      "forks": 1,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2021-05-10T23:32:59Z",
+      "pushed_at": "2026-09-13T05:29:41Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "noneface/wifi_car",
+      "url": "https://github.com/noneface/wifi_car",
+      "description": "基于arduino+esp8266+l298n+python django DIY的一辆wifi智能小车",
+      "stars": 22,
+      "forks": 12,
+      "language": "JavaScript",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2016-01-08T09:18:36Z",
+      "pushed_at": "2016-01-08T10:10:55Z",
+      "default_branch": "master",
+      "origins": [
+        "car_broad"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "yanvgf/line-follower-simulator",
+      "url": "https://github.com/yanvgf/line-follower-simulator",
+      "description": "A simple line follower robot simulator in Python.",
+      "stars": 22,
+      "forks": 4,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2023-12-22T21:43:18Z",
+      "pushed_at": "2025-06-21T13:55:07Z",
+      "default_branch": "master",
+      "origins": [
+        "line_topic"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "abordage/awesome-mcp",
+      "url": "https://github.com/abordage/awesome-mcp",
+      "description": "Curated list of Model Context Protocol (MCP) servers, clients, and frameworks. Automatically updated daily.",
+      "stars": 21,
+      "forks": 73,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-12-25T21:53:01Z",
+      "pushed_at": "2026-09-13T09:10:07Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "wedsamuel1230/arduino-skills",
+      "url": "https://github.com/wedsamuel1230/arduino-skills",
+      "description": " Arduino/embedded systems skills and maker tools. ",
+      "stars": 21,
+      "forks": 0,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-01-04T10:42:45Z",
+      "pushed_at": "2026-08-20T14:13:06Z",
+      "default_branch": "main",
+      "origins": [
+        "curated_primary_seed"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "AeonDave/malskill",
+      "url": "https://github.com/AeonDave/malskill",
+      "description": "Offensive oriented Skill for agentic AI",
+      "stars": 21,
+      "forks": 1,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2026-02-12T18:10:01Z",
+      "pushed_at": "2026-09-10T14:16:03Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "circuit-synth/mcp-kicad-sch-api",
+      "url": "https://github.com/circuit-synth/mcp-kicad-sch-api",
+      "description": "Model Context Protocol server for KiCAD schematic manipulation - AI agent integration for electronic circuit design",
+      "stars": 20,
+      "forks": 7,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-08-19T05:50:50Z",
+      "pushed_at": "2025-08-20T19:58:49Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "joshephan/awesome-agent-apis",
+      "url": "https://github.com/joshephan/awesome-agent-apis",
+      "description": "🤖 A curated list of APIs, tools, and resources for AI agents",
+      "stars": 20,
+      "forks": 6,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2026-02-09T06:32:10Z",
+      "pushed_at": "2026-02-10T14:10:01Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "es617/serial-mcp-server",
+      "url": "https://github.com/es617/serial-mcp-server",
+      "description": "Serial port MCP server for Claude Code and other MCP-compatible agents.",
+      "stars": 20,
+      "forks": 4,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-02-16T02:24:51Z",
+      "pushed_at": "2026-03-07T22:09:22Z",
+      "default_branch": "main",
+      "origins": [
+        "curated_primary_seed"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "habitoai/awesome-mcp-servers",
+      "url": "https://github.com/habitoai/awesome-mcp-servers",
+      "description": "A curated list of Model Context Protocol (MCP) servers and tools. Discover and explore various MCP implementations that enable AI models to connect with external data sources and tools.",
+      "stars": 19,
+      "forks": 95,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-04-01T23:57:16Z",
+      "pushed_at": "2026-08-22T15:15:17Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "hiifong/starList",
+      "url": "https://github.com/hiifong/starList",
+      "description": "Export your star's repository list",
+      "stars": 19,
+      "forks": 7,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2022-11-02T05:52:24Z",
+      "pushed_at": "2026-09-13T18:06:37Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "AnEntrypoint/awesome-github",
+      "url": "https://github.com/AnEntrypoint/awesome-github",
+      "description": "awesome projects on github",
+      "stars": 18,
+      "forks": 1,
+      "language": "JavaScript",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2026-08-03T08:38:44Z",
+      "pushed_at": "2026-09-13T20:51:11Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "hardware-mcp/arduino-mcp-server",
+      "url": "https://github.com/hardware-mcp/arduino-mcp-server",
+      "description": "An open source Arduino MCP server that enables AI assistants to interact with Arduino using structured tool access via the Model Context Protocol.",
+      "stars": 17,
+      "forks": 2,
+      "language": "JavaScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-02-28T07:03:46Z",
+      "pushed_at": "2026-08-22T22:33:08Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact",
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Correia-jpv/fucking-awesome-rust",
+      "url": "https://github.com/Correia-jpv/fucking-awesome-rust",
+      "description": "A curated list of Rust code and resources. With repository stars⭐ and forks🍴",
+      "stars": 17,
+      "forks": 3,
+      "language": "Rust",
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2022-02-01T11:30:17Z",
+      "pushed_at": "2026-09-12T03:54:02Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "es617/ble-mcp-server",
+      "url": "https://github.com/es617/ble-mcp-server",
+      "description": "Bluetooth Low Energy (BLE) MCP server for Claude Code and other MCP-compatible agents.",
+      "stars": 17,
+      "forks": 2,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-02-06T17:34:08Z",
+      "pushed_at": "2026-03-30T03:00:31Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "ang3lo-azevedo/my-awesome-stars",
+      "url": "https://github.com/ang3lo-azevedo/my-awesome-stars",
+      "description": " A curated list of my GitHub stars! ",
+      "stars": 16,
+      "forks": 2,
+      "language": null,
+      "license_spdx": "CC0-1.0",
+      "archived": false,
+      "created_at": "2025-12-29T13:57:09Z",
+      "pushed_at": "2026-09-13T05:14:16Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "openserv-labs/mcp-proxy",
+      "url": "https://github.com/openserv-labs/mcp-proxy",
+      "description": "Lightweight reverse proxy + admin UI that turns your backend endpoints into multi-tenant Model Context Protocol tools for OpenServ—or any MCP-compatible agent.",
+      "stars": 16,
+      "forks": 2,
+      "language": "TypeScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-05-12T13:06:06Z",
+      "pushed_at": "2026-09-08T08:18:47Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "profclaw/profclaw",
+      "url": "https://github.com/profclaw/profclaw",
+      "description": "AI agent engine with 22 chat channels, 65 tools, and 15 skills. Self-hosted, local-first, works with any LLM provider.",
+      "stars": 16,
+      "forks": 5,
+      "language": "TypeScript",
+      "license_spdx": "AGPL-3.0",
+      "archived": false,
+      "created_at": "2026-03-12T04:51:53Z",
+      "pushed_at": "2026-09-07T04:09:18Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "hugefiver/mystars",
+      "url": "https://github.com/hugefiver/mystars",
+      "description": "",
+      "stars": 16,
+      "forks": 1,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2023-02-15T02:49:17Z",
+      "pushed_at": "2026-09-13T18:14:07Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Correia-jpv/fucking-awesome-go",
+      "url": "https://github.com/Correia-jpv/fucking-awesome-go",
+      "description": "A curated list of awesome Go frameworks, libraries and software. With repository stars⭐ and forks🍴",
+      "stars": 14,
+      "forks": 0,
+      "language": "Go",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2022-02-01T11:31:45Z",
+      "pushed_at": "2026-09-12T04:06:48Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Oliver0804/arduino-cli-mcp",
+      "url": "https://github.com/Oliver0804/arduino-cli-mcp",
+      "description": "",
+      "stars": 13,
+      "forks": 3,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-03-14T18:00:52Z",
+      "pushed_at": "2026-05-16T07:17:38Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "HamzaYslmn/python-esp-bridge",
+      "url": "https://github.com/HamzaYslmn/python-esp-bridge",
+      "description": "Esp32 Python bridge, RPI bridge, its bridge, just 🌉",
+      "stars": 13,
+      "forks": 3,
+      "language": "Python",
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "created_at": "2026-06-05T19:26:13Z",
+      "pushed_at": "2026-07-30T18:43:47Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "LeoKemp223/peeko",
+      "url": "https://github.com/LeoKemp223/peeko",
+      "description": "让 AI 真正理解硬件 —— 串口桥接 PC 与 MCU，实时读写 RAM 变量 AI 辅助编程在 Web 领域已非常成熟，但在嵌入式开发中，AI 无法与真实硬件交互。Peeko 通过串口让 AI（或开发者）直接按变量名读写 MCU 内存，打通自动化闭环：",
+      "stars": 13,
+      "forks": 1,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-03-09T08:15:03Z",
+      "pushed_at": "2026-06-30T07:26:08Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Sautner-Studio-LLC/krill-oss",
+      "url": "https://github.com/Sautner-Studio-LLC/krill-oss",
+      "description": "Open source and public contributions to the Krill Platform",
+      "stars": 13,
+      "forks": 2,
+      "language": "Kotlin",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2026-03-02T14:57:20Z",
+      "pushed_at": "2026-08-24T21:49:38Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "ZonghaoLi777/githubTrending",
+      "url": "https://github.com/ZonghaoLi777/githubTrending",
+      "description": "",
+      "stars": 13,
+      "forks": 5,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2023-09-25T08:11:03Z",
+      "pushed_at": "2026-09-13T07:14:13Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "DefangLabs/samples",
+      "url": "https://github.com/DefangLabs/samples",
+      "description": "Samples to show you how to create and deploy apps with Defang.",
+      "stars": 12,
+      "forks": 27,
+      "language": "Go",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2024-05-15T22:46:25Z",
+      "pushed_at": "2026-09-11T20:16:58Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "amanbolat/awesome-rust-with-stars",
+      "url": "https://github.com/amanbolat/awesome-rust-with-stars",
+      "description": "List of awesome rust projects with stars",
+      "stars": 12,
+      "forks": 1,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2025-12-27T22:01:59Z",
+      "pushed_at": "2026-09-13T22:01:58Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "forgeai-dev/ForgeAI",
+      "url": "https://github.com/forgeai-dev/ForgeAI",
+      "description": "Self-hosted AI gateway — connect any LLM to WhatsApp, Telegram, Discord, Slack, Teams & WebChat through a single encrypted platform. 7 security modules, multi-agent system, agentic tool execution, 16-page dashboard. Your infrastructure, you",
+      "stars": 12,
+      "forks": 0,
+      "language": "TypeScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-02-17T01:50:03Z",
+      "pushed_at": "2026-03-24T00:14:12Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": true
+    },
+    {
+      "name": "FastLED/fbuild",
+      "url": "https://github.com/FastLED/fbuild",
+      "description": "A blazing fast build tool for Esp32, Teensy, Avr, Nrf, Raspberry Pi, Stm, Mgm240 and more.",
+      "stars": 12,
+      "forks": 2,
+      "language": "Rust",
+      "license_spdx": "AGPL-3.0",
+      "archived": false,
+      "created_at": "2025-06-29T20:47:28Z",
+      "pushed_at": "2026-09-13T10:02:37Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "svg153/awesome-stars",
+      "url": "https://github.com/svg153/awesome-stars",
+      "description": "",
+      "stars": 12,
+      "forks": 3,
+      "language": "JavaScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2023-02-10T19:25:18Z",
+      "pushed_at": "2026-09-13T01:18:18Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "AimanMadan/Arduino_MCP_Server",
+      "url": "https://github.com/AimanMadan/Arduino_MCP_Server",
+      "description": "",
+      "stars": 11,
+      "forks": 3,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2025-06-17T01:18:10Z",
+      "pushed_at": "2025-06-17T01:19:11Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_exact",
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Sunwood-ai-labs/m5stack-arduino-cli-skill",
+      "url": "https://github.com/Sunwood-ai-labs/m5stack-arduino-cli-skill",
+      "description": "Codex skill for setting up and troubleshooting M5Stack boards with Arduino CLI on Windows.",
+      "stars": 10,
+      "forks": 3,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-03-11T11:05:29Z",
+      "pushed_at": "2026-05-05T10:58:57Z",
+      "default_branch": "main",
+      "origins": [
+        "cli_skill_exact",
+        "curated_primary_seed"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "qarnet/serial-mcp",
+      "url": "https://github.com/qarnet/serial-mcp",
+      "description": "Serial port MCP server for Claude Code, Codex, Opencode and AI agents. Reliable UART/USB-serial access for embedded development.",
+      "stars": 9,
+      "forks": 1,
+      "language": "Rust",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-05-23T07:53:36Z",
+      "pushed_at": "2026-09-12T20:15:20Z",
+      "default_branch": "main",
+      "origins": [
+        "curated_primary_seed"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "monteslu/robot-mcp",
+      "url": "https://github.com/monteslu/robot-mcp",
+      "description": "MCP server for Johnny-Five robotics. Let LLMs control Arduino, Raspberry Pi, and other hardware.",
+      "stars": 7,
+      "forks": 1,
+      "language": "JavaScript",
+      "license_spdx": "ISC",
+      "archived": false,
+      "created_at": "2025-03-14T23:28:06Z",
+      "pushed_at": "2026-02-04T03:11:19Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "amahpour/arduino-mcp-server-simple",
+      "url": "https://github.com/amahpour/arduino-mcp-server-simple",
+      "description": "A simple Model Context Protocol (MCP) server that enables AI agents to interact with Arduino boards for development and testing",
+      "stars": 6,
+      "forks": 1,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-07-24T18:28:44Z",
+      "pushed_at": "2026-03-25T03:24:34Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "ripred/arduino-cli-skills",
+      "url": "https://github.com/ripred/arduino-cli-skills",
+      "description": "Arduino CLI skills collection with a unified suite skill, real ICL examples, and hardware-validated workflows.",
+      "stars": 4,
+      "forks": 0,
+      "language": "Shell",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-02-15T01:30:58Z",
+      "pushed_at": "2026-06-17T03:28:36Z",
+      "default_branch": "main",
+      "origins": [
+        "cli_skill_exact",
+        "curated_primary_seed"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Erablitek/esp32-arduino-development",
+      "url": "https://github.com/Erablitek/esp32-arduino-development",
+      "description": "Claude skill for ESP32 firmware development using Arduino CLI, replacing the Arduino IDE entirely. Driven by a project.json config file per project.",
+      "stars": 3,
+      "forks": 0,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-04-22T13:47:31Z",
+      "pushed_at": "2026-06-02T15:16:34Z",
+      "default_branch": "master",
+      "origins": [
+        "cli_skill_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "sushiionwest/Uno-R3-MCP",
+      "url": "https://github.com/sushiionwest/Uno-R3-MCP",
+      "description": "MCP server that lets an LLM drive an Arduino Uno R3 over USB serial: 10 tools including compile/upload via arduino-cli, plus a deterministic no-hardware mock mode (npx uno-r3-mcp).",
+      "stars": 3,
+      "forks": 0,
+      "language": "JavaScript",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-01-28T14:23:22Z",
+      "pushed_at": "2026-07-25T16:00:17Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "lookfwd/arduino-cli-claude-plugin",
+      "url": "https://github.com/lookfwd/arduino-cli-claude-plugin",
+      "description": "A skill for Claude Code that Allows it to Use arduino-cli to Work with Arduino Projects",
+      "stars": 3,
+      "forks": 0,
+      "language": "Shell",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2026-02-14T01:09:25Z",
+      "pushed_at": "2026-02-14T01:15:53Z",
+      "default_branch": "main",
+      "origins": [
+        "cli_skill_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "amahpour/arduino-mcp-server",
+      "url": "https://github.com/amahpour/arduino-mcp-server",
+      "description": "MCP Server for Arduino",
+      "stars": 2,
+      "forks": 0,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-07-20T21:46:25Z",
+      "pushed_at": "2026-03-25T03:24:32Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "dido18/arduino-mcp-server",
+      "url": "https://github.com/dido18/arduino-mcp-server",
+      "description": "An arduino mcp server written in go",
+      "stars": 2,
+      "forks": 1,
+      "language": "Go",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2025-04-10T21:38:03Z",
+      "pushed_at": "2025-04-10T22:26:12Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "tomrodinger/servomotor",
+      "url": "https://github.com/tomrodinger/servomotor",
+      "description": "Open-source NEMA-17 integrated servomotor (motor + closed-loop driver + controller + encoder). RS-485, Python/Arduino libraries, MCP server for AI control. Hardware, firmware and software.",
+      "stars": 2,
+      "forks": 1,
+      "language": "HTML",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2021-08-31T23:16:29Z",
+      "pushed_at": "2026-09-10T04:01:11Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "bmdragos/serial-mcp",
+      "url": "https://github.com/bmdragos/serial-mcp",
+      "description": "Minimal MCP server for non-blocking serial communication with Arduino, ESP32, and other devices",
+      "stars": 1,
+      "forks": 0,
+      "language": "Swift",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-01-09T01:16:21Z",
+      "pushed_at": "2026-01-11T17:34:15Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "sergiudanstan/omarchy-hardware",
+      "url": "https://github.com/sergiudanstan/omarchy-hardware",
+      "description": "Arduino, ESP32, Pico and Raspberry Pi GPIO for Omarchy — a bar widget plus an MCP server that lets Claude talk to your hardware.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-09-10T17:58:21Z",
+      "pushed_at": "2026-09-13T05:48:24Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "parkerdorris/ArduinoButtonMonitorMCP",
+      "url": "https://github.com/parkerdorris/ArduinoButtonMonitorMCP",
+      "description": "Simple demo showing MCP server that uses arduino as a single digital input monitor, and MCP client demonstrator connecting and narrating logic state. This is an experiment to learn about how MCP works with a simplified logic analyzer.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2025-08-16T15:22:09Z",
+      "pushed_at": "2025-08-16T18:43:27Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "HumbertoBernal/mcp-serial",
+      "url": "https://github.com/HumbertoBernal/mcp-serial",
+      "description": "MCP server that lets AI agents talk to serial devices: Arduino, ESP32, USB-UART, RS-232",
+      "stars": 1,
+      "forks": 1,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-08-30T04:57:25Z",
+      "pushed_at": "2026-08-30T05:01:51Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "swannman/openthread-mcp",
+      "url": "https://github.com/swannman/openthread-mcp",
+      "description": "MCP server for OpenThread CLI on Arduino Nano Matter",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2026-03-12T14:18:04Z",
+      "pushed_at": "2026-03-13T04:31:29Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "JohnTheLobster/arduino-vibe-ide",
+      "url": "https://github.com/JohnTheLobster/arduino-vibe-ide",
+      "description": "AI-powered Arduino IDE MCP server and CLI wizard for hardware vibe coding",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2026-06-01T08:12:43Z",
+      "pushed_at": "2026-06-09T20:31:03Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "evgenijovchintsev/arduino-otto-mcp",
+      "url": "https://github.com/evgenijovchintsev/arduino-otto-mcp",
+      "description": "Simple MCP server to communicate with OTTO robot over Bluetooth",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2026-05-12T05:16:33Z",
+      "pushed_at": "2026-06-06T21:12:51Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "doeslater/esp32-arduino",
+      "url": "https://github.com/doeslater/esp32-arduino",
+      "description": "Claude Code skill for building, flashing, and debugging ESP32 .ino sketches with arduino-cli",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-07-09T08:28:45Z",
+      "pushed_at": "2026-07-09T11:21:40Z",
+      "default_branch": "main",
+      "origins": [
+        "cli_skill_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "pparth230/MCP-Server-for-Arduino",
+      "url": "https://github.com/pparth230/MCP-Server-for-Arduino",
+      "description": "Full stack end to end, MCP server for Arduino using Claude Code",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2026-01-15T06:51:36Z",
+      "pushed_at": "2026-01-15T06:58:06Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "NaoNaoMe/firmata-client-mcp",
+      "url": "https://github.com/NaoNaoMe/firmata-client-mcp",
+      "description": "MCP server for controlling Arduino via StandardFirmata protocol.  Enables LLMs to perform digital/analog I/O and servo control  through natural language instructions.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-05-24T07:54:23Z",
+      "pushed_at": "2026-08-16T22:35:36Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "BufrAI/arduino-mcp",
+      "url": "https://github.com/BufrAI/arduino-mcp",
+      "description": "MCP server wrapping arduino-cli - board detection, compile, upload, and serial I/O for AI agents",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "created_at": "2026-09-01T23:27:47Z",
+      "pushed_at": "2026-09-10T01:07:08Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "shahidhustles/Arduino-Uno-with-MCP-server",
+      "url": "https://github.com/shahidhustles/Arduino-Uno-with-MCP-server",
+      "description": "",
+      "stars": 0,
+      "forks": 1,
+      "language": "TypeScript",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2025-05-12T11:54:58Z",
+      "pushed_at": "2025-05-12T12:02:55Z",
+      "default_branch": "master",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "charlesliang924/m5stack-dev-skill",
+      "url": "https://github.com/charlesliang924/m5stack-dev-skill",
+      "description": "AI agent skill for M5Stack firmware development without IDE - compile & flash via arduino-cli. Supports 26 M5 boards (M5AtomS3, M5Capsule, M5StickC Plus2, M5CoreS3, etc.)",
+      "stars": 0,
+      "forks": 0,
+      "language": "Shell",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-06-24T07:30:46Z",
+      "pushed_at": "2026-06-24T07:30:57Z",
+      "default_branch": "main",
+      "origins": [
+        "cli_skill_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "itsm0000/arduino-mcp",
+      "url": "https://github.com/itsm0000/arduino-mcp",
+      "description": "Model Context Protocol (MCP) server for AI-assisted Arduino/ESP32 development with 25 tools",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2026-06-08T10:37:47Z",
+      "pushed_at": "2026-06-08T10:37:55Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "debrunbaix/S.P.E.A.K",
+      "url": "https://github.com/debrunbaix/S.P.E.A.K",
+      "description": "An end-to-end voice-to-hardware pipeline: speech → Whisper STT → Claude LLM → MCP server → Arduino REST API → servo motor. Built incrementally from a single servo to a full robotic arm.",
+      "stars": 0,
+      "forks": 0,
+      "language": "C",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2026-02-25T14:34:58Z",
+      "pushed_at": "2026-02-26T19:45:58Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "adamdturner/mcp-esp32-firebase",
+      "url": "https://github.com/adamdturner/mcp-esp32-firebase",
+      "description": "An MCP server for integrating ESP32/Arduino C++ code with Firebase/Firestore using the mobizt/FirebaseClient library",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2025-12-31T04:22:01Z",
+      "pushed_at": "2026-01-01T00:15:03Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "Starvern/mcp-led-controller",
+      "url": "https://github.com/Starvern/mcp-led-controller",
+      "description": "A system where an AI model can interface with an MCP server to control an LED on an Arduino microcontroller.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Rust",
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2026-01-08T23:15:17Z",
+      "pushed_at": "2026-01-09T00:25:28Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "547895019/arduino-cli-skill",
+      "url": "https://github.com/547895019/arduino-cli-skill",
+      "description": "",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license_spdx": null,
+      "archived": false,
+      "created_at": "2026-03-25T07:45:42Z",
+      "pushed_at": "2026-08-01T14:56:04Z",
+      "default_branch": "master",
+      "origins": [
+        "cli_skill_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "joshferns4/arduino-cli-mcp",
+      "url": "https://github.com/joshferns4/arduino-cli-mcp",
+      "description": "Dependency-free Windows MCP server for compiling and uploading Arduino sketches with Arduino CLI",
+      "stars": 0,
+      "forks": 0,
+      "language": "PowerShell",
+      "license_spdx": "MIT",
+      "archived": false,
+      "created_at": "2026-08-11T12:09:35Z",
+      "pushed_at": "2026-08-11T12:09:41Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    },
+    {
+      "name": "hodgesmb1/Arduino_DHT11_mcp",
+      "url": "https://github.com/hodgesmb1/Arduino_DHT11_mcp",
+      "description": "Arduino DHT11 Sensor MCP Server for Anthropic Claude",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license_spdx": "GPL-3.0",
+      "archived": false,
+      "created_at": "2026-06-07T03:40:27Z",
+      "pushed_at": "2026-06-07T03:41:56Z",
+      "default_branch": "main",
+      "origins": [
+        "mcp_server_exact"
+      ],
+      "description_truncated": false
+    }
+  ],
+  "errors": [
+    {
+      "source": "pololu/zumo-32u4-arduino",
+      "message": "gh: Not Found (HTTP 404)\n{\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/repos#get-a-repository\",\"status\":\"404\"}"
+    }
+  ]
+}

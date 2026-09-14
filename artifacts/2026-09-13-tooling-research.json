@@ -1,0 +1,54 @@
+{
+  "local_date": "2026-09-13",
+  "timezone": "America/Toronto",
+  "scope": "GitHub tooling research, read-only port enumeration and compile-only validation; no serial connection, upload or actuation",
+  "search": {
+    "queries": 22,
+    "query_hits_before_deduplication": 822,
+    "initial_public_repositories_after_deduplication": 807,
+    "queries_limited_to_first_100": 5,
+    "supplemental_public_repository": "wokwi/wokwi-cli",
+    "shortlisted_repositories_including_private_autorc": 45,
+    "cloned_mcp_and_skill_source_pins_checked": 12,
+    "cached_readme_and_license_hashes_checked": 86,
+    "unresolved_search_requests": 0,
+    "seed_fetch_errors": 1,
+    "seed_error_note": "pololu/zumo-32u4-arduino returned 404; official QTR README identifies pololu/zumo-32u4-arduino-library, which was not added to the shortlist"
+  },
+  "usb_enumeration": {
+    "port": "COM5",
+    "protocol": "serial",
+    "vid": "0x1A86",
+    "pid": "0x7523",
+    "matching_boards_present": false,
+    "board_identification": "Unknown from CLI; Uno-compatible target comes from kit documentation, not USB VID/PID"
+  },
+  "cli_debug_capability": {
+    "command": "arduino-cli debug check --fqbn arduino:avr:uno --json",
+    "debugging_supported": false,
+    "scope": "Installed arduino:avr@1.8.6, no external programmer selected"
+  },
+  "compile": {
+    "recorded_at_utc": "2026-09-14T00:49:29.7791996Z",
+    "cli_version": "1.5.1",
+    "core": "arduino:avr@1.8.6",
+    "program": "usb_check",
+    "passed": 1,
+    "total": 1,
+    "flash_bytes": 2318,
+    "flash_limit_bytes": 32256,
+    "static_ram_bytes": 193,
+    "ram_limit_bytes": 2048,
+    "warning_count": 4
+  },
+  "research_checks_passed": true,
+  "repository_checks_passed": true,
+  "vendor_files_unchanged": 70,
+  "candidate_mcp_servers_installed": 0,
+  "candidate_skills_installed": 0,
+  "physical_serial_sessions_opened": 0,
+  "firmware_uploads": 0,
+  "actuator_tests": 0,
+  "new_vehicle_features_implemented": false,
+  "global_configuration_modified": false
+}

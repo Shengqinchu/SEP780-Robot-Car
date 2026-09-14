@@ -1,0 +1,1237 @@
+{
+  "retrieved_at_utc": "2026-09-14T01:03:00.5278490Z",
+  "repositories": [
+    {
+      "name": "arduino/arduino-cli",
+      "category": "toolchain",
+      "url": "https://github.com/arduino/arduino-cli",
+      "private": false,
+      "stars": 5023,
+      "archived": false,
+      "pushed_at": "2026-09-13T04:58:47Z",
+      "commit": "2c192bf5d4ff2214d081b0caf2d024bc7d026d3c",
+      "commit_date": "2026-09-02T16:16:39Z",
+      "license_spdx": "GPL-3.0",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "277f36a3a37f7d07a374977c0cc46f07efc9658c",
+          "sha256": "03fcdb692c7a03bf867996369ea18af78e6ef53b35f63eb3b04575c400abae00",
+          "url": "https://github.com/arduino/arduino-cli/blob/2c192bf5d4ff2214d081b0caf2d024bc7d026d3c/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "url": "https://github.com/arduino/arduino-cli/blob/2c192bf5d4ff2214d081b0caf2d024bc7d026d3c/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "name": "platformio/platformio-core",
+      "category": "toolchain",
+      "url": "https://github.com/platformio/platformio-core",
+      "private": false,
+      "stars": 9456,
+      "archived": false,
+      "pushed_at": "2026-09-11T10:42:53Z",
+      "commit": "4db7cb04904da9428e1bfe3254548659ffeb215a",
+      "commit_date": "2026-09-10T10:09:05Z",
+      "license_spdx": "Apache-2.0",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.rst",
+          "blob_sha": "df73525eab877a995ff1cbbd26da74ce3a38a014",
+          "sha256": "2eb1247517f6463dfd9feab60e9a176050b3d48f66dba6ec67e2321d48df027a",
+          "url": "https://github.com/platformio/platformio-core/blob/4db7cb04904da9428e1bfe3254548659ffeb215a/README.rst"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "2f79a3b32276664234549247e7b4324e6e01658d",
+          "sha256": "aa53ae6e1f414b3f3041b66b7394ac86f740cb86cfb096ad89495ab74efcfd05",
+          "url": "https://github.com/platformio/platformio-core/blob/4db7cb04904da9428e1bfe3254548659ffeb215a/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "pyserial/pyserial",
+      "category": "host-api",
+      "url": "https://github.com/pyserial/pyserial",
+      "private": false,
+      "stars": 3571,
+      "archived": false,
+      "pushed_at": "2026-05-19T21:16:00Z",
+      "commit": "a5c48d445fbc1943d4fabf8d9090a50fda3172fd",
+      "commit_date": "2026-02-27T03:20:00Z",
+      "license_spdx": "NOASSERTION",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.rst",
+          "blob_sha": "91a71fd041c9490d9f0eaf249e72515834c63698",
+          "sha256": "54156e21d604f2207febf6ba20d6774154a828a52f5bfcc69a3fec0a195ffbc2",
+          "url": "https://github.com/pyserial/pyserial/blob/a5c48d445fbc1943d4fabf8d9090a50fda3172fd/README.rst"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "0eded9a5b64c5f73c42194caddd7f8353259bf61",
+          "sha256": "f30d42819c1b52d6b9bb3d95414e587cb60bb0934aa6c8844eea7bfbd43d5e50",
+          "url": "https://github.com/pyserial/pyserial/blob/a5c48d445fbc1943d4fabf8d9090a50fda3172fd/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "name": "Serial-Studio/Serial-Studio",
+      "category": "telemetry-mcp",
+      "url": "https://github.com/Serial-Studio/Serial-Studio",
+      "private": false,
+      "stars": 7194,
+      "archived": false,
+      "pushed_at": "2026-09-13T23:07:50Z",
+      "commit": "5e8c86a13250396beada5bcb07e94609b529eea1",
+      "commit_date": "2026-09-13T21:46:43Z",
+      "license_spdx": "NOASSERTION",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "004d8f13fb29f82df1ce30b8b24d0e9c42b98daa",
+          "sha256": "0e761759efde9940673d8d0aac2d9c2f2d298286f20befbd3acc1ee0e2d291ca",
+          "url": "https://github.com/Serial-Studio/Serial-Studio/blob/5e8c86a13250396beada5bcb07e94609b529eea1/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.md",
+          "blob_sha": "cc6d15305dd9003eb8ce7cb46f5491118c021b87",
+          "sha256": "353ca499ef112da7da88118b5b2b94499a0a19d4b8494442d38a8313512a063f",
+          "url": "https://github.com/Serial-Studio/Serial-Studio/blob/5e8c86a13250396beada5bcb07e94609b529eea1/LICENSE.md"
+        }
+      ]
+    },
+    {
+      "name": "microsoft/vscode-arduino",
+      "category": "toolchain",
+      "url": "https://github.com/microsoft/vscode-arduino",
+      "private": false,
+      "stars": 1191,
+      "archived": true,
+      "pushed_at": "2024-10-01T17:06:24Z",
+      "commit": "23ed54b7a39ad1ceaf34ac303e18dce8c1f53a47",
+      "commit_date": "2024-09-03T16:57:54Z",
+      "license_spdx": "NOASSERTION",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "a5e35ac0dfd405cde83ac0cb3469f524b1b45a18",
+          "sha256": "d8aab69182b84c13d039e233b7f06c8b96b1b1f6bf9630ec4408eda1ca206c1f",
+          "url": "https://github.com/microsoft/vscode-arduino/blob/23ed54b7a39ad1ceaf34ac303e18dce8c1f53a47/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "9bc64b958ffed356688e93cc13c8c03aeaf1a80e",
+          "sha256": "5a38cb54f05bd24468597fa50eac738a1d170d26d1f67537d7bbb8021706b5f8",
+          "url": "https://github.com/microsoft/vscode-arduino/blob/23ed54b7a39ad1ceaf34ac303e18dce8c1f53a47/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "name": "wokwi/avr8js",
+      "category": "simulation",
+      "url": "https://github.com/wokwi/avr8js",
+      "private": false,
+      "stars": 844,
+      "archived": false,
+      "pushed_at": "2026-08-31T09:50:23Z",
+      "commit": "bee6f0a94e0e27786f6bc21aee3c775849fb50fd",
+      "commit_date": "2026-08-31T09:49:42Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "38c7d3dbf969f7d10074b90e2b60229b34c7141e",
+          "sha256": "ed81ad864c4ed8bc81ee0b95084a1df1fe26dd788f8f2abb139d4809df43767e",
+          "url": "https://github.com/wokwi/avr8js/blob/bee6f0a94e0e27786f6bc21aee3c775849fb50fd/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "267bdc64e83f89a63e84c213de23a135a3a4244c",
+          "sha256": "71d092fa8944eb36ce929756f620ee5bf31f119d5f78a6941dc04d48f504177b",
+          "url": "https://github.com/wokwi/avr8js/blob/bee6f0a94e0e27786f6bc21aee3c775849fb50fd/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "buserror/simavr",
+      "category": "simulation",
+      "url": "https://github.com/buserror/simavr",
+      "private": false,
+      "stars": 1784,
+      "archived": false,
+      "pushed_at": "2026-09-10T11:49:10Z",
+      "commit": "fe665cef7d309e95bafe7339cdf11fe73d9218b3",
+      "commit_date": "2026-09-10T11:47:32Z",
+      "license_spdx": "GPL-3.0",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "c0360d4d9897c05c6c949435afd332148cd0dbaa",
+          "sha256": "51ca5aa95a80a545438b397c8c34af08ca4c50a343007033063f5fff283959b0",
+          "url": "https://github.com/buserror/simavr/blob/fe665cef7d309e95bafe7339cdf11fe73d9218b3/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "COPYING",
+          "blob_sha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "url": "https://github.com/buserror/simavr/blob/fe665cef7d309e95bafe7339cdf11fe73d9218b3/COPYING"
+        }
+      ]
+    },
+    {
+      "name": "ThrowTheSwitch/Unity",
+      "category": "testing",
+      "url": "https://github.com/ThrowTheSwitch/Unity",
+      "private": false,
+      "stars": 5375,
+      "archived": false,
+      "pushed_at": "2026-09-10T20:16:48Z",
+      "commit": "2b80d1a357271b20f15c9f2573ddab164a626132",
+      "commit_date": "2026-09-10T20:16:48Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "ac0ac3885d91c4a2f501ff9532c0e5a84c8f4ca2",
+          "sha256": "5ffd900631f182bd020c211b2c96907b5e429a7d8f2f9017293794d2cdd33770",
+          "url": "https://github.com/ThrowTheSwitch/Unity/blob/2b80d1a357271b20f15c9f2573ddab164a626132/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "bd46b90762c64b7bab4dbb4f39923dc01a288a5c",
+          "sha256": "ec6cf55f05ba2aa538b9677b2481b9ac14a87c63594fce8a0677d4f71c583980",
+          "url": "https://github.com/ThrowTheSwitch/Unity/blob/2b80d1a357271b20f15c9f2573ddab164a626132/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "name": "FabioBatSilva/ArduinoFake",
+      "category": "testing",
+      "url": "https://github.com/FabioBatSilva/ArduinoFake",
+      "private": false,
+      "stars": 131,
+      "archived": false,
+      "pushed_at": "2025-09-25T14:38:49Z",
+      "commit": "4335fd1091fd05caec288ec4d4999ee35aea208a",
+      "commit_date": "2025-09-25T14:38:49Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "872eb27a5832e6d8a0da1765dc3c28a30cbb1498",
+          "sha256": "4339f866d70b053e45e5fdc235242aa0eb22826edc26e26e583c25061b000522",
+          "url": "https://github.com/FabioBatSilva/ArduinoFake/blob/4335fd1091fd05caec288ec4d4999ee35aea208a/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "2bf523ca5f3dd06d7826fdc4073fcf148135b73f",
+          "sha256": "cdaad3419f6db440448c64ddd0757f4730ff75d1dcd27902d3bbeeced8ccce64",
+          "url": "https://github.com/FabioBatSilva/ArduinoFake/blob/4335fd1091fd05caec288ec4d4999ee35aea208a/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "hardware-mcp/arduino-mcp-server",
+      "category": "mcp",
+      "url": "https://github.com/hardware-mcp/arduino-mcp-server",
+      "private": false,
+      "stars": 17,
+      "archived": false,
+      "pushed_at": "2026-08-22T22:33:08Z",
+      "commit": "c020098a05b0d259320df2756fde09e7ca6fecc0",
+      "commit_date": "2026-08-22T22:33:08Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "532da6ad00f8c6144e5694c3d9c523e2539096c2",
+          "sha256": "6b685d29d637f9f4a6347a1217b184babcb639248ea3861aefe7d7ab87c99260",
+          "url": "https://github.com/hardware-mcp/arduino-mcp-server/blob/c020098a05b0d259320df2756fde09e7ca6fecc0/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "a68247fe74e8358ab25fd716a46593686fda9e95",
+          "sha256": "6b83b90acc58adb161629d98b6a43dd25cc790af82bc694975c2a7157ca7f63d",
+          "url": "https://github.com/hardware-mcp/arduino-mcp-server/blob/c020098a05b0d259320df2756fde09e7ca6fecc0/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "jl-codes/platformio-mcp",
+      "category": "mcp",
+      "url": "https://github.com/jl-codes/platformio-mcp",
+      "private": false,
+      "stars": 51,
+      "archived": false,
+      "pushed_at": "2026-09-09T03:18:01Z",
+      "commit": "40e12ccb8e85fcaf33b46c50b6d832665728e773",
+      "commit_date": "2026-09-09T03:12:58Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "1361747d58f4c9ae1b1dbb258ddb843ed4fb9d7e",
+          "sha256": "cbe2284b7015f29788cdf6c8117d58a5ddc944d452b71b7e2be04e56e59a9aa8",
+          "url": "https://github.com/jl-codes/platformio-mcp/blob/40e12ccb8e85fcaf33b46c50b6d832665728e773/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "8e42d0088740053b05b3d86a1a968de4d2c1e06e",
+          "sha256": "d246cb432bf4e23a0202f6bf5a1d5f435c2c94e9c3818e87a8cf4beb9c9b2276",
+          "url": "https://github.com/jl-codes/platformio-mcp/blob/40e12ccb8e85fcaf33b46c50b6d832665728e773/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "Adancurusul/serial-mcp-server",
+      "category": "mcp",
+      "url": "https://github.com/Adancurusul/serial-mcp-server",
+      "private": false,
+      "stars": 91,
+      "archived": false,
+      "pushed_at": "2026-07-07T08:10:23Z",
+      "commit": "6c05e3808dac7f797a574d3f4a2e38f940d7ee4b",
+      "commit_date": "2026-07-07T08:10:20Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "01297bd79b2f5ace70cfa0d30ece8632a6264b82",
+          "sha256": "6deae77e91357eda2c7c8065e2de651194bc851d5a3cab3c3033daa83bf6ce5a",
+          "url": "https://github.com/Adancurusul/serial-mcp-server/blob/6c05e3808dac7f797a574d3f4a2e38f940d7ee4b/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "70f3e09b3f1d09a38917be1bd8be0e1dff98d9a5",
+          "sha256": "3c4d853d8856fa83f736e290ea5b723a23912fb9171fa8944bd1fa127332260b",
+          "url": "https://github.com/Adancurusul/serial-mcp-server/blob/6c05e3808dac7f797a574d3f4a2e38f940d7ee4b/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "es617/serial-mcp-server",
+      "category": "mcp",
+      "url": "https://github.com/es617/serial-mcp-server",
+      "private": false,
+      "stars": 20,
+      "archived": false,
+      "pushed_at": "2026-03-07T22:09:22Z",
+      "commit": "b940b842bf5e39921c72323cf1b58785d62a3f76",
+      "commit_date": "2026-03-07T21:47:26Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "e0f1ed6f7819ad5021af320e290dc00df23d2ca9",
+          "sha256": "34ffae06c2862ed7e28bacbeaa54d606a36df956153bec789c9e55950e440900",
+          "url": "https://github.com/es617/serial-mcp-server/blob/b940b842bf5e39921c72323cf1b58785d62a3f76/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "28a612eb5cae7d54528d59464fb8038e499ad8a3",
+          "sha256": "7704d163ad9a20bcae0e8e29fc3bb3b180693ae90bc26c54b95965e9cad0ae6f",
+          "url": "https://github.com/es617/serial-mcp-server/blob/b940b842bf5e39921c72323cf1b58785d62a3f76/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "qarnet/serial-mcp",
+      "category": "mcp",
+      "url": "https://github.com/qarnet/serial-mcp",
+      "private": false,
+      "stars": 9,
+      "archived": false,
+      "pushed_at": "2026-09-12T20:15:20Z",
+      "commit": "d3701de473022d409cc4b71302a22d975a29b8ef",
+      "commit_date": "2026-09-12T20:15:10Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "c31b2a0be9a99da18bf75ab3e78c106eee150717",
+          "sha256": "2eeb903bbb15964cf3e6b7121d6fe2877f5fb1105f4f16cfe47d569f86234a6b",
+          "url": "https://github.com/qarnet/serial-mcp/blob/d3701de473022d409cc4b71302a22d975a29b8ef/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "86e9b552e13f29e83e2372d2692da1f705ca92ae",
+          "sha256": "6550768f1d00d69560a98f2a1beb90ebc9a467dda9d93a4fd1b539a71d1cfa24",
+          "url": "https://github.com/qarnet/serial-mcp/blob/d3701de473022d409cc4b71302a22d975a29b8ef/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "Rance-OwO/Serial-Agent",
+      "category": "mcp",
+      "url": "https://github.com/Rance-OwO/Serial-Agent",
+      "private": false,
+      "stars": 40,
+      "archived": false,
+      "pushed_at": "2026-08-22T11:50:49Z",
+      "commit": "2814b2e24e3dd77e08373b99b9b48a410e0d8aa3",
+      "commit_date": "2026-08-22T11:24:27Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "10f4911dc63856bdd6d4d1efd1c738e05e2bafea",
+          "sha256": "f7567abc0e49e7478eca5d310890bbb31ab5f79a7dfc57e7d5a9f370f9559933",
+          "url": "https://github.com/Rance-OwO/Serial-Agent/blob/2814b2e24e3dd77e08373b99b9b48a410e0d8aa3/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "e8ac0dd0490cab33848767a9f1358cf17c2724c1",
+          "sha256": "a66f0ab28d03d2df12fd17bbf4813d41c451ababe0c8282d8fd7d2f2a3574777",
+          "url": "https://github.com/Rance-OwO/Serial-Agent/blob/2814b2e24e3dd77e08373b99b9b48a410e0d8aa3/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "niradler/arduino-mcp",
+      "category": "mcp",
+      "url": "https://github.com/niradler/arduino-mcp",
+      "private": false,
+      "stars": 2,
+      "archived": false,
+      "pushed_at": "2025-12-10T23:29:44Z",
+      "commit": "dae94d3bfb5aac20942af785d504b74b5395884f",
+      "commit_date": "2025-12-10T23:29:32Z",
+      "license_spdx": null,
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "32602d88573a35d9c1e03e950bcf9830f732e97f",
+          "sha256": "f02ede87d943eb69b3093510075b2a503f8c9c5d488f2e7e70895933d4abc08a",
+          "url": "https://github.com/niradler/arduino-mcp/blob/dae94d3bfb5aac20942af785d504b74b5395884f/README.md"
+        }
+      ]
+    },
+    {
+      "name": "amahpour/arduino-mcp-server-simple",
+      "category": "mcp",
+      "url": "https://github.com/amahpour/arduino-mcp-server-simple",
+      "private": false,
+      "stars": 6,
+      "archived": false,
+      "pushed_at": "2026-03-25T03:24:34Z",
+      "commit": "fa3170d3f67c6a3915c4fe56221d992d923a1e13",
+      "commit_date": "2026-03-25T03:24:33Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "0c6e17681332c82faf149da608cb225b84b9f171",
+          "sha256": "d1bb5726ef2e49228b5ac1ca58e491eda2114ef143e2fc94eb7ccb6a60319892",
+          "url": "https://github.com/amahpour/arduino-mcp-server-simple/blob/fa3170d3f67c6a3915c4fe56221d992d923a1e13/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.md",
+          "blob_sha": "b6cea7d44a4b54754cb44cf827cb3346cab11f43",
+          "sha256": "a7e3de194f51ba269e1ca9539823ec35248cbb06c299a5f32feb3e8db8215ac4",
+          "url": "https://github.com/amahpour/arduino-mcp-server-simple/blob/fa3170d3f67c6a3915c4fe56221d992d923a1e13/LICENSE.md"
+        }
+      ]
+    },
+    {
+      "name": "wedsamuel1230/arduino-skills",
+      "category": "skill",
+      "url": "https://github.com/wedsamuel1230/arduino-skills",
+      "private": false,
+      "stars": 21,
+      "archived": false,
+      "pushed_at": "2026-08-20T14:13:06Z",
+      "commit": "d6e77bb2461a2126267e0e00b697b28abe0c0ea2",
+      "commit_date": "2026-08-20T14:12:51Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "0d1b75ab243a699d7b299d24de80dbd4125fca72",
+          "sha256": "59e2cca620db4ed97a584fd2745128e9a232786ee5432bc9d595beb9a78af296",
+          "url": "https://github.com/wedsamuel1230/arduino-skills/blob/d6e77bb2461a2126267e0e00b697b28abe0c0ea2/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "f36f22436191fffbf2f5297a7457b45038955dbe",
+          "sha256": "0f437ad456f916a1ee18aabdd8e84b052fc05c7cc8253dd30c2098c64a1519a1",
+          "url": "https://github.com/wedsamuel1230/arduino-skills/blob/d6e77bb2461a2126267e0e00b697b28abe0c0ea2/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "ripred/arduino-cli-skills",
+      "category": "skill",
+      "url": "https://github.com/ripred/arduino-cli-skills",
+      "private": false,
+      "stars": 4,
+      "archived": false,
+      "pushed_at": "2026-06-17T03:28:36Z",
+      "commit": "b91b49ee6cc6ebec28c9b5cb8683fea7c92ef28c",
+      "commit_date": "2026-06-17T03:28:35Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "2458f24b036e657de310c67af5f54bbea307bdac",
+          "sha256": "66ec696e71b4d18e0b5f4ab005d756f32895420d31a843bcdd1a95c9a2e40807",
+          "url": "https://github.com/ripred/arduino-cli-skills/blob/b91b49ee6cc6ebec28c9b5cb8683fea7c92ef28c/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "bd988ce7a60bb04cadf24a66f028a797f692fe94",
+          "sha256": "2521ba9a5314ea91d29bf89117a316eb9f0287525e14a421c3e8cf5ad29461c3",
+          "url": "https://github.com/ripred/arduino-cli-skills/blob/b91b49ee6cc6ebec28c9b5cb8683fea7c92ef28c/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "Sunwood-ai-labs/m5stack-arduino-cli-skill",
+      "category": "skill",
+      "url": "https://github.com/Sunwood-ai-labs/m5stack-arduino-cli-skill",
+      "private": false,
+      "stars": 10,
+      "archived": false,
+      "pushed_at": "2026-05-05T10:58:57Z",
+      "commit": "bc104017caa4ce0731ab7245e2f446342e86fa11",
+      "commit_date": "2026-05-05T10:58:56Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "7c08cbe04ffd7b3ac763bcd01128a2203aefcfc3",
+          "sha256": "d21a48923a755528311c466cec5fe530b0d48e2e1c9fa80fdb3bea84562c2f87",
+          "url": "https://github.com/Sunwood-ai-labs/m5stack-arduino-cli-skill/blob/bc104017caa4ce0731ab7245e2f446342e86fa11/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "7d3ab8fb06f41434d2a341c36e68dcdf0a5adfbd",
+          "sha256": "72380798af61d6131287b0dd3c8dc5345535df641002fece3a02d7ef109c5f8e",
+          "url": "https://github.com/Sunwood-ai-labs/m5stack-arduino-cli-skill/blob/bc104017caa4ce0731ab7245e2f446342e86fa11/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "rockets-cn/unihiker-k10-skills",
+      "category": "skill",
+      "url": "https://github.com/rockets-cn/unihiker-k10-skills",
+      "private": false,
+      "stars": 6,
+      "archived": false,
+      "pushed_at": "2026-08-10T06:43:00Z",
+      "commit": "f4d43cfed320eaa315467041fba8a3742e0042db",
+      "commit_date": "2026-08-10T06:42:58Z",
+      "license_spdx": null,
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "05d3e73a479230046c66b0d07966d01184f0c48c",
+          "sha256": "9da3891be24d7ab7e1c6dda451719dcbdf05cc722e1b0e39cde74333678d810d",
+          "url": "https://github.com/rockets-cn/unihiker-k10-skills/blob/f4d43cfed320eaa315467041fba8a3742e0042db/README.md"
+        }
+      ]
+    },
+    {
+      "name": "arkhipenko/TaskScheduler",
+      "category": "firmware-library",
+      "url": "https://github.com/arkhipenko/TaskScheduler",
+      "private": false,
+      "stars": 1654,
+      "archived": false,
+      "pushed_at": "2026-04-20T16:31:28Z",
+      "commit": "9d500226d83efd3172e797be9e1987a9be09edcd",
+      "commit_date": "2026-04-20T16:31:07Z",
+      "license_spdx": "BSD-3-Clause",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "3c14b6a88704f6a5e90935f776ff766894296ae9",
+          "sha256": "59034e4aa3747167172aa3af6b2151437028442aba43d8690f73c7a68321be1b",
+          "url": "https://github.com/arkhipenko/TaskScheduler/blob/9d500226d83efd3172e797be9e1987a9be09edcd/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "717af63cd37780748d51a777c6f7c0b461b637d0",
+          "sha256": "7ba0841f67ce1845650cf0ba49c8de4e826f9dbd777da463cdd84160f1b55341",
+          "url": "https://github.com/arkhipenko/TaskScheduler/blob/9d500226d83efd3172e797be9e1987a9be09edcd/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "name": "bxparks/AceRoutine",
+      "category": "firmware-library",
+      "url": "https://github.com/bxparks/AceRoutine",
+      "private": false,
+      "stars": 189,
+      "archived": false,
+      "pushed_at": "2024-01-17T17:53:52Z",
+      "commit": "88b871bb5f7f23eb56a016c97bf19f7c81f8f952",
+      "commit_date": "2024-01-17T17:53:47Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "0f9b2832d471da60849a1f143ddb7e115e416c2f",
+          "sha256": "e41201b014c65cbe0292109dcebc33d642b7d8d08afec4f85bd8a21949ba1150",
+          "url": "https://github.com/bxparks/AceRoutine/blob/88b871bb5f7f23eb56a016c97bf19f7c81f8f952/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "b1d1f2c55cad0a7ae3664ff3e1a7782f8e22c2fd",
+          "sha256": "2afc3e3dbd279216398b20ef0de9275441cb7c2d58ca71b7df794d29d587c283",
+          "url": "https://github.com/bxparks/AceRoutine/blob/88b871bb5f7f23eb56a016c97bf19f7c81f8f952/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "br3ttb/Arduino-PID-Library",
+      "category": "firmware-library",
+      "url": "https://github.com/br3ttb/Arduino-PID-Library",
+      "private": false,
+      "stars": 2202,
+      "archived": false,
+      "pushed_at": "2024-05-31T10:04:34Z",
+      "commit": "524a4268fc01e6ea397e7fc5b5d820741e9b662f",
+      "commit_date": "2024-05-31T10:04:34Z",
+      "license_spdx": null,
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.txt",
+          "blob_sha": "020ef132943f30a1b398505d744cba8f04207158",
+          "sha256": "69b4022374789faeedd7caf664227b3d278200054b89dceecc9c82e5259b0d94",
+          "url": "https://github.com/br3ttb/Arduino-PID-Library/blob/524a4268fc01e6ea397e7fc5b5d820741e9b662f/README.txt"
+        }
+      ]
+    },
+    {
+      "name": "Dlloydev/QuickPID",
+      "category": "firmware-library",
+      "url": "https://github.com/Dlloydev/QuickPID",
+      "private": false,
+      "stars": 255,
+      "archived": false,
+      "pushed_at": "2023-06-10T19:43:02Z",
+      "commit": "c3f64fa24bbd6c0ff00ae9ffa08e0bba0890dba0",
+      "commit_date": "2023-06-10T19:40:52Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "c913885aebb80b391aafe95d573ff205c8ee8d5c",
+          "sha256": "e66765fc94c925e5b3ebca8f42ef0baa14795b4e0fd999399f75f8eae221a07f",
+          "url": "https://github.com/Dlloydev/QuickPID/blob/c3f64fa24bbd6c0ff00ae9ffa08e0bba0890dba0/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "3a20a5b9934160335e93726a2e51dc79495d28ba",
+          "sha256": "d2ad5a4ca25cca34b483febe37342da5d0c2f3a429b728e00ca1911131871de6",
+          "url": "https://github.com/Dlloydev/QuickPID/blob/c3f64fa24bbd6c0ff00ae9ffa08e0bba0890dba0/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "bakercp/PacketSerial",
+      "category": "firmware-library",
+      "url": "https://github.com/bakercp/PacketSerial",
+      "private": false,
+      "stars": 306,
+      "archived": false,
+      "pushed_at": "2023-10-15T19:40:01Z",
+      "commit": "92c4bae0bd9340cb0b265789885bf8873402ed8f",
+      "commit_date": "2022-04-02T04:39:34Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "f9ea068fb5ac56553cf3fbd513a0cb5da01f6b25",
+          "sha256": "bc395ea0a6e1dc75c8c81cf2925fb9159bf62fe9815bc3853adb63bc9a8c5373",
+          "url": "https://github.com/bakercp/PacketSerial/blob/92c4bae0bd9340cb0b265789885bf8873402ed8f/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.md",
+          "blob_sha": "8ecd1de63a5a5749098af433c848f77ab1954a1c",
+          "sha256": "7041a7de46488bca009b0d82317c9e7bb6634749ed0cd3956a5ef8041664b36e",
+          "url": "https://github.com/bakercp/PacketSerial/blob/92c4bae0bd9340cb0b265789885bf8873402ed8f/LICENSE.md"
+        }
+      ]
+    },
+    {
+      "name": "PowerBroker2/SerialTransfer",
+      "category": "firmware-library",
+      "url": "https://github.com/PowerBroker2/SerialTransfer",
+      "private": false,
+      "stars": 486,
+      "archived": false,
+      "pushed_at": "2025-07-15T03:17:53Z",
+      "commit": "51e467f43ef7288af7b6551784d92b946a9a8b9b",
+      "commit_date": "2025-07-15T03:15:42Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "77024d2b6759accc1f9317295ef9587d91483a88",
+          "sha256": "a9bc486b23c8253a01b32c7ec65cf094aea7e40eb08f659216a95eddea12073c",
+          "url": "https://github.com/PowerBroker2/SerialTransfer/blob/51e467f43ef7288af7b6551784d92b946a9a8b9b/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "691aea5864948b7c01500c8b35d3e6cb36ea444f",
+          "sha256": "ea196b62b06cbce5d5e35f72982cb72fba341a02fd92497d6c86fdedc0455146",
+          "url": "https://github.com/PowerBroker2/SerialTransfer/blob/51e467f43ef7288af7b6551784d92b946a9a8b9b/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "bblanchon/ArduinoJson",
+      "category": "firmware-library",
+      "url": "https://github.com/bblanchon/ArduinoJson",
+      "private": false,
+      "stars": 7213,
+      "archived": false,
+      "pushed_at": "2026-08-15T10:39:44Z",
+      "commit": "1cd478f48e7c4cd142a0bd26ee17d63d70d04e3f",
+      "commit_date": "2026-08-11T08:31:20Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "27a12a450f896a536ede417366b3b9059711e998",
+          "sha256": "850e474e487f3c4546ff1b9fdfda96d7c6a98a8bf3dd7163cab1efdec38b931e",
+          "url": "https://github.com/bblanchon/ArduinoJson/blob/1cd478f48e7c4cd142a0bd26ee17d63d70d04e3f/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "d54407d89ffc1abd664bde685be670ab8db9ff6d",
+          "sha256": "4a7ee9c96b28cbf30c5bf7c2d211a0ef57179f0328e68ad7b7fa7d754b7da1a2",
+          "url": "https://github.com/bblanchon/ArduinoJson/blob/1cd478f48e7c4cd142a0bd26ee17d63d70d04e3f/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "name": "pololu/qtr-sensors-arduino",
+      "category": "firmware-library",
+      "url": "https://github.com/pololu/qtr-sensors-arduino",
+      "private": false,
+      "stars": 150,
+      "archived": false,
+      "pushed_at": "2020-03-14T08:51:13Z",
+      "commit": "4a0d1c59842307164735f923f0eb99cbb2538428",
+      "commit_date": "2019-03-16T00:21:01Z",
+      "license_spdx": "NOASSERTION",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "b2b40a57a8e9592f98ea1730cffa72ae3570b53a",
+          "sha256": "0827dc6e16c432c20b6d7b452c982f410143dd95cadf188f50fb2b70e8d344a5",
+          "url": "https://github.com/pololu/qtr-sensors-arduino/blob/4a0d1c59842307164735f923f0eb99cbb2538428/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "f7fca1d98b5db267a67aec3d8b98b5ec8e2a6297",
+          "sha256": "ba8a29138d90cd545491bf125d29231f1e729e6afd4ffd9eecf7b8d861349ca9",
+          "url": "https://github.com/pololu/qtr-sensors-arduino/blob/4a0d1c59842307164735f923f0eb99cbb2538428/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "name": "firmata/arduino",
+      "category": "host-control",
+      "url": "https://github.com/firmata/arduino",
+      "private": false,
+      "stars": 1621,
+      "archived": false,
+      "pushed_at": "2024-09-13T12:20:20Z",
+      "commit": "ebd19be71b3673ba16f884c00b0a2e940ef86157",
+      "commit_date": "2024-09-13T04:50:04Z",
+      "license_spdx": "LGPL-2.1",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "readme.md",
+          "blob_sha": "cde486411562f5618d51818e0224104b7650e306",
+          "sha256": "32fedd54c2900c154698723310717d0ca157ce7456f0f05bf2d82f9279b3aa2e",
+          "url": "https://github.com/firmata/arduino/blob/ebd19be71b3673ba16f884c00b0a2e940ef86157/readme.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "77cec6dd195dfa3b7e6fb0cc660c6f2a99fd0cbc",
+          "sha256": "253ab592417971d406ea43868f05ea9987728549ad59c8c8a2b2efcce0c6993e",
+          "url": "https://github.com/firmata/arduino/blob/ebd19be71b3673ba16f884c00b0a2e940ef86157/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "name": "rwaldron/johnny-five",
+      "category": "host-control",
+      "url": "https://github.com/rwaldron/johnny-five",
+      "private": false,
+      "stars": 13410,
+      "archived": false,
+      "pushed_at": "2023-10-24T22:18:06Z",
+      "commit": "094bf6cceb8b9ec424306da8e98308ebd6fa2252",
+      "commit_date": "2023-03-23T13:19:01Z",
+      "license_spdx": "NOASSERTION",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "f0c0241966d40d08a6243d721dda1c13e02659f9",
+          "sha256": "dbe9b05cdffcbee7079aa3d40ba363fe6267360728ccde2a6567f0ddf3aa0b34",
+          "url": "https://github.com/rwaldron/johnny-five/blob/094bf6cceb8b9ec424306da8e98308ebd6fa2252/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE-MIT",
+          "blob_sha": "510d124daedb05dfec5d256f10af347bd7786048",
+          "sha256": "672f7283e6f371f0b4740013dc42c2ea47cf12c3d10bf9f66b09b91e9a5da310",
+          "url": "https://github.com/rwaldron/johnny-five/blob/094bf6cceb8b9ec424306da8e98308ebd6fa2252/LICENSE-MIT"
+        }
+      ]
+    },
+    {
+      "name": "MrYsLab/pymata4",
+      "category": "host-control",
+      "url": "https://github.com/MrYsLab/pymata4",
+      "private": false,
+      "stars": 77,
+      "archived": true,
+      "pushed_at": "2022-05-12T05:28:09Z",
+      "commit": "1cbf02499024d36478ab7e90c3a2bc5d9bb17338",
+      "commit_date": "2022-01-21T20:36:10Z",
+      "license_spdx": "AGPL-3.0",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "f38c61e2ff74e8cde5667debbd83ab95ebb55ac4",
+          "sha256": "179ac1c9618668efc226ba0620acadbba8525f5ddcb84aadc4fc0778b8322611",
+          "url": "https://github.com/MrYsLab/pymata4/blob/1cbf02499024d36478ab7e90c3a2bc5d9bb17338/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "license.txt",
+          "blob_sha": "2def0e8831c25daae02b8b87cd439da27f1ac1c1",
+          "sha256": "91b65277959ec273763d28ef002e83a6b3fba57c7a35436c9e5b66536333d720",
+          "url": "https://github.com/MrYsLab/pymata4/blob/1cbf02499024d36478ab7e90c3a2bc5d9bb17338/license.txt"
+        }
+      ]
+    },
+    {
+      "name": "MrYsLab/telemetrix",
+      "category": "host-control",
+      "url": "https://github.com/MrYsLab/telemetrix",
+      "private": false,
+      "stars": 93,
+      "archived": false,
+      "pushed_at": "2026-07-27T17:32:12Z",
+      "commit": "2e1ff94450c50d383fc02395c906cf4865038552",
+      "commit_date": "2026-07-27T17:26:42Z",
+      "license_spdx": "AGPL-3.0",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "036eed67c09f8c03f2c4720a413b9ac0b18edbd0",
+          "sha256": "efcbe1dcaf6cbcbfba1ad5acfc9a6bf77dcb88a3bfc85a72e8030b96fbe5e523",
+          "url": "https://github.com/MrYsLab/telemetrix/blob/2e1ff94450c50d383fc02395c906cf4865038552/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "license.txt",
+          "blob_sha": "2def0e8831c25daae02b8b87cd439da27f1ac1c1",
+          "sha256": "91b65277959ec273763d28ef002e83a6b3fba57c7a35436c9e5b66536333d720",
+          "url": "https://github.com/MrYsLab/telemetrix/blob/2e1ff94450c50d383fc02395c906cf4865038552/license.txt"
+        }
+      ]
+    },
+    {
+      "name": "ob-f/OpenBot",
+      "category": "robot-architecture",
+      "url": "https://github.com/ob-f/OpenBot",
+      "private": false,
+      "stars": 3492,
+      "archived": false,
+      "pushed_at": "2026-08-26T04:41:41Z",
+      "commit": "0679c46187811d588553cab3bccc0e3bd3c5c803",
+      "commit_date": "2026-08-26T04:41:40Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "bb81a29f0da3d9e10c6b68195f8168a5df9fe3fb",
+          "sha256": "e3b180d395ed3275fee3cf4391fb58017df152beaa6a69b2e4b571f23470fa68",
+          "url": "https://github.com/ob-f/OpenBot/blob/0679c46187811d588553cab3bccc0e3bd3c5c803/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "d308e31d87fd2abca6c6c91890c17d74dd2bedd6",
+          "sha256": "7815496a899eb0916fe9407c8eaeb7642518536f3f701876dbf73b523878760f",
+          "url": "https://github.com/ob-f/OpenBot/blob/0679c46187811d588553cab3bccc0e3bd3c5c803/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "autorope/donkeycar",
+      "category": "robot-architecture",
+      "url": "https://github.com/autorope/donkeycar",
+      "private": false,
+      "stars": 3502,
+      "archived": false,
+      "pushed_at": "2026-09-08T19:47:38Z",
+      "commit": "ba25266b9b446661e5249b1a4ae4397a695f181c",
+      "commit_date": "2026-08-17T20:32:57Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "2c7fcfa7b1542ccca5a45e40a070287136f5c46a",
+          "sha256": "f5a46d90fb19054dc660decb7043dbc10d4e22da9b28b56c4fca609272e5aec2",
+          "url": "https://github.com/autorope/donkeycar/blob/ba25266b9b446661e5249b1a4ae4397a695f181c/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "5dce8a270e2d890e8fdcdcd5f3f013176c258652",
+          "sha256": "b216078a073fba33801e1556e8fa359953a08186ad27eeba6110244448b1a2a4",
+          "url": "https://github.com/autorope/donkeycar/blob/ba25266b9b446661e5249b1a4ae4397a695f181c/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "linorobot/linorobot2",
+      "category": "robot-architecture",
+      "url": "https://github.com/linorobot/linorobot2",
+      "private": false,
+      "stars": 1014,
+      "archived": false,
+      "pushed_at": "2026-08-14T02:56:20Z",
+      "commit": "90cc23b37a4154c71e5b97924013d6f8c076722c",
+      "commit_date": "2026-08-14T02:56:01Z",
+      "license_spdx": "Apache-2.0",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "ea829106d525e81b761c9ff4053387cd293f0a93",
+          "sha256": "fa86d9909fe56aab11a5a1df4ea5e3473cfcdbd699ae7c3c42a3c80aeb08edf3",
+          "url": "https://github.com/linorobot/linorobot2/blob/90cc23b37a4154c71e5b97924013d6f8c076722c/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "url": "https://github.com/linorobot/linorobot2/blob/90cc23b37a4154c71e5b97924013d6f8c076722c/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "micro-ROS/micro_ros_arduino",
+      "category": "robot-architecture",
+      "url": "https://github.com/micro-ROS/micro_ros_arduino",
+      "private": false,
+      "stars": 575,
+      "archived": false,
+      "pushed_at": "2026-01-28T06:50:06Z",
+      "commit": "dc256d6fa0a0960f0e1b88a5aff679eddbc78131",
+      "commit_date": "2025-09-30T10:44:14Z",
+      "license_spdx": "Apache-2.0",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "d80ce48f4e13b8e2f4099db31421bf053b3e6214",
+          "sha256": "7b2f805ac4ce1766884ae3b17de27b41a5681b83bd7f4b2df53d17abf2d34f7b",
+          "url": "https://github.com/micro-ROS/micro_ros_arduino/blob/dc256d6fa0a0960f0e1b88a5aff679eddbc78131/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "url": "https://github.com/micro-ROS/micro_ros_arduino/blob/dc256d6fa0a0960f0e1b88a5aff679eddbc78131/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "ros-drivers/rosserial",
+      "category": "robot-architecture",
+      "url": "https://github.com/ros-drivers/rosserial",
+      "private": false,
+      "stars": 549,
+      "archived": false,
+      "pushed_at": "2024-04-25T11:39:22Z",
+      "commit": "c169ae2173dcfda7cee567d64beae45198459400",
+      "commit_date": "2021-06-16T14:34:19Z",
+      "license_spdx": null,
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "65cd8aa87c8c1f8653430d128bcd25fa6cbf00d4",
+          "sha256": "dfa97090573927645d27a8a5bcf0fbaf07fe50d703cacb9e50dfb53dd451e8b3",
+          "url": "https://github.com/ros-drivers/rosserial/blob/c169ae2173dcfda7cee567d64beae45198459400/README.md"
+        }
+      ]
+    },
+    {
+      "name": "opencv/opencv",
+      "category": "vision",
+      "url": "https://github.com/opencv/opencv",
+      "private": false,
+      "stars": 90818,
+      "archived": false,
+      "pushed_at": "2026-09-11T17:49:54Z",
+      "commit": "db0ce14ef2841adfd543eb29ed85f4d6da938dc9",
+      "commit_date": "2026-09-11T17:47:19Z",
+      "license_spdx": "Apache-2.0",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "9952c4db01fcc394ebce8bed98abfd39df2a55e7",
+          "sha256": "aac69c83891b1455f5736f9794c240b47448a28c476252e164455d103b5bafc9",
+          "url": "https://github.com/opencv/opencv/blob/db0ce14ef2841adfd543eb29ed85f4d6da938dc9/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "url": "https://github.com/opencv/opencv/blob/db0ce14ef2841adfd543eb29ed85f4d6da938dc9/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "opencv/opencv_contrib",
+      "category": "vision",
+      "url": "https://github.com/opencv/opencv_contrib",
+      "private": false,
+      "stars": 10191,
+      "archived": false,
+      "pushed_at": "2026-08-14T14:32:08Z",
+      "commit": "17af220dd982eb56d647da56032aaebf2caf374f",
+      "commit_date": "2026-08-14T14:32:08Z",
+      "license_spdx": "Apache-2.0",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "8d3ecda0413bb20eb86f0b6b51846db1a7b0a70c",
+          "sha256": "246c7daab81423c937a8b3a8c4bfa8bf063510b905ea32620743d540008ded04",
+          "url": "https://github.com/opencv/opencv_contrib/blob/17af220dd982eb56d647da56032aaebf2caf374f/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "url": "https://github.com/opencv/opencv_contrib/blob/17af220dd982eb56d647da56032aaebf2caf374f/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "AprilRobotics/apriltag",
+      "category": "vision",
+      "url": "https://github.com/AprilRobotics/apriltag",
+      "private": false,
+      "stars": 2516,
+      "archived": false,
+      "pushed_at": "2026-08-07T17:19:29Z",
+      "commit": "b7c0ebe9aa20f82ec7a828579004f9e706bfecd9",
+      "commit_date": "2026-08-07T17:19:28Z",
+      "license_spdx": "NOASSERTION",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "14655475f0a6e8737052a0b8f990be3e2e374d7d",
+          "sha256": "a4a8a0994f012d31c9364af6d8fe454a2c10a14747434f08584815e1df7c88b2",
+          "url": "https://github.com/AprilRobotics/apriltag/blob/b7c0ebe9aa20f82ec7a828579004f9e706bfecd9/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.md",
+          "blob_sha": "dbbce27054fefb56539eaa785c5df4eaa6dfbd51",
+          "sha256": "9b6baf7627d6a4b0f1f79cf72253ddd8ad7ca55a52aa47331c45f2628c910c11",
+          "url": "https://github.com/AprilRobotics/apriltag/blob/b7c0ebe9aa20f82ec7a828579004f9e706bfecd9/LICENSE.md"
+        }
+      ]
+    },
+    {
+      "name": "alphacep/vosk-api",
+      "category": "voice",
+      "url": "https://github.com/alphacep/vosk-api",
+      "private": false,
+      "stars": 15127,
+      "archived": false,
+      "pushed_at": "2026-08-09T13:35:47Z",
+      "commit": "05adbfcc0df27a1535913c6accd4b7fc60ffd59d",
+      "commit_date": "2026-08-09T13:35:46Z",
+      "license_spdx": "Apache-2.0",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "8f4d4d529df19103d005ded5e290def8b8346684",
+          "sha256": "5f56ab2addced6c3655d22dbeeaf05dd5fc75ab9aa8e5e6a9f18b622fe68e5bb",
+          "url": "https://github.com/alphacep/vosk-api/blob/05adbfcc0df27a1535913c6accd4b7fc60ffd59d/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "COPYING",
+          "blob_sha": "ab6497f4aa0723b6f3bf344a4dc1a1f186bcc310",
+          "sha256": "bb618af833c817ab01c1564bd3ec75ba4b4f9cf30910a4a2168e30a674ee8cc6",
+          "url": "https://github.com/alphacep/vosk-api/blob/05adbfcc0df27a1535913c6accd4b7fc60ffd59d/COPYING"
+        }
+      ]
+    },
+    {
+      "name": "Freenove/Freenove_4WD_Car_Kit",
+      "category": "hardware-baseline",
+      "url": "https://github.com/Freenove/Freenove_4WD_Car_Kit",
+      "private": false,
+      "stars": 39,
+      "archived": false,
+      "pushed_at": "2025-09-18T07:38:26Z",
+      "commit": "a035ca380a9218d0a88aab635a58b9a3c738940f",
+      "commit_date": "2025-09-18T07:38:19Z",
+      "license_spdx": "NOASSERTION",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "a76c321f661354daf43d4211beaf8b18acd69820",
+          "sha256": "4d441b1d936c6f8d37babd88f8fbab578e76e0580d69cca95427bc0b2bde35b9",
+          "url": "https://github.com/Freenove/Freenove_4WD_Car_Kit/blob/a035ca380a9218d0a88aab635a58b9a3c738940f/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "a354af8153ddfb682e48d38d7700b20871c669f0",
+          "sha256": "6f0ad05bd210c96bf7541c7fe9d117dab0542613594a3aa4d22c8a28a0a7b105",
+          "url": "https://github.com/Freenove/Freenove_4WD_Car_Kit/blob/a035ca380a9218d0a88aab635a58b9a3c738940f/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "name": "Shengqinchu/AutoRC",
+      "category": "existing-project",
+      "url": "https://github.com/Shengqinchu/AutoRC",
+      "private": true,
+      "stars": 0,
+      "archived": false,
+      "pushed_at": "2026-08-28T22:45:42Z",
+      "commit": "90340e608afd63ca1e6900db1cd9813bbdd24ca9",
+      "commit_date": "2026-08-28T22:45:42Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "515b3dcefa65da00e52581341f8298a1b1ecc3ef",
+          "sha256": "8608d1fc3ed63ff884a008bdad54791836dda5ce780bb7fa204140ed68c09911",
+          "url": "https://github.com/Shengqinchu/AutoRC/blob/90340e608afd63ca1e6900db1cd9813bbdd24ca9/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "e45f1d1f3ca25a36b991e234bdbab621f37bc112",
+          "sha256": "b6a1465bc825b21e6b8e7648020a5bfa6f615aef4c9831ef608d37da5ae04afb",
+          "url": "https://github.com/Shengqinchu/AutoRC/blob/90340e608afd63ca1e6900db1cd9813bbdd24ca9/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "wokwi/wokwi-cli",
+      "category": "simulation-mcp",
+      "url": "https://github.com/wokwi/wokwi-cli",
+      "private": false,
+      "stars": 66,
+      "archived": false,
+      "pushed_at": "2026-06-06T14:27:14Z",
+      "commit": "7a208779ef6579463626a24f898ab08495ee247e",
+      "commit_date": "2026-06-06T14:27:09Z",
+      "license_spdx": "MIT",
+      "documents": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "39594ba45b10db90934ab538003a903f6cdd92fb",
+          "sha256": "f988e66ce6ed8f911595dd98d1b35f7ce4002bb2da774fcd1c07314db1082fae",
+          "url": "https://github.com/wokwi/wokwi-cli/blob/7a208779ef6579463626a24f898ab08495ee247e/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "44c1ea63b0c8a9f045312204ee71958354b5b5af",
+          "sha256": "3df01526a8a277cb34d5be806321bebd876120d588f90f5e4bffdfde00bb7bee",
+          "url": "https://github.com/wokwi/wokwi-cli/blob/7a208779ef6579463626a24f898ab08495ee247e/LICENSE"
+        }
+      ]
+    }
+  ]
+}

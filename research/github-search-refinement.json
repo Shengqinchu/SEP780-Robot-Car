@@ -1,0 +1,25 @@
+{
+  "per_page": 50,
+  "max_pages": 2,
+  "queries": [
+    {"id": "mcp_exact", "q": "arduino \"model context protocol\" in:name,description,readme stars:>1"},
+    {"id": "mcp_server_exact", "q": "arduino mcp-server in:name,description"},
+    {"id": "car_broad", "q": "arduino car in:name,description stars:>20"},
+    {"id": "line_topic", "q": "topic:line-follower stars:>20"},
+    {"id": "cli_skill_exact", "q": "arduino-cli skill in:name,description"},
+    {"id": "mcp_awesome", "q": "awesome embedded mcp in:name,description,readme stars:>50"}
+  ],
+  "seeds": [
+    "rwaldron/johnny-five",
+    "RoboticsBrno/ServoESP32",
+    "pololu/qtr-sensors-arduino",
+    "pololu/zumo-32u4-arduino",
+    "Adancurusul/serial-mcp-server",
+    "Rance-OwO/Serial-Agent",
+    "es617/serial-mcp-server",
+    "qarnet/serial-mcp",
+    "ripred/arduino-cli-skills",
+    "wedsamuel1230/arduino-skills",
+    "Sunwood-ai-labs/m5stack-arduino-cli-skill"
+  ]
+}

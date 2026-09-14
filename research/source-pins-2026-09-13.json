@@ -1,0 +1,62 @@
+[
+  {
+    "name": "hardware-mcp/arduino-mcp-server",
+    "commit": "c020098a05b0d259320df2756fde09e7ca6fecc0",
+    "url": "https://github.com/hardware-mcp/arduino-mcp-server/tree/c020098a05b0d259320df2756fde09e7ca6fecc0"
+  },
+  {
+    "name": "niradler/arduino-mcp",
+    "commit": "dae94d3bfb5aac20942af785d504b74b5395884f",
+    "url": "https://github.com/niradler/arduino-mcp/tree/dae94d3bfb5aac20942af785d504b74b5395884f"
+  },
+  {
+    "name": "jl-codes/platformio-mcp",
+    "commit": "40e12ccb8e85fcaf33b46c50b6d832665728e773",
+    "url": "https://github.com/jl-codes/platformio-mcp/tree/40e12ccb8e85fcaf33b46c50b6d832665728e773"
+  },
+  {
+    "name": "Adancurusul/serial-mcp-server",
+    "commit": "6c05e3808dac7f797a574d3f4a2e38f940d7ee4b",
+    "url": "https://github.com/Adancurusul/serial-mcp-server/tree/6c05e3808dac7f797a574d3f4a2e38f940d7ee4b"
+  },
+  {
+    "name": "es617/serial-mcp-server",
+    "commit": "b940b842bf5e39921c72323cf1b58785d62a3f76",
+    "url": "https://github.com/es617/serial-mcp-server/tree/b940b842bf5e39921c72323cf1b58785d62a3f76"
+  },
+  {
+    "name": "qarnet/serial-mcp",
+    "commit": "d3701de473022d409cc4b71302a22d975a29b8ef",
+    "url": "https://github.com/qarnet/serial-mcp/tree/d3701de473022d409cc4b71302a22d975a29b8ef"
+  },
+  {
+    "name": "Rance-OwO/Serial-Agent",
+    "commit": "2814b2e24e3dd77e08373b99b9b48a410e0d8aa3",
+    "url": "https://github.com/Rance-OwO/Serial-Agent/tree/2814b2e24e3dd77e08373b99b9b48a410e0d8aa3"
+  },
+  {
+    "name": "amahpour/arduino-mcp-server-simple",
+    "commit": "fa3170d3f67c6a3915c4fe56221d992d923a1e13",
+    "url": "https://github.com/amahpour/arduino-mcp-server-simple/tree/fa3170d3f67c6a3915c4fe56221d992d923a1e13"
+  },
+  {
+    "name": "ripred/arduino-cli-skills",
+    "commit": "b91b49ee6cc6ebec28c9b5cb8683fea7c92ef28c",
+    "url": "https://github.com/ripred/arduino-cli-skills/tree/b91b49ee6cc6ebec28c9b5cb8683fea7c92ef28c"
+  },
+  {
+    "name": "wedsamuel1230/arduino-skills",
+    "commit": "d6e77bb2461a2126267e0e00b697b28abe0c0ea2",
+    "url": "https://github.com/wedsamuel1230/arduino-skills/tree/d6e77bb2461a2126267e0e00b697b28abe0c0ea2"
+  },
+  {
+    "name": "Sunwood-ai-labs/m5stack-arduino-cli-skill",
+    "commit": "bc104017caa4ce0731ab7245e2f446342e86fa11",
+    "url": "https://github.com/Sunwood-ai-labs/m5stack-arduino-cli-skill/tree/bc104017caa4ce0731ab7245e2f446342e86fa11"
+  },
+  {
+    "name": "rockets-cn/unihiker-k10-skills",
+    "commit": "f4d43cfed320eaa315467041fba8a3742e0042db",
+    "url": "https://github.com/rockets-cn/unihiker-k10-skills/tree/f4d43cfed320eaa315467041fba8a3742e0042db"
+  }
+]

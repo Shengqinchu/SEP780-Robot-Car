@@ -20,6 +20,10 @@ RF24 使用厂商提供的 1.3.2。IRremote 使用同一快照附带版本，不
 
 `firmware/usb_check`、构建脚本、检查脚本及开发文档由本课程项目新增，使用了 AI 辅助编写和核验。仓库为私有协作用途，未对独立新增内容另行授予公开开源许可；不影响任何第三方原有授权。
 
+## 调研候选与已采用依赖的区别
+
+2026-09-13 的 [工具选型报告](docs/tooling-research.md) 和 `research/` 只记录候选、来源及审阅结果。本轮没有把候选 MCP、Skill、视觉/控制库或 AutoRC 实现复制到本项目代码，也未改变原厂许可或现有依赖锁。完整第三方源码/README 缓存在被忽略的 `.cache/`，不随本仓库发布。后续真正采用时，再在这里逐项列明版本、许可证、导入路径和改动。
+
 ## 官方资料
 
 - [装配与烧录顺序](https://docs.freenove.com/projects/fnk0041/en/latest/fnk0041/codes/tutorial/0_Software,_Assembly_and_Play.html)

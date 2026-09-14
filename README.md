@@ -6,12 +6,15 @@ GitHub 私有仓库：[Shengqinchu/SEP780-Robot-Car](https://github.com/Shengqin
 
 > 电脑端准备已完成：Windows 本机和 GitHub Linux CI 均为 30/30 编译通过。2026-09-13 晚的照片显示机械主体已装成，但接线未完成逐项验收；电池最新已知状态仍为未到。尚未烧录、完成舵机归中或实车测试。编译成功不代表小车已经能运行。
 
+2026-09-13 USB 已连接，电脑枚举到 COM5（CLI 板型仍为 Unknown）。按“先调研、后调试”的要求，本轮只做工具研究与无上传编译，未打开串口或让小车动作。
+
 ## 从哪里开始
 
 - [开发日志](DEVLOG.md)：实际操作、问题、解决办法及验证状态。
 - [上电与装配检查](docs/bring-up.md)：电池未到时能做什么，哪些步骤必须等待。
 - [测试清单](docs/test-plan.md)：逐项记录真实结果，不提前打勾。
 - [项目计划](docs/project-plan.md)：原厂基线与拟新增功能的边界。
+- [自动化工具与开源选型](docs/tooling-research.md)：45 项 CLI/API/MCP/Skill/机器人项目比较，含源码检查和采用建议。
 - [来源与许可](THIRD_PARTY.md)：原厂代码来源、固定版本及许可。
 - [GitHub 编译验证](https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34784847884)：固定版本工具链的远端复现结果。
 
@@ -64,6 +67,7 @@ Windows 电脑另已准备 Arduino IDE 2.3.10。可以运行 `./scripts/Open-IDE
 - `vendor/freenove/`：固定提交的原厂示例和依赖压缩包，保留原作者信息。
 - `scripts/`、`tests/`：可复现准备、编译和仓库检查。
 - `docs/`、`DEVLOG.md`：计划、装配门槛、测试与开发过程。
+- `research/`：GitHub 检索范围、固定版本和来源证据；不是已安装依赖清单。
 - `artifacts/`：可分享的精简验证记录；原始机器日志在被忽略的 `artifacts/local/`。
 
 不上传课程教材、录课、个人截图、支付信息、访问凭证、IDE 安装包和编译产物。旧 `Shengqinchu/AutoRC` 未修改，此阶段不引入 Raspberry Pi 或 OpenCV 依赖。

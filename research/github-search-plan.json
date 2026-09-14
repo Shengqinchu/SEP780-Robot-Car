@@ -1,0 +1,33 @@
+{
+  "per_page": 50,
+  "max_pages": 2,
+  "queries": [
+    {"id":"mcp_arduino","q":"arduino mcp in:name,description"},
+    {"id":"mcp_serial","q":"serial mcp in:name,description"},
+    {"id":"mcp_platformio","q":"platformio mcp in:name,description"},
+    {"id":"skills_arduino","q":"arduino skill in:name,description"},
+    {"id":"agents_arduino","q":"arduino agent in:name,description stars:>2"},
+    {"id":"mcp_chinese","q":"串口 MCP in:name,description"},
+    {"id":"cli_arduino","q":"arduino-cli in:name,description stars:>10"},
+    {"id":"simulator_arduino","q":"arduino simulator in:name,description stars:>10"},
+    {"id":"state_machine","q":"arduino state machine in:name,description stars:>20"},
+    {"id":"serial_protocol","q":"arduino serial protocol in:name,description stars:>20"},
+    {"id":"robot_car","q":"arduino robot car in:name,description stars:>50"},
+    {"id":"robot_framework","q":"arduino robot framework in:name,description stars:>50"},
+    {"id":"line_following","q":"line following arduino in:name,description stars:>20"},
+    {"id":"aruco_robot","q":"robot aruco in:name,description stars:>20"},
+    {"id":"arduino_debug_chinese","q":"Arduino 调试 in:name,description"},
+    {"id":"embedded_skills","q":"embedded firmware skills in:name,description stars:>5"}
+  ],
+  "seeds": [
+    "arduino/arduino-cli", "arduino/arduino-ide", "platformio/platformio-core", "pyserial/pyserial",
+    "Serial-Studio/Serial-Studio", "microsoft/vscode-arduino", "wokwi/avr8js", "buserror/simavr",
+    "ThrowTheSwitch/Unity", "FabioBatSilva/ArduinoFake", "firmata/arduino", "MrYsLab/pymata4",
+    "MrYsLab/telemetrix", "PowerBroker2/SerialTransfer", "bakercp/PacketSerial", "arkhipenko/TaskScheduler",
+    "br3ttb/Arduino-PID-Library", "Dlloydev/QuickPID", "bblanchon/ArduinoJson", "bxparks/AceRoutine",
+    "isl-org/OpenBot", "autorope/donkeycar", "linorobot/linorobot2", "micro-ROS/micro_ros_arduino",
+    "ros-drivers/rosserial", "opencv/opencv", "opencv/opencv_contrib", "AprilRobotics/apriltag",
+    "hardware-mcp/arduino-mcp-server", "niradler/arduino-mcp", "jl-codes/platformio-mcp",
+    "rockets-cn/unihiker-k10-skills", "alphacep/vosk-api", "Freenove/Freenove_4WD_Car_Kit"
+  ]
+}
