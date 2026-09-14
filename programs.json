@@ -1,5 +1,5 @@
 [
-  {"name":"usb_check","path":"firmware/usb_check","actuators":false,"power":"bare_board_usb","description":"USB serial and onboard LED check only"},
+  {"name":"usb_check","path":"firmware/usb_check","actuators":false,"power":"usb_only_no_external_power_car_switch_off","description":"USB serial and onboard LED check only; Bluetooth removed"},
   {"name":"servo_center","path":"vendor/freenove/Sketches/00.0_Servo_90","actuators":true,"power":"car_batteries_for_servo","description":"Assembly: position servo at 90 degrees"},
   {"name":"motor_test","path":"vendor/freenove/Sketches/01.1.3_Car_Move_and_Turn","actuators":true,"power":"car_batteries","description":"Starts motors automatically; lift all wheels before power-on"},
   {"name":"ultrasonic_test","path":"vendor/freenove/Sketches/02.2_Ultrasonic_Ranging","actuators":true,"power":"car_batteries","description":"Ultrasonic readings with automatic servo sweep: 45, 90, 135 degrees"},

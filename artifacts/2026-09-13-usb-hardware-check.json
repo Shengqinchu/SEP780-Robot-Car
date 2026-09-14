@@ -1,0 +1,70 @@
+{
+  "recorded_at_utc": "2026-09-14T01:57:55.0184589Z",
+  "local_date": "2026-09-13",
+  "timezone": "America/Toronto",
+  "port": "COM5",
+  "usb_bridge": "CH340",
+  "fqbn": "arduino:avr:uno",
+  "program": "usb_check",
+  "firmware_source_sha256": "a21e6443c0263bfd009b37fe2f861267c86cf2a43fb69d836e52da97e7f0bd91",
+  "setup": {
+    "user_reports_no_batteries": true,
+    "conditions_communicated": [
+      "USB to control board",
+      "No external supply",
+      "Car POWER off",
+      "Bluetooth removed"
+    ],
+    "individual_motor_servo_disconnection_required": false,
+    "scope": "User requested retry after USB-only instructions; electrical rail topology and switch positions were not electronically measured"
+  },
+  "upload": {
+    "attempts": 1,
+    "exit_code": 0
+  },
+  "query": {
+    "status": "passed",
+    "elapsed_ms": 1547,
+    "received_bytes": 104,
+    "evidence": {
+      "ready_seen": false,
+      "query_sent": true,
+      "query_ack": true,
+      "heartbeat_count": 2,
+      "last_uptime_ms": 15000,
+      "reset_during_check": false
+    },
+    "trace_sha256": "8bd8048f151df70b52279f398ca8f7bb15018288e07754d0ae2e1709af0ca06f"
+  },
+  "read_only_capture": {
+    "status": "captured",
+    "elapsed_ms": 8000,
+    "received_bytes": 160,
+    "heartbeat_uptimes_ms": [
+      49000,
+      50000,
+      51000,
+      52000,
+      53000,
+      54000,
+      55000,
+      56000
+    ],
+    "evidence": {
+      "ready_seen": false,
+      "query_sent": false,
+      "query_ack": false,
+      "heartbeat_count": 8,
+      "last_uptime_ms": 56000,
+      "reset_during_check": false
+    },
+    "close_event_seen": true,
+    "trace_sha256": "8906028f4ab47b9f76352cc33e0e481f345dd0b0db8ee19c143126376c702e59"
+  },
+  "physical_serial_sessions_opened": 2,
+  "actuator_test_programs_run": 0,
+  "led_blink_visually_verified": false,
+  "remaining_project_port_locks": 0,
+  "local_host_tests_passed": 43,
+  "hardware_scope": "USB programming and serial communication only; no motor, servo, sensor, battery or navigation acceptance"
+}

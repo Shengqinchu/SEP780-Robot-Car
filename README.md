@@ -4,11 +4,9 @@
 
 GitHub 私有仓库：[Shengqinchu/SEP780-Robot-Car](https://github.com/Shengqinchu/SEP780-Robot-Car)。
 
-> 电脑端准备已完成：Windows 本机和 GitHub Linux CI 均为 30/30 编译通过。2026-09-13 晚的照片显示机械主体已装成，但接线未完成逐项验收；电池最新已知状态仍为未到。尚未烧录、完成舵机归中或实车测试。编译成功不代表小车已经能运行。
+> 2026-09-13 晚：usb_check 已成功上传到 COM5，实际收到两条推进心跳及问号查询应答；另做 8 秒只读采集，收到 8 条连续心跳，无检测到复位。[实测摘要](artifacts/2026-09-13-usb-hardware-check.json)。
 
-2026-09-13 USB 已连接，电脑枚举到 COM5（CLI 板型仍为 Unknown）。按“先调研、后调试”的要求，本轮只做工具研究与无上传编译，未打开串口或让小车动作。
-
-后续电脑端已落地：pySerial API、限时采集/查询、端口互斥锁及 42 项离线测试；Windows 与 [新 GitHub CI](https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34796061715) 均通过主机测试及 30/30 编译。真实串口会话/烧录仍等待现场隔离条件确认。
+主控 USB 下载/通信已通过，不代表整车功能通过。电池尚未到，实际舵机归中、电机/传感器、循迹与避障测试仍未执行；LED 物理闪烁也未由现场观察确认。电脑端已有 CLI、pySerial API、日志、端口锁及离线/CI 验证，具体记录见开发日志。
 
 ## 从哪里开始
 
@@ -53,7 +51,7 @@ Windows 电脑另已准备 Arduino IDE 2.3.10。可以运行 `./scripts/Open-IDE
 
 | 名称 | 用途 | 硬件注意事项 |
 | --- | --- | --- |
-| `usb_check` | 自编写的串口心跳及板载 LED 检查，115200 波特率 | 仅裸主控板 USB；不控制执行器 |
+| `usb_check` | 自编写的串口心跳及板载 LED 检查，115200 波特率 | 无电池/外接电源，车板 POWER 关、蓝牙移除；只接主控 USB |
 | `servo_center` | 官方装配用 90 度归中 | 真实归中需要正确接线及供电 |
 | `motor_test` | 官方前进、后退、转向测试 | 上电后会自行转动；四轮架空 |
 | `tracking_sensor` | 三路循迹传感器读数 | 原厂示例，9600 波特率 |

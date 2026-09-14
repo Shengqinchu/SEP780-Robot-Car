@@ -1,4 +1,4 @@
-// Project-authored USB-only bring-up check. Use a bare, USB-powered Uno.
+// Project-authored USB-only check. No batteries/external power; car POWER off, Bluetooth removed.
 // No motor, servo, sensor or radio pins are configured.
 #include <Arduino.h>
 

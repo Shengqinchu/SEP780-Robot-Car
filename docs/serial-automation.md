@@ -1,6 +1,8 @@
 # USB 串口自动调试
 
-本阶段已实现电脑端工具，不等于已经烧录或通过实车测试。真正打开串口前，必须确认裸主控板仅接 USB、电池盒断开、蓝牙移除且执行器隔离。开关串口可能触发复位；即使设置 DTR/RTS 为 inactive，也不能保证驱动不产生跳变。[pySerial 官方说明](https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial.open)
+真正打开串口前，确认主控板仅接 USB、没有电池或其他外接电源、上层车板 POWER 关闭、蓝牙移除。已组装的电机/舵机接线可以保留，不把逐个拔线或拆成裸板作为 USB 下载的必要条件；本阶段只用不控制执行器的 usb_check。依据见 [官方组装后上传步骤](https://docs.freenove.com/projects/fnk0041/en/latest/fnk0041/codes/tutorial/0_Software,_Assembly_and_Play.html)。这不等于已经证明各供电分路断电，插拔模块前仍须先断 USB。
+
+开关串口可能触发复位；即使设置 DTR/RTS 为 inactive，也不能保证驱动不产生跳变。[pySerial 官方说明](https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial.open)
 
 ## 安装与离线验证
 
@@ -17,7 +19,7 @@ PowerShell 7、Python 3.10+。当前 Windows 实测 Python 3.12.14。虚拟环�
 
 `self-test` 只使用 pySerial 的内存 `loop://`，不是向 Arduino 发送数据；`list` 只枚举系统串口，省略设备序列号和完整硬件实例 ID。当前读取到 COM5 / USB-SERIAL CH340，不是从该名称独立确认了 MCU 型号。
 
-## 已确认隔离之后
+## 已确认 USB 条件之后
 
 每次先重新核对串口。下面命令会覆盖固件或打开端口，只能在确认的物理条件下执行，确认参数不是对物理检查的替代。
 
@@ -25,7 +27,7 @@ PowerShell 7、Python 3.10+。当前 Windows 实测 Python 3.12.14。虚拟环�
 ./scripts/List-Boards.ps1
 $port = Read-Host '输入核对后的实际 USB 串口'
 ./scripts/Upload.ps1 -Program usb_check -Port $port -ConfirmHardwareReady
-./scripts/Serial.ps1 -Action usb-check -Port $port -Seconds 8 -ConfirmUsbIsolated
+./scripts/Serial.ps1 -Action usb-check -Port $port -Seconds 8 -ConfirmUsbSetup
 ```
 
 `usb-check` 使用 115200 波特率，一次打开/关闭一个会话；看到当前检查固件的 READY 或心跳后，等待至少一秒，再发送一次 `?`。只有至少两条推进的心跳及发送后的精确应答，才报告 passed。READY 可能因固件已经运行而未出现，这本身不会使测试失败。期间出现复位迹象、没有应答、超时或达到字节上限均不会当成通过。
@@ -35,10 +37,10 @@ $port = Read-Host '输入核对后的实际 USB 串口'
 只采集、不发送查询：
 
 ```powershell
-./scripts/Serial.ps1 -Action capture -Port $port -Seconds 8 -MaxBytes 8192 -ConfirmUsbIsolated
+./scripts/Serial.ps1 -Action capture -Port $port -Seconds 8 -MaxBytes 8192 -ConfirmUsbSetup
 ```
 
-当前工具只用于 USB 检查阶段，固定 115200 波特率；原厂 9600 波特率示例尚未通过此工具适配。不能将其直接用于运动固件或未隔离的整车。
+当前工具只用于 USB 检查阶段，固定 115200 波特率；原厂 9600 波特率示例尚未通过此工具适配。不能将其直接用于运动固件或已经开启外部动力电源的整车。旧 ConfirmUsbIsolated / --confirm-usb-isolated 保留为兼容别名，新调用使用 ConfirmUsbSetup。
 
 ## 输出与退出
 
@@ -59,6 +61,6 @@ Python 串口会话和现有 PowerShell Upload 共用 `.local/port-locks` 的独
 
 ## 测试覆盖与当前状态
 
-42 个 Python 测试覆盖参数门槛、URL/非法端口拒绝、分包/超长行、精确应答、旧应答排除、时间回绕/复位、未知固件不写入、超时/字节预算、断线/中断清理、锁冲突、结果落档和软件回环。PowerShell 另验证锁命名与 Python 一致、锁互斥以及非法端口拒绝。
+43 个 Python 测试覆盖参数门槛、新旧确认参数兼容、URL/非法端口拒绝、分包/超长行、精确应答、旧应答排除、时间回绕/复位、未知固件不写入、超时/字节预算、断线/中断清理、锁冲突、结果落档和软件回环。PowerShell 另验证锁命名与 Python 一致、锁互斥以及非法端口拒绝。
 
-Windows 本机和 [GitHub Linux CI](https://github.com/Shengqinchu/SEP780-Robot-Car/actions/runs/34796061715) 均通过 42 项测试、软件回环及 30/30 无上传编译；测试代码提交为 `852beb0`。当前未开真实串口、未烧录、未测试执行器；下一步等待现场隔离状态确认。
+2026-09-13 本机新增兼容测试后 43/43 通过。COM5 实际上传 usb_check 成功，问号应答与两次推进心跳通过；8 秒只读采集收到 8 次连续心跳，两个会话均已关闭。READY 未在打开串口后重新出现，不能将其写成观察到了启动横幅。[实物证据](../artifacts/2026-09-13-usb-hardware-check.json)。执行器/传感器和电池验收仍未进行；CI 对应版本见 DEVLOG。

@@ -149,7 +149,7 @@ def validate_session(action: str, port: str, confirmed: bool, seconds: float, ma
     if action not in {"capture", "usb-check"}:
         raise SafetyError("Unsupported serial action.")
     if not confirmed:
-        raise SafetyError("USB isolation confirmation is required before opening a port; opening may reset the MCU.")
+        raise SafetyError("USB-only setup confirmation is required: no batteries/external supply, car POWER off, Bluetooth removed. Opening may reset the MCU.")
     canonical_port(port)
     if not math.isfinite(seconds) or not 1 <= seconds <= 60:
         raise SafetyError("Duration must be finite and between 1 and 60 seconds.")
@@ -258,7 +258,7 @@ def parser() -> argparse.ArgumentParser:
     for action in ("capture", "usb-check"):
         command = commands.add_parser(action)
         command.add_argument("--port", required=True)
-        command.add_argument("--confirm-usb-isolated", action="store_true")
+        command.add_argument("--confirm-usb-setup", "--confirm-usb-isolated", dest="confirm_usb_setup", action="store_true")
         command.add_argument("--seconds", type=float, default=8.0)
         command.add_argument("--max-bytes", type=int, default=8192)
     return cli
@@ -274,7 +274,7 @@ def main(argv=None) -> int:
         elif args.action == "self-test":
             result = loopback_test()
         else:
-            validate_session(args.action, args.port, args.confirm_usb_isolated, args.seconds, args.max_bytes)
+            validate_session(args.action, args.port, args.confirm_usb_setup, args.seconds, args.max_bytes)
             RECORD_ROOT.mkdir(parents=True, exist_ok=True)
             name = datetime.now(timezone.utc).strftime("serial-%Y%m%dT%H%M%SZ-") + uuid4().hex[:8]
             trace_path = RECORD_ROOT / (name + ".jsonl")
@@ -284,7 +284,7 @@ def main(argv=None) -> int:
                     trace.write(json.dumps(event, ensure_ascii=True) + "\n")
                     trace.flush()
                 try:
-                    result = run_session(args.action, args.port, args.confirm_usb_isolated,
+                    result = run_session(args.action, args.port, args.confirm_usb_setup,
                                          args.seconds, args.max_bytes, emit)
                 except (SafetyError, PortBusyError, serial.SerialException, OSError) as exc:
                     emit({"event": "error", "type": type(exc).__name__, "message": str(exc)})

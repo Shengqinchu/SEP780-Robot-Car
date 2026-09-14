@@ -4,16 +4,16 @@ param(
     [string]$Port,
     [ValidateRange(1, 60)][double]$Seconds = 8,
     [ValidateRange(128, 65536)][int]$MaxBytes = 8192,
-    [switch]$ConfirmUsbIsolated
+    [Alias('ConfirmUsbIsolated')][switch]$ConfirmUsbSetup
 )
 . (Join-Path $PSScriptRoot 'Common.ps1')
 $hostPython = Get-HostPython
 $arguments = @('-X', 'utf8', (Join-Path $ProjectRoot 'host/serial_tool.py'), $Action)
 if ($Action -in @('capture', 'usb-check')) {
-    if (-not $ConfirmUsbIsolated) { throw 'Confirm bare USB board and isolated actuators before serial open; it may reset the MCU.' }
+    if (-not $ConfirmUsbSetup) { throw 'Confirm USB-only power, no batteries/external supply, car POWER off and Bluetooth removed before serial open.' }
     if ([string]::IsNullOrWhiteSpace($Port)) { throw 'An explicit port is required.' }
-    $arguments += @('--port', $Port, '--seconds', $Seconds.ToString([Globalization.CultureInfo]::InvariantCulture), '--max-bytes', "$MaxBytes", '--confirm-usb-isolated')
-} elseif ($Port -or $ConfirmUsbIsolated) {
+    $arguments += @('--port', $Port, '--seconds', $Seconds.ToString([Globalization.CultureInfo]::InvariantCulture), '--max-bytes', "$MaxBytes", '--confirm-usb-setup')
+} elseif ($Port -or $ConfirmUsbSetup) {
     throw 'list/self-test do not accept a physical port or hardware confirmation.'
 }
 & $hostPython @arguments

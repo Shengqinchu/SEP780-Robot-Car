@@ -289,6 +289,12 @@ class SoftwareLoopbackTests(unittest.TestCase):
 
 
 class CliTests(unittest.TestCase):
+    def test_usb_setup_confirmation_and_legacy_alias(self):
+        for flag in ("--confirm-usb-setup", "--confirm-usb-isolated"):
+            with self.subTest(flag=flag):
+                args = tool.parser().parse_args(["usb-check", "--port", "COM5", flag])
+                self.assertTrue(args.confirm_usb_setup)
+
     def test_refused_cli_creates_no_record(self):
         with tempfile.TemporaryDirectory() as directory:
             target = Path(directory) / "records"

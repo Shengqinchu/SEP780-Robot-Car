@@ -2,7 +2,7 @@
 
 ## 当前边界
 
-截至 2026-09-13 晚，用户提供的照片显示车轮、两层底板、板卡和超声波支架已装到车体上。后续近照已看清车头下方的循迹板、扩展板上的红外接收器、上层电池电源插口和下层 USB-C 接口，但仍未逐针核对全部接线/板间接触。电池最新已知状态仍为未到；实际烧录、舵机归中和电机测试没有新增通过记录。
+截至 2026-09-13 晚，机械主体已装成，电池仍未到。usb_check 已通过 COM5 上传，实际串口查询与连续心跳采集成功；这是主控 USB 通信证据，不是全部接线/供电或整车功能验收。舵机实际归中和电机测试仍未执行。
 
 官方装配顺序以 [Chapter 0](https://docs.freenove.com/projects/fnk0041/en/latest/fnk0041/codes/tutorial/0_Software,_Assembly_and_Play.html) 为准。本文件是操作检查清单，不代替逐张接线图。
 
@@ -13,7 +13,7 @@
 - 电脑用 Arduino IDE 或本项目 CLI 编译/上传 C/C++ `.ino` 程序，并通过串口查看调试数据。
 - USB 数据线连接下层主控板的 USB-C 口；同一侧的圆形 DC 插口不是电脑数据接口。
 - 程序上传后保存在主控板上，装好电池可脱离电脑运行；手机蓝牙或红外遥控是否可用取决于所接模块和所选固件。
-- 电池未到时先准备 USB 主控板识别/检查，不用 USB 去验证整车驱动或舵机归中。仍按下面的裸板检查条件执行，不因看到接口就自动烧录。
+- 电池未到时做 USB 主控板识别/检查，不用 USB 去验证整车驱动或舵机归中。保留组装接线即可，但需无电池/外接电源、车板 POWER 关闭、蓝牙移除及明确的上传授权。
 - 蓝牙模块暂不插入；USB 上传与蓝牙共用串口，上传完成并断电后再按实际针脚接回。
 
 来源：[Control Board and Software](https://docs.freenove.com/projects/fnk0041/en/latest/fnk0041/codes/tutorial/Control_Board_and_Software.html)、[Chapter 6](https://docs.freenove.com/projects/fnk0041/en/latest/fnk0041/codes/tutorial/6_Bluetooth_control.html)。
@@ -38,29 +38,23 @@
 1. 清点底板、四个电机/轮子、电路板、舵机、超声波/循迹模块、线材与螺丝。
 2. 可以按官方图装机械底盘；不要剪掉电机原有扎带，不要过度拧紧亚克力板。
 3. 舵盘、超声波转头的最终角度固定留到实际 90 度归中以后。不要靠手强行转动舵机来找中位。
-4. 准备 USB 数据线；待明确板型后，可将裸主控板连接电脑，不连接电池和扩展板负载。先运行 `List-Boards.ps1` 识别新增串口。
+4. 准备 USB 数据线；主控接 USB，保持无电池/外接电源、上层 POWER 关闭、蓝牙未插。电机和舵机插头不必逐个拆下；先运行 `List-Boards.ps1` 识别串口。
 5. 如果没有新增串口，再检查数据线、USB 口和设备管理器。根据实际芯片/硬件 ID 判断是否需要 CH340 驱动，不盲装驱动。
 
 ## USB 检查
 
-仅在已确认裸 Uno、USB 连接且蓝牙模块未插的情况下执行以下交互命令：
+仅在确认上述 USB-only 条件和串口后执行以下命令。早先的“必须拆成裸板/逐个拔掉执行器”是额外保守条件，不是厂家组装后 USB 上传的必要步骤；已按官方流程纠正。USB 仍会给主控供电，插拔线材前先拔 USB。
 
 ```powershell
 ./scripts/List-Boards.ps1
 $port = Read-Host '输入刚核对过的实际串口名称'
 ./scripts/Upload.ps1 -Program usb_check -Port $port -ConfirmHardwareReady
-./scripts/Serial.ps1 -Action usb-check -Port $port -ConfirmUsbIsolated
+./scripts/Serial.ps1 -Action usb-check -Port $port -ConfirmUsbSetup
 ```
 
-先按 [串口自动调试](serial-automation.md) 准备主机环境。预期现象是板载 LED 每秒切换，串口每秒输出 `HEARTBEAT`；主机工具发送 `?` 并验证应答。采集默认 8 秒内结束，保存本地记录。这只是裸板验证，不证明电机、传感器、无线模块或电源工作正常；烧录前关闭 IDE/其他串口监视器。
+先按 [串口自动调试](serial-automation.md) 准备主机环境。程序预期让板载 LED 每秒切换，串口每秒输出 `HEARTBEAT`；主机工具发送 `?` 并验证应答。采集默认 8 秒内结束，保存本地记录。这只是主控验证，不证明电机、传感器、无线模块或电源工作正常；烧录前关闭 IDE/其他串口监视器。
 
-随后可在同样的裸板状态上传归中程序：
-
-```powershell
-./scripts/Upload.ps1 -Program servo_center -Port $port -ConfirmHardwareReady
-```
-
-**上传归中程序不等于完成归中。** 电池到货并按官方步骤供电后，舵机才会实际转到程序要求的位置。归中程序固定 D2 为舵机信号；不得据此猜测其他板型的引脚。
+舵机归中是另一个会控制执行器的步骤，当前不自动上传/执行 servo_center。等有合适供电并确认实际接线后按官方步骤操作；**上传归中程序不等于完成归中**，还要观察实际角度，再断电固定舵盘。
 
 ## 电池到货后的门槛
 
