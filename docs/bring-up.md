@@ -49,11 +49,10 @@
 ./scripts/List-Boards.ps1
 $port = Read-Host '输入刚核对过的实际串口名称'
 ./scripts/Upload.ps1 -Program usb_check -Port $port -ConfirmHardwareReady
-. ./scripts/Common.ps1
-& $ArduinoCli monitor --port $port --config baudrate=115200
+./scripts/Serial.ps1 -Action usb-check -Port $port -ConfirmUsbIsolated
 ```
 
-预期现象是板载 LED 每秒切换，串口每秒输出 `HEARTBEAT`；发送 `?` 返回检查状态。这只是裸板验证，不证明电机、传感器、无线模块或电源工作正常。串口监视器用 Ctrl+C 退出，烧录前关闭占用串口的监视器。
+先按 [串口自动调试](serial-automation.md) 准备主机环境。预期现象是板载 LED 每秒切换，串口每秒输出 `HEARTBEAT`；主机工具发送 `?` 并验证应答。采集默认 8 秒内结束，保存本地记录。这只是裸板验证，不证明电机、传感器、无线模块或电源工作正常；烧录前关闭 IDE/其他串口监视器。
 
 随后可在同样的裸板状态上传归中程序：
 

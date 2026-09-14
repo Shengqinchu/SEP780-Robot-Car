@@ -46,3 +46,38 @@ function Get-Program {
     }
     return $matches[0]
 }
+
+function Get-HostPython {
+    $relative = if ($OnWindows) { 'Scripts/python.exe' } else { 'bin/python' }
+    $python = Join-Path (Join-Path $ProjectRoot '.local/host-pyserial-3.5') $relative
+    if (-not (Test-Path -LiteralPath $python)) { throw 'Host environment missing. Run scripts/Setup-Host.ps1 first.' }
+    return $python
+}
+
+function Get-PortLockPath {
+    param([Parameter(Mandatory)][string]$Port)
+    if ($Port -match '\ACOM[1-9][0-9]{0,3}\z') { $Port = $Port.ToUpperInvariant() }
+    elseif ($Port -cnotmatch '\A/dev/tty(ACM|USB)[0-9]+\z') { throw 'Expected a local COMn or /dev/ttyACMn/ttyUSBn port.' }
+    $hash = [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData([Text.Encoding]::UTF8.GetBytes($Port))).ToLowerInvariant().Substring(0, 16)
+    return Join-Path (Join-Path $ProjectRoot '.local/port-locks') "port-$hash.lock"
+}
+
+function Invoke-WithPortLock {
+    param([Parameter(Mandatory)][string]$Port, [Parameter(Mandatory)][scriptblock]$Operation)
+    $path = Get-PortLockPath -Port $Port
+    New-Item -ItemType Directory -Force -Path (Split-Path $path -Parent) | Out-Null
+    try { $stream = [IO.File]::Open($path, [IO.FileMode]::CreateNew, [IO.FileAccess]::Write, [IO.FileShare]::None) }
+    catch [IO.IOException] { throw 'Project port lock exists or cannot be created. Close the owner or inspect a stale lock; no port accessed.' }
+    $token = [Guid]::NewGuid().ToString('N')
+    try {
+        $bytes = [Text.Encoding]::UTF8.GetBytes((@{token=$token; pid=$PID; port=$Port} | ConvertTo-Json -Compress))
+        $stream.Write($bytes, 0, $bytes.Length)
+    } finally { $stream.Dispose() }
+    try { & $Operation }
+    finally {
+        if (Test-Path -LiteralPath $path) {
+            $owner = Get-Content -LiteralPath $path -Raw | ConvertFrom-Json
+            if ($owner.token -eq $token) { Remove-Item -LiteralPath $path }
+        }
+    }
+}

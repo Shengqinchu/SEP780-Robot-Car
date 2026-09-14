@@ -12,6 +12,8 @@ if (-not $ConfirmHardwareReady) {
 if ([string]::IsNullOrWhiteSpace($Port)) { throw 'An explicit serial port is required.' }
 Assert-Toolchain
 Write-Warning "This overwrites the firmware on $Port. Program: $Program. Required power state: $($item.power)."
-& (Join-Path $PSScriptRoot 'Build.ps1') -Program $Program
-Invoke-Arduino -Arguments @('compile', '--fqbn', $Toolchain.board, '--libraries', $LibraryDirectory, '--upload', '--port', $Port, (Join-Path $ProjectRoot $item.path))
+Invoke-WithPortLock -Port $Port -Operation {
+    & (Join-Path $PSScriptRoot 'Build.ps1') -Program $Program
+    Invoke-Arduino -Arguments @('compile', '--fqbn', $Toolchain.board, '--libraries', $LibraryDirectory, '--upload', '--port', $Port, (Join-Path $ProjectRoot $item.path))
+}
 Write-Host 'Upload completed. This is NOT evidence of hardware functional success.'

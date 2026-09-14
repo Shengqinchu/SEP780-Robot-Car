@@ -8,10 +8,13 @@ GitHub 私有仓库：[Shengqinchu/SEP780-Robot-Car](https://github.com/Shengqin
 
 2026-09-13 USB 已连接，电脑枚举到 COM5（CLI 板型仍为 Unknown）。按“先调研、后调试”的要求，本轮只做工具研究与无上传编译，未打开串口或让小车动作。
 
+后续电脑端已落地：pySerial API、限时采集/查询、端口互斥锁及 42 项离线测试；真实串口会话/烧录仍等待现场隔离条件确认。
+
 ## 从哪里开始
 
 - [开发日志](DEVLOG.md)：实际操作、问题、解决办法及验证状态。
 - [上电与装配检查](docs/bring-up.md)：电池未到时能做什么，哪些步骤必须等待。
+- [USB 串口自动调试](docs/serial-automation.md)：不用 IDE 点击的查询、日志、离线测试与安全门槛。
 - [测试清单](docs/test-plan.md)：逐项记录真实结果，不提前打勾。
 - [项目计划](docs/project-plan.md)：原厂基线与拟新增功能的边界。
 - [自动化工具与开源选型](docs/tooling-research.md)：45 项 CLI/API/MCP/Skill/机器人项目比较，含源码检查和采用建议。
@@ -34,6 +37,12 @@ GitHub 私有仓库：[Shengqinchu/SEP780-Robot-Car](https://github.com/Shengqin
 
 # 只读列出串口，不会烧录
 ./scripts/List-Boards.ps1
+
+# 独立主机环境、离线测试与只读串口枚举
+./scripts/Setup-Host.ps1
+./tests/Test-Host.ps1
+./scripts/Serial.ps1 -Action self-test
+./scripts/Serial.ps1 -Action list
 ```
 
 脚本当前支持 x64 Windows 和 x64 Linux。工具和编译缓存放在用户缓存目录；可通过 `SEP780_TOOL_ROOT` 指定另一个独立目录。不要指向其他项目已有的 Arduino 数据目录。
@@ -64,6 +73,7 @@ Windows 电脑另已准备 Arduino IDE 2.3.10。可以运行 `./scripts/Open-IDE
 ## 仓库内容
 
 - `firmware/`：项目新增程序，和原厂代码分开。
+- `host/`：pySerial USB 检查 API 和固定依赖；不是固件或运动控制器。
 - `vendor/freenove/`：固定提交的原厂示例和依赖压缩包，保留原作者信息。
 - `scripts/`、`tests/`：可复现准备、编译和仓库检查。
 - `docs/`、`DEVLOG.md`：计划、装配门槛、测试与开发过程。

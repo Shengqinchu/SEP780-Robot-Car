@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'firmware/**'
+      - 'host/**'
       - 'vendor/**'
       - 'scripts/**'
       - 'tests/**'
@@ -13,6 +14,7 @@ on:
   pull_request:
     paths:
       - 'firmware/**'
+      - 'host/**'
       - 'vendor/**'
       - 'scripts/**'
       - 'tests/**'
@@ -36,5 +38,11 @@ jobs:
         run: ./tests/Check-Repository.ps1
       - name: Install pinned Arduino toolchain
         run: ./scripts/Setup-Toolchain.ps1
+      - name: Install isolated host tools
+        run: ./scripts/Setup-Host.ps1
+      - name: Test host API without hardware
+        run: ./tests/Test-Host.ps1
+      - name: Host-only pySerial loopback
+        run: ./scripts/Serial.ps1 -Action self-test
       - name: Compile every official sketch and USB check
         run: ./scripts/Build.ps1 -All

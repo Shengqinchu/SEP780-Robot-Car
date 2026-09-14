@@ -24,6 +24,12 @@ RF24 使用厂商提供的 1.3.2。IRremote 使用同一快照附带版本，不
 
 2026-09-13 的 [工具选型报告](docs/tooling-research.md) 和 `research/` 只记录候选、来源及审阅结果。本轮没有把候选 MCP、Skill、视觉/控制库或 AutoRC 实现复制到本项目代码，也未改变原厂许可或现有依赖锁。完整第三方源码/README 缓存在被忽略的 `.cache/`，不随本仓库发布。后续真正采用时，再在这里逐项列明版本、许可证、导入路径和改动。
 
+## 已采用的主机依赖
+
+- pySerial 3.5，[官方仓库](https://github.com/pyserial/pyserial)、[PyPI 固定版本](https://pypi.org/project/pyserial/3.5/)。许可为 BSD-3-Clause，许可正文随 wheel 安装在虚拟环境中。
+- 安装文件 `pyserial-3.5-py2.py3-none-any.whl`，SHA-256 `c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0`，锁在 `host/requirements.lock`；本机和 CI 均使用 require-hashes 安装。
+- `host/serial_tool.py` 及测试、PowerShell 接入由本项目新增并经 AI 辅助编写；未复制第三方 MCP 实现、未修改 pySerial 源码。依赖/环境在 `.local`，不上传二进制或 site-packages。
+
 ## 官方资料
 
 - [装配与烧录顺序](https://docs.freenove.com/projects/fnk0041/en/latest/fnk0041/codes/tutorial/0_Software,_Assembly_and_Play.html)
