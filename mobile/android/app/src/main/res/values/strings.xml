@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">SEP780 Robot Car</string>
+    <string name="app_subtitle">MOBILE DRIVE CONSOLE</string>
+    <string name="language_selector">Interface language</string>
+    <string name="language_chinese" translatable="false">中文</string>
+    <string name="language_english" translatable="false">English</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="connecting">Connecting</string>
+    <string name="discovering">Discovering services</string>
+    <string name="connected">Connected</string>
+    <string name="connection_error">Connection error</string>
+    <string name="connection_error_detail">Connection error: %1$s</string>
+    <string name="scan_error">BLE scan error: %1$d</string>
+    <string name="scan">Scan</string>
+    <string name="reconnect">Reconnect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="scanning">Scanning for BLE devices</string>
+    <string name="scan_finished">Select a BLE device</string>
+    <string name="unnamed_device">Unnamed BLE device</string>
+    <string name="cancel">Cancel</string>
+    <string name="bluetooth_unavailable">Bluetooth Low Energy is unavailable.</string>
+    <string name="bluetooth_permission_denied">Nearby devices permission was denied.</string>
+    <string name="audio_permission_denied">Microphone permission was denied.</string>
+    <string name="enable_bluetooth">Enable Bluetooth to connect.</string>
+    <string name="status_dot" translatable="false">●</string>
+    <string name="bluetooth">BLUETOOTH</string>
+
+    <string name="joystick_accessibility">Remote joystick; speed limit %1$d; left output %2$d; right output %3$d</string>
+    <string name="joystick_limit">MAX PWM %1$d</string>
+    <string name="joystick_output">L %1$d   R %2$d</string>
+    <string name="speed_limit">REMOTE LIMIT</string>
+    <string name="speed_limit_accessibility">Remote-control speed limit</string>
+    <string name="speed_limit_value">%1$d PWM</string>
+    <string name="battery">BATTERY</string>
+    <string name="range">RANGE</string>
+    <string name="line_sensors">LINE</string>
+    <string name="value_pending" translatable="false">--</string>
+    <string name="battery_value">%1$.2f V</string>
+    <string name="range_value">%1$d mm</string>
+    <string name="line_value" translatable="false">%1$s</string>
+    <string name="voice_button">Voice command</string>
+    <string name="horn_button">Hold horn</string>
+    <string name="voice_unavailable">Speech recognition is unavailable.</string>
+    <string name="voice_listening">Listening</string>
+    <string name="voice_processing">Processing</string>
+    <string name="voice_error">Speech recognition error: %1$d</string>
+    <string name="voice_unknown">Command not recognized; no movement sent.</string>
+    <string name="transcript_empty">No voice command</string>
+    <string name="recognized_phrase">Heard: %1$s</string>
+
+    <string name="line_follow">Follow line</string>
+    <string name="line_mode_selector">Line-follow drive mode</string>
+    <string name="line_mode_pulse">Pulse</string>
+    <string name="line_mode_hybrid">Normal</string>
+    <string name="stop">STOP</string>
+    <string name="control_not_connected">Connect to the car first.</string>
+    <string name="control_line_pending">Preparing line mode</string>
+    <string name="control_line">Line mode active</string>
+    <string name="control_manual_pending">Preparing manual mode</string>
+    <string name="control_manual">Analog remote active</string>
+    <string name="control_speed_selected">Speed selected; movement stopped</string>
+    <string name="control_line_mode_selected">Line mode selected; movement stopped</string>
+    <string name="control_stopped">Stopped</string>
+    <string name="control_command_error">Command rejected; stop sent.</string>
+    <string name="last_command">TX: %1$s</string>
+
+    <string name="telemetry_format">Mode %1$s · State %2$s\nLine %3$d · Range %4$d mm · Battery %5$.2f V\nPWM L %6$d · R %7$d</string>
+    <string name="last_reply">RX: %1$s</string>
+</resources>

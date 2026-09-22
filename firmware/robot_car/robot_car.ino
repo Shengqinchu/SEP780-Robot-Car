@@ -26,6 +26,8 @@ void report(const robot::Inputs& in) {
 
 void setup() {
   board.begin(); // Motors stop; the ultrasonic head moves to its configured center.
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, LOW);
   Serial.begin(115200);
   receiver.enableIRIn();
   Serial.println(F("SEP780 ROBOT READY v=1"));
@@ -52,12 +54,27 @@ void loop() {
     }
   }
   if (receiver.decode(&irResult)) {
-    if (irResult.decode_type == NEC && remote.decode(irResult.value, millis(), car.config().cruise_pwm, command)) {
-      robot::execute(car, command, robot::Source::Infrared, in, millis());
+    const uint32_t code = irResult.value;
+    const bool recognized = remote.decode(code, millis(), car.config().cruise_pwm, command);
+    bool accepted = false;
+    if (recognized) {
+      accepted = robot::execute(car, command, robot::Source::Infrared, in, millis());
       board.write(car.tick(in, millis()));
     }
+    // Some compatible handsets provide the expected Freenove key value while
+    // older IRremote releases classify the protocol as UNKNOWN. The bounded
+    // key map remains authoritative; protocol classification is diagnostic.
+    Serial.print(F("IR code=0x")); Serial.print(code, HEX);
+    Serial.print(F(" proto=")); Serial.print(static_cast<int>(irResult.decode_type));
+    Serial.print(F(" recognized=")); Serial.print(recognized ? 1 : 0);
+    Serial.print(F(" accepted=")); Serial.print(accepted ? 1 : 0);
+    Serial.print(F(" state=")); Serial.println(static_cast<uint8_t>(car.state()));
     receiver.resume();
   }
+  const bool obstacleAlert = car.mode() == robot::Mode::Line && in.range_valid &&
+    in.range_mm <= car.config().obstacle_stop_mm;
+  board.setBuzzer(obstacleAlert, car.hornActive());
+  digitalWrite(LED_BUILTIN, car.armed() ? HIGH : LOW);
   now = millis();
   if (now - reportedMs >= 200) { reportedMs = now; report(in); }
 }

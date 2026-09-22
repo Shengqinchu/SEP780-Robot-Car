@@ -25,8 +25,8 @@ def load_scenario(path):
     encoded = []
     for row in rows:
         limits = {"ms": (0, 0xFFFFFFFF), "line": (0, 7), "range_mm": (0, 4000), "range_valid": (0, 1),
-                  "battery_mv": (0, 20000), "left": (-150, 150), "right": (-150, 150),
-                  "expected_left": (-180, 180), "expected_right": (-180, 180)}
+                  "battery_mv": (0, 20000), "left": (-200, 200), "right": (-200, 200),
+                  "expected_left": (-200, 200), "expected_right": (-200, 200)}
         for key, (low, high) in limits.items():
             row[key] = int(row[key])
             if not low <= row[key] <= high:

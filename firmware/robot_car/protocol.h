@@ -4,12 +4,16 @@
 #include "controller.h"
 
 namespace robot {
-enum class CommandType : uint8_t { Stop, ArmLine, ArmManual, Drive, Ping, Status };
+enum class CommandType : uint8_t {
+  Stop, ArmLine, ArmManual, LinePulse, LineContinuous, LineHybrid, Speed,
+  Drive, RemoteDrive, HornOn, HornOff, Ping, Status
+};
 struct Command {
   uint16_t sequence = 0;
   CommandType type = CommandType::Stop;
   int16_t left = 0;
   int16_t right = 0;
+  uint8_t speed = 0;
 };
 enum class ParseResult : uint8_t { None, Ready, Invalid };
 

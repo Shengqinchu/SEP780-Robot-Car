@@ -26,7 +26,7 @@ void Fnk0041Io::begin() {
   pinMode(left_dir, OUTPUT); pinMode(right_dir, OUTPUT);
   pinMode(trigger_pin, OUTPUT); digitalWrite(trigger_pin, LOW);
   pinMode(echo_pin, INPUT);
-  pinMode(A0, INPUT); digitalWrite(A0, LOW); // A0 is shared with the buzzer; keep it an input.
+  digitalWrite(A0, LOW); pinMode(A0, INPUT); // A0 is shared by battery sensing and the active buzzer.
   pinMode(A1, INPUT); pinMode(A2, INPUT); pinMode(A3, INPUT);
   head_.write(hardware::servo_center_degrees);
   head_.attach(servo_pin);
@@ -48,9 +48,12 @@ Inputs Fnk0041Io::read() {
   }
   uint8_t line = (digitalRead(A1) << 2) | (digitalRead(A2) << 1) | digitalRead(A3);
   inputs_.line = hardware::black_reads_high ? line : (line ^ 7);
-  uint32_t adc = 0;
-  for (uint8_t n = 0; n < 4; ++n) adc += analogRead(A0);
-  inputs_.battery_mv = static_cast<uint16_t>((adc / 4) * hardware::adc_full_scale_mv / 1023UL);
+  // Driving A0 high sounds the buzzer, so preserve the last voltage until the quiet phase.
+  if (!buzzer_on_) {
+    uint32_t adc = 0;
+    for (uint8_t n = 0; n < 4; ++n) adc += analogRead(A0);
+    inputs_.battery_mv = static_cast<uint16_t>((adc / 4) * hardware::adc_full_scale_mv / 1023UL);
+  }
   inputs_.sampled_ms = millis();
   inputs_.sample_valid = true;
   return inputs_;
@@ -59,5 +62,27 @@ Inputs Fnk0041Io::read() {
 void Fnk0041Io::write(Drive drive) {
   wheel(hardware::invert_left_motor ? -drive.left : drive.left, left_dir, left_pwm, false, left_sign_);
   wheel(hardware::invert_right_motor ? -drive.right : drive.right, right_dir, right_pwm, true, right_sign_);
+}
+
+void Fnk0041Io::setBuzzer(bool obstacle_alert, bool manual_horn) {
+  const uint32_t now = millis();
+  if (obstacle_alert != alert_active_ || manual_horn != horn_active_) {
+    alert_active_ = obstacle_alert;
+    horn_active_ = manual_horn;
+    alert_ms_ = now;
+  }
+  const bool next = manual_horn
+    ? ((now - alert_ms_) % hardware::horn_period_ms < hardware::horn_on_ms)
+    : obstacle_alert &&
+      ((now - alert_ms_) % hardware::buzzer_period_ms < hardware::buzzer_on_ms);
+  if (next == buzzer_on_) return;
+  buzzer_on_ = next;
+  if (buzzer_on_) {
+    pinMode(A0, OUTPUT);
+    digitalWrite(A0, HIGH);
+  } else {
+    digitalWrite(A0, LOW);
+    pinMode(A0, INPUT);
+  }
 }
 }

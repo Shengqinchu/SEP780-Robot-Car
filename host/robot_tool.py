@@ -62,6 +62,20 @@ class RobotLink:
                 return
         raise SessionError("No project-firmware v1 telemetry. No command sent.")
 
+    def wait_motion_ready(self, timeout=3.0):
+        """Wait out a serial-open reset without sending an ARM command."""
+        if not self.identified:
+            raise SessionError("Firmware identity is required before readiness checks.")
+        started = self.clock()
+        deadline = started + timeout
+        while self.clock() < deadline:
+            if self.last is not None and 20 <= self.last["range_mm"] <= 4000:
+                self.emit({"event": "motion_ready", "waited_ms": round((self.clock() - started) * 1000),
+                           "range_mm": self.last["range_mm"]})
+                return
+            self.receive()
+        raise SessionError("No valid ultrasonic range after controller startup; no ARM sent.")
+
     def request(self, action, left=0, right=0, timeout=0.30):
         if not self.identified:
             raise SessionError("Firmware identity is required before writing.")
@@ -117,6 +131,9 @@ def run_session(action, port, confirmed=False, motion_clear=False, seconds=5, le
                     # Mark before ARM: a lost acknowledgement must still lead to STOP.
                     movement_requested = True
                     link.request("stop")
+                    # Opening an Uno serial port can reset the MCU. Its first telemetry frame
+                    # arrives before the servo settles and before the first valid sonar echo.
+                    link.wait_motion_ready()
                     link.request("line" if action == "line" else "manual")
                 end = clock() + seconds
                 refresh = clock()

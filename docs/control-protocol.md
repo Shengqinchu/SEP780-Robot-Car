@@ -9,12 +9,25 @@
 ```text
 S 101 STATUS
 S 102 STOP
-S 103 ARM LINE
-S 104 PING
-S 105 STOP
-S 106 ARM MANUAL
-S 107 DRIVE 80 80
-S 108 STOP
+S 103 SPEED 100
+S 104 LINE PULSE
+S 105 ARM LINE
+S 106 PING
+S 107 STOP
+S 108 LINE CONTINUOUS
+S 109 ARM LINE
+S 110 STOP
+S 111 LINE HYBRID
+S 112 ARM LINE
+S 113 STOP
+S 114 SPEED 120
+S 115 ARM MANUAL
+S 116 DRIVE 120 120
+S 117 STOP
+S 118 R 200 -200
+S 119 R 0 0
+S 120 H 1
+S 121 H 0
 ```
 
 These are wire-format examples, not a script to send unattended. Use the bounded host API and the physical setup sequence in the calibration guide.
@@ -23,20 +36,30 @@ These are wire-format examples, not a script to send unattended. Use the bounded
 | --- | --- |
 | `STATUS` | Emit current telemetry; does not extend a lease |
 | `STOP` | Set wheel output to zero and clear the active mode; any source may stop |
-| `ARM LINE` | Start line following from idle with valid readings and clearance |
+| `SPEED pwm` | While idle, set the legacy manual/IR cruise preference to 50..200 in steps of 10; it does not change the fixed line pulse or Android joystick limit |
+| `LINE PULSE` | While idle and owned by serial/BLE, select PWM 120 with 80 ms drive / 80 ms coast for the next line run |
+| `LINE CONTINUOUS` | Diagnostic profile: while idle, select continuous PWM 120 for every valid line pattern; not exposed by the final app |
+| `LINE HYBRID` | App Normal profile: pulse at PWM 120 on `010`, continuously correct at PWM 150 on `110/011`, and counter-rotate at `±150` on `100/001`; stop interlocks are unchanged |
+| `ARM LINE` | Enter line-follow standby from idle after base sensor and battery validation |
 | `ARM MANUAL` | Enable manual commands from idle; initial wheel output remains zero |
-| `DRIVE left right` | Signed PWM; renews the manual and serial leases |
+| `DRIVE left right` | Legacy signed PWM after `ARM MANUAL`; renews the manual and serial leases |
+| `R left right` | Atomic Android remote command: take serial manual control if needed, then apply signed wheel PWM; `R 0 0` stops motion idempotently |
+| `H 1` / `H 0` | Start/renew or stop the manual horn; the on request expires after 1.5 seconds without renewal |
 | `PING` | Renew the serial-owner lease only; cannot sustain an old manual movement |
 
-Sequences are integers in 1..65535. Replies are `ACK 101` or `ERR 101`. An invalid frame produces `ERR 0 FRAME` and stops the controller. ARM is rejected while already armed, on invalid inputs, or without sufficient clearance. Rejected valid commands do not steal an existing control owner. Out-of-range manual PWM stops its owner.
+Sequences are integers in 1..65535. Replies are `ACK 101` or `ERR 101`. An invalid frame produces `ERR 0 FRAME` and stops the controller. ARM is rejected while already armed or on invalid base inputs. Line mode may arm while blocked or off-line, but requests zero until a valid line and clearance are present. `SPEED` and all `LINE` profile commands are rejected while armed or from the infrared source; `SPEED` enforces 50..200 in 10-point steps. The Android app sends STOP, `LINE PULSE` or `LINE HYBRID`, and then `ARM LINE`. All line profiles share the same sensor, obstacle, low-voltage, lease, and STOP interlocks. Pulse uses PWM 120; Hybrid also uses 120 while centered but raises only continuous side corrections and counter-rotation to 150. Infrared button `1` always restores Pulse. Values below the measured motor-start threshold may be accepted without producing motion. Rejected valid commands do not steal an existing control owner. Out-of-range manual PWM stops its owner.
 
-Host PWM is restricted to -150..150. The parser accepts -180..180, then the controller enforces its configured maximum. A complete command must arrive within 200 ms and fit in a 63-byte payload. Overlong, non-ASCII, or expired partial commands are discarded through the next newline. LF and CRLF are accepted; commands are case-sensitive. Sequence numbers correlate replies, not authentication or exactly-once delivery; the host does not automatically retry movement commands.
+Manual PWM is restricted to -200..200. The Android UI offers a 110..200 limit with a cold-start value of 150 because this chassis could not reliably start at 50..100. `R` removes the old STOP/SPEED/ARM/DRIVE timing race: a nonzero frame performs takeover and update atomically, while zero always succeeds as a motion stop. At a front obstacle, net forward manual requests produce zero output without dropping the manual session; reverse and counter-rotation remain available for escape. Low voltage, stale/invalid sensors, communication leases, malformed input, and STOP still latch zero output. The worst-case compact frame `S 65535 R -200 -200\n` is exactly 20 bytes.
+
+The active buzzer shares A0 with battery sensing. `H 1` therefore uses a 120 ms on / 30 ms quiet pattern so the ADC can still sample. The controller requires renewal within 1.5 seconds, and `STOP` silences it. It is an active buzzer with on/off control, so rhythmic alerts are supported but pitched melodies are not.
+
+A complete command must arrive within 200 ms and fit in a 63-byte payload. Overlong, non-ASCII, or expired partial commands are discarded through the next newline. LF and CRLF are accepted; commands are case-sensitive. Sequence numbers correlate replies, not authentication or exactly-once delivery; the host does not automatically retry movement commands.
 
 ## Telemetry
 
 ```text
 SEP780 ROBOT READY v=1
-SEP780 v=1 ms=1200 mode=1 state=2 owner=0 line=2 mm=800 mv=7400 l=90 r=90
+SEP780 v=1 ms=1200 mode=1 state=2 owner=0 line=2 mm=800 mv=7400 l=120 r=120
 ```
 
 | Field | Meaning |

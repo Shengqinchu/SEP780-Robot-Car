@@ -3,8 +3,8 @@ param(
     [Parameter(Mandatory)][ValidateSet('observe','line','drive','stop')][string]$Action,
     [Parameter(Mandatory)][string]$Port,
     [ValidateRange(1,30)][double]$Seconds = 5,
-    [ValidateRange(-150,150)][int]$Left = 0,
-    [ValidateRange(-150,150)][int]$Right = 0,
+    [ValidateRange(-200,200)][int]$Left = 0,
+    [ValidateRange(-200,200)][int]$Right = 0,
     [switch]$ConfirmHardwareReady,
     [switch]$ConfirmMotionClear
 )

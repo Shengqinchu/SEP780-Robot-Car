@@ -35,10 +35,21 @@ bool parse(char* line, Command& command) {
   else if (count == 3 && strcmp(fields[2], "STATUS") == 0) candidate.type = CommandType::Status;
   else if (count == 4 && strcmp(fields[2], "ARM") == 0 && strcmp(fields[3], "LINE") == 0) candidate.type = CommandType::ArmLine;
   else if (count == 4 && strcmp(fields[2], "ARM") == 0 && strcmp(fields[3], "MANUAL") == 0) candidate.type = CommandType::ArmManual;
-  else if (count == 5 && strcmp(fields[2], "DRIVE") == 0) {
+  else if (count == 4 && strcmp(fields[2], "LINE") == 0 && strcmp(fields[3], "PULSE") == 0) candidate.type = CommandType::LinePulse;
+  else if (count == 4 && strcmp(fields[2], "LINE") == 0 && strcmp(fields[3], "CONTINUOUS") == 0) candidate.type = CommandType::LineContinuous;
+  else if (count == 4 && strcmp(fields[2], "LINE") == 0 && strcmp(fields[3], "HYBRID") == 0) candidate.type = CommandType::LineHybrid;
+  else if (count == 4 && strcmp(fields[2], "H") == 0 && strcmp(fields[3], "1") == 0) candidate.type = CommandType::HornOn;
+  else if (count == 4 && strcmp(fields[2], "H") == 0 && strcmp(fields[3], "0") == 0) candidate.type = CommandType::HornOff;
+  else if (count == 4 && strcmp(fields[2], "SPEED") == 0) {
+    int32_t speed = 0;
+    if (!number(fields[3], 0, 255, speed)) return false;
+    candidate.type = CommandType::Speed;
+    candidate.speed = static_cast<uint8_t>(speed);
+  }
+  else if (count == 5 && (strcmp(fields[2], "DRIVE") == 0 || strcmp(fields[2], "R") == 0)) {
     int32_t left = 0, right = 0;
-    if (!number(fields[3], -180, 180, left) || !number(fields[4], -180, 180, right)) return false;
-    candidate.type = CommandType::Drive;
+    if (!number(fields[3], -200, 200, left) || !number(fields[4], -200, 200, right)) return false;
+    candidate.type = strcmp(fields[2], "R") == 0 ? CommandType::RemoteDrive : CommandType::Drive;
     candidate.left = static_cast<int16_t>(left);
     candidate.right = static_cast<int16_t>(right);
   } else return false;
@@ -85,7 +96,15 @@ bool execute(Controller& controller, const Command& command, Source source, cons
     case CommandType::Stop: controller.stop(); return true;
     case CommandType::ArmLine: return controller.arm(Mode::Line, source, inputs, now);
     case CommandType::ArmManual: return controller.arm(Mode::Manual, source, inputs, now);
+    case CommandType::LinePulse: return controller.setLineDriveProfile(LineDriveProfile::Pulse, source);
+    case CommandType::LineContinuous: return controller.setLineDriveProfile(LineDriveProfile::Continuous, source);
+    case CommandType::LineHybrid: return controller.setLineDriveProfile(LineDriveProfile::Hybrid, source);
+    case CommandType::Speed: return controller.setCruisePwm(command.speed, source);
     case CommandType::Drive: return controller.drive(command.left, command.right, source, now);
+    case CommandType::RemoteDrive:
+      return controller.remoteDrive(command.left, command.right, source, inputs, now);
+    case CommandType::HornOn: return controller.horn(true, source, now);
+    case CommandType::HornOff: return controller.horn(false, source, now);
     case CommandType::Ping: return controller.ping(source, now);
     case CommandType::Status: return true;
   }

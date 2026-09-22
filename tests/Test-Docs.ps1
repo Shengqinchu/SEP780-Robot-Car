@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param()
 . (Join-Path (Split-Path $PSScriptRoot -Parent) 'scripts/Common.ps1')
-$documents = @('README.md','README.en.md','docs/calibration.md','docs/calibration.en.md','docs/controller.md','docs/control-protocol.md','docs/project-plan.md','docs/test-plan.md')
+$documents = @('README.md','README.en.md','docs/calibration.md','docs/calibration.en.md','docs/controller.md','docs/control-protocol.md','docs/project-plan.md','docs/test-plan.md','docs/voice-control.md','docs/voice-control.en.md','docs/demo-guide.md','docs/demo-guide.en.md','docs/demo-script-bilingual.md')
 $linkCount = 0
 foreach ($file in $documents) {
     $path = Join-Path $ProjectRoot $file

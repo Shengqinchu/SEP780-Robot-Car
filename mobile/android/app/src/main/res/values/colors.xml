@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ink">#152126</color>
+    <color name="muted">#627078</color>
+    <color name="surface">#EEF2F3</color>
+    <color name="band">#FFFFFF</color>
+    <color name="divider">#DCE3E5</color>
+    <color name="outline">#CED8DB</color>
+    <color name="primary">#00866F</color>
+    <color name="primary_pressed">#006D5B</color>
+    <color name="primary_soft">#E2F3EF</color>
+    <color name="danger">#C6372D</color>
+    <color name="danger_pressed">#A92B23</color>
+    <color name="inactive">#7C888E</color>
+    <color name="warning">#D29827</color>
+    <color name="bluetooth_blue">#1473E6</color>
+    <color name="dashboard">#172329</color>
+    <color name="dashboard_track">#34454C</color>
+    <color name="dashboard_tick">#7F929A</color>
+    <color name="dashboard_text">#F4F8F7</color>
+    <color name="dashboard_muted">#A4B4BA</color>
+    <color name="dashboard_accent">#39D6B2</color>
+    <color name="joystick_steering">#39D6B2</color>
+    <color name="joystick_throttle">#F0B43C</color>
+    <color name="joystick_thumb">#DCE7EA</color>
+    <color name="joystick_thumb_active">#FFFFFF</color>
+    <color name="control_pressed">#E7ECEE</color>
+    <color name="control_surface">#FFFFFF</color>
+    <color name="sensor_active">#172329</color>
+    <color name="sensor_inactive">#D7DEE1</color>
+</resources>

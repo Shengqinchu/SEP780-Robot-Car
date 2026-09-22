@@ -28,3 +28,6 @@ Desktop.ini
 .DS_Store
 __pycache__/
 *.pyc
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/android/app/build/

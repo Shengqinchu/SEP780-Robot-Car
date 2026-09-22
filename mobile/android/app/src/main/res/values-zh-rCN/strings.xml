@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_subtitle">移动控制台</string>
+    <string name="language_selector">界面语言</string>
+    <string name="disconnected">未连接</string>
+    <string name="connecting">正在连接</string>
+    <string name="discovering">正在读取蓝牙服务</string>
+    <string name="connected">已连接</string>
+    <string name="connection_error">连接错误</string>
+    <string name="connection_error_detail">连接错误：%1$s</string>
+    <string name="scan_error">蓝牙扫描错误：%1$d</string>
+    <string name="scan">扫描</string>
+    <string name="reconnect">重连</string>
+    <string name="disconnect">断开</string>
+    <string name="scanning">正在扫描 BLE 设备</string>
+    <string name="scan_finished">选择 BLE 设备</string>
+    <string name="unnamed_device">未命名 BLE 设备</string>
+    <string name="cancel">取消</string>
+    <string name="bluetooth_unavailable">手机不支持低功耗蓝牙。</string>
+    <string name="bluetooth_permission_denied">没有获得附近设备权限。</string>
+    <string name="audio_permission_denied">没有获得麦克风权限。</string>
+    <string name="enable_bluetooth">请先开启蓝牙。</string>
+    <string name="bluetooth">蓝牙</string>
+
+    <string name="joystick_accessibility">模拟遥控摇杆；速度上限 %1$d；左侧输出 %2$d；右侧输出 %3$d</string>
+    <string name="joystick_limit">最高 PWM %1$d</string>
+    <string name="joystick_output">左 %1$d   右 %2$d</string>
+    <string name="speed_limit">遥控上限</string>
+    <string name="speed_limit_accessibility">遥控模式速度上限</string>
+    <string name="speed_limit_value">%1$d PWM</string>
+    <string name="battery">电池</string>
+    <string name="range">距离</string>
+    <string name="line_sensors">循迹</string>
+    <string name="battery_value">%1$.2f V</string>
+    <string name="range_value">%1$d mm</string>
+    <string name="voice_button">语音命令</string>
+    <string name="horn_button">按住鸣笛</string>
+    <string name="voice_unavailable">手机没有可用的语音识别服务。</string>
+    <string name="voice_listening">正在听</string>
+    <string name="voice_processing">正在识别</string>
+    <string name="voice_error">语音识别错误：%1$d</string>
+    <string name="voice_unknown">未识别为安全指令，没有发送运动命令。</string>
+    <string name="transcript_empty">尚无语音指令</string>
+    <string name="recognized_phrase">识别：%1$s</string>
+
+    <string name="line_follow">开始循迹</string>
+    <string name="line_mode_selector">循迹驱动模式</string>
+    <string name="line_mode_pulse">步进</string>
+    <string name="line_mode_hybrid">正常</string>
+    <string name="stop">停止</string>
+    <string name="control_not_connected">请先连接小车。</string>
+    <string name="control_line_pending">正在准备循迹模式</string>
+    <string name="control_line">循迹模式运行中</string>
+    <string name="control_manual_pending">正在准备手动模式</string>
+    <string name="control_manual">模拟遥控运行中</string>
+    <string name="control_speed_selected">已选择速度，运动保持停止</string>
+    <string name="control_line_mode_selected">已选择循迹模式，运动保持停止</string>
+    <string name="control_stopped">已停止</string>
+    <string name="control_command_error">指令被拒绝，已发送停止。</string>
+    <string name="last_command">发送：%1$s</string>
+
+    <string name="telemetry_format">模式 %1$s · 状态 %2$s\n循迹 %3$d · 距离 %4$d mm · 电压 %5$.2f V\nPWM 左 %6$d · 右 %7$d</string>
+    <string name="last_reply">接收：%1$s</string>
+</resources>

@@ -31,7 +31,8 @@ class Clock:
 
 class FakeSerial:
     """UART peer fixture, not a physics or firmware implementation."""
-    def __init__(self, clock, known=True, reject=None, drop=None, partial=False, reset=False, fail=False, interrupt=False):
+    def __init__(self, clock, known=True, reject=None, drop=None, partial=False, reset=False, fail=False,
+                 interrupt=False, ready_after=0.0):
         self.clock = clock
         self.known, self.reject, self.drop, self.partial, self.reset, self.fail = known, reject, drop, partial, reset, fail
         self.pending = []
@@ -39,6 +40,7 @@ class FakeSerial:
         self.closed = False
         self.mode = 0
         self.interrupt = interrupt
+        self.ready_after = ready_after
         self.last_report = -1.0
 
     def write(self, data):
@@ -70,7 +72,11 @@ class FakeSerial:
             return b"SEP780 ROBOT READY v=1\n"
         if self.clock.now - self.last_report >= 0.2:
             self.last_report = self.clock.now
-            return telemetry(int(1000 + self.clock.now * 1000), self.mode, 2 if self.mode == 1 else 3 if self.mode == 2 else 0) if self.known else b"HEARTBEAT ms=1000\n"
+            sample = telemetry(int(1000 + self.clock.now * 1000), self.mode,
+                               2 if self.mode == 1 else 3 if self.mode == 2 else 0)
+            if self.clock.now < self.ready_after:
+                sample = sample.replace(b"mm=800", b"mm=0")
+            return sample if self.known else b"HEARTBEAT ms=1000\n"
         return b""
 
     def close(self):
@@ -98,14 +104,21 @@ class ProtocolTests(unittest.TestCase):
     def test_sequence_and_command_encoding(self):
         self.assertEqual(protocol.encode(7, "line"), b"S 7 ARM LINE\n")
         self.assertEqual(protocol.encode(9, "drive", -80, 90), b"S 9 DRIVE -80 90\n")
+        self.assertEqual(protocol.encode(10, "remote", -200, 200), b"S 10 R -200 200\n")
+        self.assertEqual(protocol.encode(11, "horn_on"), b"S 11 H 1\n")
+        self.assertEqual(protocol.encode(12, "horn_off"), b"S 12 H 0\n")
+        self.assertEqual(protocol.encode(10, "speed", speed=50), b"S 10 SPEED 50\n")
+        self.assertEqual(protocol.encode(10, "speed", speed=130), b"S 10 SPEED 130\n")
 
     def test_invalid_sequence(self):
         for value in (0, 65536, -1, True, 1.5):
             with self.assertRaises(ValueError): protocol.encode(value, "stop")
 
     def test_pwm_and_command_injection_rejected(self):
-        for left in (151, -151, True, "0\nS 2 ARM LINE"):
+        for left in (201, -201, True, "0\nS 2 ARM LINE"):
             with self.assertRaises(ValueError): protocol.encode(1, "drive", left, 0)
+        for speed in (40, 55, 201, True, "100\nS 2 ARM LINE"):
+            with self.assertRaises(ValueError): protocol.encode(1, "speed", speed=speed)
         with self.assertRaises(ValueError): protocol.encode(1, "stop\nARM LINE")
 
 
@@ -143,6 +156,23 @@ class SessionTests(unittest.TestCase):
         self.assertEqual(commands[-1], "STOP")
         self.assertTrue(result["stop_acknowledged"])
         self.assertEqual(result["status"], "completed")
+
+    def test_motion_waits_for_valid_post_reset_range_before_arm(self):
+        result, peer, events, _ = self.invoke("line", ready_after=0.5)
+        arm_index = next(i for i, event in enumerate(events)
+                         if event.get("event") == "tx" and event.get("action") == "line")
+        ready_index = next(i for i, event in enumerate(events) if event.get("event") == "motion_ready")
+        self.assertLess(ready_index, arm_index)
+        self.assertGreaterEqual(events[ready_index]["range_mm"], 20)
+        self.assertEqual(result["status"], "completed")
+
+    def test_motion_never_arms_without_valid_post_reset_range(self):
+        result, peer, _, clock = self.invoke("line", ready_after=99.0)
+        self.assertEqual(result["status"], "failed")
+        self.assertIn("no ARM sent", result["error"])
+        self.assertNotIn(b" ARM ", b"".join(peer.writes))
+        self.assertTrue(result["stop_acknowledged"])
+        self.assertLess(clock.now, 3.5)
 
     def test_drive_refreshes_at_bounded_intervals(self):
         result, peer, _, clock = self.invoke("drive")
@@ -255,7 +285,7 @@ class SessionTests(unittest.TestCase):
 class DataTests(unittest.TestCase):
     def test_scenario_schema_and_commands(self):
         rows, stream = simulate.load_scenario(ROOT / "scenarios/line_course.csv")
-        self.assertEqual(len(rows), 31)
+        self.assertEqual(len(rows), 35)
         self.assertTrue(stream.startswith("1000 2 800 1 7400 1 0 0\n"))
 
     def test_wrong_csv_schema_rejected(self):
