@@ -7,7 +7,9 @@ public final class RobotProtocol {
     public static final int FIRMWARE_MIN_PWM = 50;
     public static final int MIN_PWM = 110;
     public static final int DEFAULT_PWM = 150;
+    // The wire format accepts 200; this car's motor I/O clips physical writes at 180.
     public static final int MAX_PWM = 200;
+    public static final int REMOTE_MAX_PWM = 180;
     public static final int PWM_STEP = 10;
     private int nextSequence = 1;
 

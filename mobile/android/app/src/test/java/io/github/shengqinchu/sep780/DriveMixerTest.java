@@ -15,16 +15,16 @@ public final class DriveMixerTest {
 
     @Test
     public void fullAxesMapToDifferentialDrive() {
-        assertWheels(200, 200, DriveMixer.mix(1.0f, 0.0f, 200));
-        assertWheels(-200, -200, DriveMixer.mix(-1.0f, 0.0f, 200));
-        assertWheels(200, -200, DriveMixer.mix(0.0f, 1.0f, 200));
-        assertWheels(-200, 200, DriveMixer.mix(0.0f, -1.0f, 200));
-        assertWheels(200, 0, DriveMixer.mix(1.0f, 1.0f, 200));
+        assertWheels(180, 180, DriveMixer.mix(1.0f, 0.0f, 180));
+        assertWheels(-180, -180, DriveMixer.mix(-1.0f, 0.0f, 180));
+        assertWheels(180, -180, DriveMixer.mix(0.0f, 1.0f, 180));
+        assertWheels(-180, 180, DriveMixer.mix(0.0f, -1.0f, 180));
+        assertWheels(180, 0, DriveMixer.mix(1.0f, 1.0f, 180));
     }
 
     @Test
     public void motionDemandStartsAtTheMeasuredMotorThreshold() {
-        DriveMixer.Wheels wheels = DriveMixer.mix(0.09f, 0.0f, 200);
+        DriveMixer.Wheels wheels = DriveMixer.mix(0.09f, 0.0f, 180);
         assertTrue(Math.abs(wheels.left) >= DriveMixer.START_PWM);
         assertTrue(Math.abs(wheels.right) >= DriveMixer.START_PWM);
     }
@@ -32,8 +32,8 @@ public final class DriveMixerTest {
     @Test
     public void validatesAndClampsInputs() {
         assertThrows(IllegalArgumentException.class, () -> DriveMixer.mix(0.0f, 0.0f, 109));
-        assertThrows(IllegalArgumentException.class, () -> DriveMixer.mix(0.0f, 0.0f, 201));
-        assertWheels(200, 200, DriveMixer.mix(2.0f, 0.0f, 200));
+        assertThrows(IllegalArgumentException.class, () -> DriveMixer.mix(0.0f, 0.0f, 181));
+        assertWheels(180, 180, DriveMixer.mix(2.0f, 0.0f, 180));
     }
 
     private static void assertWheels(int left, int right, DriveMixer.Wheels actual) {

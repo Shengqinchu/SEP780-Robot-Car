@@ -75,7 +75,7 @@ Mark the demo `Ready` only after every row passes.
 | Complete route | Five runs on one unchanged layout are recorded without reset or uncontrolled motion | [ ] |
 | Emergency stop | App Stop, IR `0`, and physical power-off paths have all been checked | [ ] |
 
-PWM 50–100 are recorded as unable to start reliably. The app joystick limit is 110–200 and defaults to 150; it affects manual and voice directions only. Production line mode ignores that limit. Pulse uses PWM 120 with 80/80 ms timing. Normal keeps that centered pulse and uses continuous PWM 150 only for side correction or counter-rotation. Repeat-accept Normal on the fixed course and do not tune parameters on demo day.
+PWM 50–100 are recorded as unable to start reliably. The selectable app joystick limit is 110–180 and defaults to 150; it affects manual and voice directions only. Production line mode ignores that limit. Pulse uses PWM 120 with 80/80 ms timing. Normal keeps that centered pulse and uses continuous PWM 150 only for side correction or counter-rotation. Repeat-accept Normal on the fixed course and do not tune parameters on demo day.
 
 ## Recording procedure
 
@@ -86,7 +86,7 @@ PWM 50–100 are recorded as unable to start reliably. The app joystick limit is
 3. Disable phone battery restrictions and interruptions, keep the screen awake, and verify Bluetooth, nearby-device, and microphone permissions.
 4. Select one UI language before connecting. Changing language while connected intentionally stops and disconnects the car.
 5. Power on, identify the target by toggling only the car's Bluetooth power, and connect to it. Confirm a blue connection indicator, zero requested PWM, and plausible distance and line values.
-6. Select an accepted manual limit; the app defaults to 150 and allows 110–200. Line speed is not controlled by this slider: centered travel uses the vehicle-side PWM 120 pulse and Normal turns use 150.
+6. Select an accepted manual limit; the app defaults to 150 and allows 110–180. Line speed is not controlled by this slider: centered travel uses the vehicle-side PWM 120 pulse and Normal turns use 150.
 7. Press the fixed Stop button once. One teammate should remain close to the physical switches without reaching into the motion area.
 
 ### Roles

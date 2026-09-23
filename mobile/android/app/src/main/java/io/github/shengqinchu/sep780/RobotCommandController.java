@@ -118,7 +118,7 @@ public final class RobotCommandController {
     }
 
     public void selectSpeed(int pwm) {
-        if (pwm < RobotProtocol.MIN_PWM || pwm > RobotProtocol.MAX_PWM ||
+        if (pwm < RobotProtocol.MIN_PWM || pwm > RobotProtocol.REMOTE_MAX_PWM ||
                 (pwm - RobotProtocol.MIN_PWM) % RobotProtocol.PWM_STEP != 0) {
             throw new IllegalArgumentException("Unsupported speed step.");
         }

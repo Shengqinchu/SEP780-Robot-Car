@@ -183,7 +183,7 @@ public final class MainActivity extends Activity implements BleUartClient.Listen
         bindHornButton();
         lineButton.setOnClickListener(view -> controller.startLine());
         stopButton.setOnClickListener(view -> controller.stop());
-        int speedSteps = (RobotProtocol.MAX_PWM - RobotProtocol.MIN_PWM) / RobotProtocol.PWM_STEP;
+        int speedSteps = (RobotProtocol.REMOTE_MAX_PWM - RobotProtocol.MIN_PWM) / RobotProtocol.PWM_STEP;
         speedSeek.setMax(speedSteps);
         speedSeek.setProgress((controller.selectedPwm() - RobotProtocol.MIN_PWM) / RobotProtocol.PWM_STEP);
         updateSpeedLabel(controller.selectedPwm());

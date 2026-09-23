@@ -35,4 +35,10 @@ public final class RobotProtocolTest {
         assertThrows(IllegalArgumentException.class, () -> protocol.speed(55));
         assertThrows(IllegalArgumentException.class, () -> protocol.speed(201));
     }
+
+    @Test
+    public void remoteUiCeilingMatchesTheMotorIoCapWithoutChangingTheWireRange() {
+        assertEquals(180, RobotProtocol.REMOTE_MAX_PWM);
+        assertEquals(200, RobotProtocol.MAX_PWM);
+    }
 }

@@ -19,7 +19,7 @@ public final class DriveMixer {
     private DriveMixer() {}
 
     public static Wheels mix(float throttle, float steering, int limitPwm) {
-        if (limitPwm < START_PWM || limitPwm > RobotProtocol.MAX_PWM) {
+        if (limitPwm < START_PWM || limitPwm > RobotProtocol.REMOTE_MAX_PWM) {
             throw new IllegalArgumentException("Unsupported remote PWM limit.");
         }
         float shapedThrottle = shape(applyDeadZone(clamp(throttle), THROTTLE_DEAD_ZONE), 0.35f);
